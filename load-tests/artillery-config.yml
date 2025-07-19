@@ -1,0 +1,112 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    # Warm-up phase
+    - duration: 60
+      arrivalRate: 10
+      name: "Warm-up"
+
+    # Ramp-up phase
+    - duration: 120
+      arrivalRate: 10
+      rampTo: 100
+      name: "Ramp-up"
+
+    # Sustained load phase
+    - duration: 300
+      arrivalRate: 100
+      name: "Sustained load"
+
+    # Peak load phase
+    - duration: 180
+      arrivalRate: 100
+      rampTo: 500
+      name: "Peak load"
+
+    # Stress test phase
+    - duration: 120
+      arrivalRate: 500
+      rampTo: 1000
+      name: "Stress test"
+
+    # Cool-down phase
+    - duration: 60
+      arrivalRate: 1000
+      rampTo: 10
+      name: "Cool-down"
+
+  defaults:
+    headers:
+      User-Agent: "Kenya-Votes-Load-Test/1.0"
+      Accept: "application/json"
+
+  processor: "./functions.js"
+
+scenarios:
+  - name: "Health Check"
+    weight: 10
+    flow:
+      - get:
+          url: "/health"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  - name: "Election Status"
+    weight: 15
+    flow:
+      - get:
+          url: "/api/status"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  - name: "Presidential Results"
+    weight: 25
+    flow:
+      - function: "setRandomCounty"
+      - get:
+          url: "/api/results/PRESIDENT/COUNTY/{{countyCode}}"
+          expect:
+            - statusCode: 200
+            - contentType: json
+            - hasProperty: "results"
+
+  - name: "Governor Results"
+    weight: 20
+    flow:
+      - function: "setRandomCounty"
+      - get:
+          url: "/api/results/GOVERNOR/COUNTY/{{countyCode}}"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  - name: "Senator Results"
+    weight: 15
+    flow:
+      - function: "setRandomCounty"
+      - get:
+          url: "/api/results/SENATOR/COUNTY/{{countyCode}}"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  - name: "Candidate Search"
+    weight: 10
+    flow:
+      - function: "setRandomSearchTerm"
+      - get:
+          url: "/api/candidates/search?q={{searchTerm}}"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  - name: "API Documentation"
+    weight: 5
+    flow:
+      - get:
+          url: "/api-docs"
+          expect:
+            - statusCode: 200
+            - contentType: json

@@ -1,0 +1,76 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    # Warm-up phase
+    - duration: 30
+      arrivalRate: 5
+      name: "Warm-up"
+
+    # Ramp-up phase
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 50
+      name: "Ramp-up"
+
+    # Sustained load phase
+    - duration: 120
+      arrivalRate: 50
+      name: "Sustained load"
+
+    # Peak load phase
+    - duration: 60
+      arrivalRate: 50
+      rampTo: 200
+      name: "Peak load"
+
+    # Cool-down phase
+    - duration: 30
+      arrivalRate: 200
+      rampTo: 5
+      name: "Cool-down"
+
+  defaults:
+    headers:
+      User-Agent: "Kenya-Votes-Load-Test/1.0"
+      Accept: "application/json"
+
+scenarios:
+  - name: "Health Check"
+    weight: 20
+    flow:
+      - get:
+          url: "/health"
+          expect:
+            - statusCode: 200
+
+  - name: "Election Status"
+    weight: 25
+    flow:
+      - get:
+          url: "/api/status"
+          expect:
+            - statusCode: 200
+
+  - name: "Presidential Results - Mombasa"
+    weight: 20
+    flow:
+      - get:
+          url: "/api/results/PRESIDENT/COUNTY/001"
+          expect:
+            - statusCode: 200
+
+  - name: "Governor Results - Nairobi"
+    weight: 20
+    flow:
+      - get:
+          url: "/api/results/GOVERNOR/COUNTY/047"
+          expect:
+            - statusCode: 200
+
+  - name: "Senator Results - Nakuru"
+    weight: 15
+    flow:
+      - get:
+          url: "/api/results/SENATOR/COUNTY/032"
+          expect:
+            - statusCode: 200

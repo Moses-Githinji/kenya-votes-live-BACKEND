@@ -1,0 +1,216 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    # Phase 1: Warm-up with moderate load
+    - duration: 60
+      arrivalRate: 100
+      name: "Warm-up Phase"
+
+    # Phase 2: Ramp-up to high load
+    - duration: 120
+      arrivalRate: 1000
+      rampTo: 5000
+      name: "Ramp-up Phase"
+
+    # Phase 3: High load sustained
+    - duration: 300
+      arrivalRate: 5000
+      name: "High Load Phase"
+
+    # Phase 4: Extreme load spike
+    - duration: 180
+      arrivalRate: 10000
+      rampTo: 50000
+      name: "Extreme Load Spike"
+
+    # Phase 5: Massive scale test
+    - duration: 600
+      arrivalRate: 50000
+      rampTo: 200000
+      name: "Massive Scale Test"
+
+    # Phase 6: Peak election day simulation
+    - duration: 900
+      arrivalRate: 100000
+      rampTo: 500000
+      name: "Peak Election Day"
+
+    # Phase 7: Sustained extreme load
+    - duration: 600
+      arrivalRate: 300000
+      name: "Sustained Extreme Load"
+
+    # Phase 8: Cool-down
+    - duration: 300
+      arrivalRate: 10000
+      rampTo: 1000
+      name: "Cool-down Phase"
+
+  processor: "./functions.js"
+
+  # Enhanced metrics collection
+  metrics:
+    - name: "response_time"
+      unit: "milliseconds"
+    - name: "requests_per_second"
+      unit: "requests"
+    - name: "concurrent_users"
+      unit: "users"
+    - name: "error_rate"
+      unit: "percentage"
+    - name: "cpu_usage"
+      unit: "percentage"
+    - name: "memory_usage"
+      unit: "megabytes"
+    - name: "database_connections"
+      unit: "connections"
+    - name: "cache_hit_rate"
+      unit: "percentage"
+
+  # HTTP settings for high concurrency
+  http:
+    timeout: 30
+    pool: 1000
+    keepAlive: true
+    keepAliveMsecs: 1000
+    maxSockets: 1000
+    maxFreeSockets: 256
+
+  # Enhanced payloads for realistic testing
+  # payload:
+  #   path: "./test-data.json"
+  #   fields:
+  #     - "countyCode"
+  #     - "position"
+  #     - "regionId"
+  #     - "searchTerm"
+  #     - "candidateId"
+
+scenarios:
+  # Election Results (60% of traffic - highest priority)
+  - name: "Election Results"
+    weight: 60
+    flow:
+      - function: "setRandomElectionData"
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/api/results/{{position}}/{{regionType}}/{{regionId}}"
+          capture:
+            - json: "$.position"
+              as: "position"
+            - json: "$.results"
+              as: "results"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 1
+      - function: "addRandomDelay"
+
+  # Candidate Information (25% of traffic)
+  - name: "Candidate Information"
+    weight: 25
+    flow:
+      - function: "setRandomCandidateData"
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/api/candidates/{{candidateId}}"
+          capture:
+            - json: "$.candidate"
+              as: "candidate"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 2
+      - function: "addRandomDelay"
+
+      - function: "setRandomSearchTerm"
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/api/candidates/search?q={{searchTerm}}"
+          capture:
+            - json: "$.candidates"
+              as: "searchResults"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 1
+
+  # Map and Historical Data (10% of traffic)
+  - name: "Map and Historical Data"
+    weight: 10
+    flow:
+      - function: "setRandomMapData"
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/api/map/{{regionType}}/{{regionId}}"
+          capture:
+            - json: "$.mapData"
+              as: "mapData"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 3
+      - function: "addRandomDelay"
+
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/api/historical/{{regionType}}/{{regionId}}"
+          capture:
+            - json: "$.historicalData"
+              as: "historicalData"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 2
+
+  # Feedback Submission (3% of traffic)
+  - name: "Feedback Submission"
+    weight: 3
+    flow:
+      - function: "setRandomFeedbackData"
+      - function: "metricsByEndpoint_beforeRequest"
+      - post:
+          url: "/api/feedback"
+          json:
+            type: "{{feedbackType}}"
+            message: "{{feedbackMessage}}"
+            regionId: "{{regionId}}"
+            contact: "{{contact}}"
+          capture:
+            - json: "$.feedbackId"
+              as: "feedbackId"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 5
+
+  # Health Check (1% of traffic - monitoring)
+  - name: "Health Check"
+    weight: 1
+    flow:
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/health"
+          capture:
+            - json: "$.status"
+              as: "healthStatus"
+            - json: "$.uptime"
+              as: "uptime"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 1
+
+  # Performance Metrics (1% of traffic)
+  - name: "Performance Metrics"
+    weight: 1
+    flow:
+      - function: "metricsByEndpoint_beforeRequest"
+      - get:
+          url: "/metrics"
+          capture:
+            - json: "$.system"
+              as: "systemMetrics"
+            - json: "$.current"
+              as: "currentMetrics"
+      - function: "metricsByEndpoint_afterResponse"
+      - think: 2
+# Enhanced reporting
+# reporting:
+#   - name: "detailed"
+#     format: "json"
+#     destination: "./reports/massive-stress-test-report.json"
+#
+#   - name: "summary"
+#     format: "html"
+#     destination: "./reports/massive-stress-test-summary.html"
+#
+#   - name: "metrics"
+#     format: "csv"
+#     destination: "./reports/massive-stress-test-metrics.csv"

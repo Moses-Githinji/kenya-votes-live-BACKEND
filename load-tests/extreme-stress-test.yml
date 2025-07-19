@@ -1,0 +1,165 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    # Phase 1: Warm-up (1 minute)
+    - duration: 60
+      arrivalRate: 100
+      name: "Warm-up Phase"
+
+    # Phase 2: Ramp-up (2 minutes)
+    - duration: 120
+      arrivalRate: 1000
+      rampTo: 5000
+      name: "Ramp-up Phase"
+
+    # Phase 3: Peak Load - Election Day Simulation (5 minutes)
+    - duration: 300
+      arrivalRate: 5000
+      name: "Peak Load - Election Day"
+
+    # Phase 4: Extreme Load - Breaking Point Test (3 minutes)
+    - duration: 180
+      arrivalRate: 10000
+      name: "Extreme Load - Breaking Point"
+
+    # Phase 5: Sustained High Load (5 minutes)
+    - duration: 300
+      arrivalRate: 8000
+      name: "Sustained High Load"
+
+    # Phase 6: Cool-down (2 minutes)
+    - duration: 120
+      arrivalRate: 1000
+      rampTo: 100
+      name: "Cool-down Phase"
+
+  processor: "./functions.js"
+  variables:
+    positions:
+      [
+        "president",
+        "governor",
+        "senator",
+        "mp",
+        "woman_representative",
+        "county_assembly",
+      ]
+    regionTypes: ["county", "constituency", "ward"]
+    regionIds:
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+      ]
+
+  http:
+    timeout: 30
+    pool: 1000
+    headers:
+      "User-Agent": "Kenya-Votes-Live-Stress-Test/1.0"
+      "Accept": "application/json"
+      "Cache-Control": "no-cache"
+
+scenarios:
+  - name: "Election Results - High Traffic"
+    weight: 60
+    flow:
+      - function: "setRandomElectionData"
+      - get:
+          url: "/api/results/{{position}}/{{regionType}}/{{regionId}}"
+          capture:
+            - json: "$.status"
+              as: "apiStatus"
+      - think: 1
+      - get:
+          url: "/api/status"
+      - think: 2
+      - get:
+          url: "/api/turnout/{{regionType}}/{{regionId}}"
+      - think: 1
+
+  - name: "Candidate Information - Moderate Traffic"
+    weight: 25
+    flow:
+      - function: "setRandomCandidateData"
+      - get:
+          url: "/api/candidates/{{candidateId}}"
+      - think: 3
+      - get:
+          url: "/api/candidates/search?q={{searchTerm}}"
+      - think: 2
+
+  - name: "Map and Historical Data - Low Traffic"
+    weight: 10
+    flow:
+      - function: "setRandomMapData"
+      - get:
+          url: "/api/map/{{regionType}}/{{regionId}}"
+      - think: 5
+      - get:
+          url: "/api/historical/2022/{{regionId}}"
+      - think: 3
+
+  - name: "Feedback Submission - Minimal Traffic"
+    weight: 5
+    flow:
+      - function: "setRandomFeedbackData"
+      - post:
+          url: "/api/feedback"
+          json:
+            type: "{{feedbackType}}"
+            message: "{{feedbackMessage}}"
+            regionId: "{{regionId}}"
+            contact: "{{contact}}"
+      - think: 10
+
+  - name: "Health Check - Monitoring"
+    weight: 1
+    flow:
+      - get:
+          url: "/health"
+      - think: 30

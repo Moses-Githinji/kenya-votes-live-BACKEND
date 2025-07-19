@@ -1,0 +1,346 @@
+version: "3.8"
+
+services:
+  # Load Balancer
+  nginx:
+    image: nginx:alpine
+    container_name: kenya-votes-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/ssl:ro
+      - nginx_cache:/var/cache/nginx
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - app
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
+        reservations:
+          cpus: "0.5"
+          memory: 256M
+
+  # Main Application (Auto-scaled)
+  app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: kenya-votes-app
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - PORT=3000
+    volumes:
+      - app_logs:/app/logs
+      - app_uploads:/app/uploads
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      replicas: 4
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+        reservations:
+          cpus: "1.0"
+          memory: 1G
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+        interval: 30s
+        timeout: 10s
+        retries: 3
+        start_period: 40s
+
+  # PostgreSQL Database (Primary)
+  postgres:
+    image: postgres:15-alpine
+    container_name: kenya-votes-postgres
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-kenya_votes}
+      - POSTGRES_USER=${POSTGRES_USER:-kenya_votes}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 4G
+        reservations:
+          cpus: "2.0"
+          memory: 2G
+      healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-kenya_votes}"]
+        interval: 30s
+        timeout: 10s
+        retries: 3
+
+  # PostgreSQL Read Replicas
+  postgres-replica-1:
+    image: postgres:15-alpine
+    container_name: kenya-votes-postgres-replica-1
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-kenya_votes}
+      - POSTGRES_USER=${POSTGRES_USER:-kenya_votes}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_replica_1_data:/var/lib/postgresql/data
+      - ./postgres-replica.conf:/etc/postgresql/postgresql.conf:ro
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+        reservations:
+          cpus: "1.0"
+          memory: 1G
+
+  postgres-replica-2:
+    image: postgres:15-alpine
+    container_name: kenya-votes-postgres-replica-2
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-kenya_votes}
+      - POSTGRES_USER=${POSTGRES_USER:-kenya_votes}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_replica_2_data:/var/lib/postgresql/data
+      - ./postgres-replica.conf:/etc/postgresql/postgresql.conf:ro
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+        reservations:
+          cpus: "1.0"
+          memory: 1G
+
+  # Redis Cluster
+  redis-master:
+    image: redis:7-alpine
+    container_name: kenya-votes-redis-master
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redis_master_data:/data
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+
+  redis-slave-1:
+    image: redis:7-alpine
+    container_name: kenya-votes-redis-slave-1
+    command: redis-server --slaveof redis-master 6379 --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redis_slave_1_data:/data
+    depends_on:
+      - redis-master
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  redis-slave-2:
+    image: redis:7-alpine
+    container_name: kenya-votes-redis-slave-2
+    command: redis-server --slaveof redis-master 6379 --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redis_slave_2_data:/data
+    depends_on:
+      - redis-master
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  # Monitoring Stack
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: kenya-votes-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/etc/prometheus/console_libraries"
+      - "--web.console.templates=/etc/prometheus/consoles"
+      - "--storage.tsdb.retention.time=200h"
+      - "--web.enable-lifecycle"
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: kenya-votes-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  # Backup Service
+  backup:
+    image: postgres:15-alpine
+    container_name: kenya-votes-backup
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-kenya_votes}
+      - POSTGRES_USER=${POSTGRES_USER:-kenya_votes}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+    volumes:
+      - ./backup-script.sh:/backup-script.sh:ro
+      - backup_data:/backups
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    command: ["/bin/sh", "/backup-script.sh"]
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  # CDN Edge Cache (Redis-based)
+  cdn-cache:
+    image: redis:7-alpine
+    container_name: kenya-votes-cdn-cache
+    command: redis-server --maxmemory 2gb --maxmemory-policy allkeys-lru
+    volumes:
+      - cdn_cache_data:/data
+    restart: unless-stopped
+    networks:
+      - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 2G
+        reservations:
+          cpus: "0.5"
+          memory: 1G
+
+volumes:
+  postgres_data:
+    driver: local
+  postgres_replica_1_data:
+    driver: local
+  postgres_replica_2_data:
+    driver: local
+  redis_master_data:
+    driver: local
+  redis_slave_1_data:
+    driver: local
+  redis_slave_2_data:
+    driver: local
+  nginx_cache:
+    driver: local
+  nginx_logs:
+    driver: local
+  app_logs:
+    driver: local
+  app_uploads:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  backup_data:
+    driver: local
+  cdn_cache_data:
+    driver: local
+
+networks:
+  kenya-votes-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

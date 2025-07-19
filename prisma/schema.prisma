@@ -1,0 +1,292 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+/// @seed = "node prisma/seed.js"
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User roles and permissions
+enum UserRole {
+  PUBLIC
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum Position {
+  PRESIDENT
+  GOVERNOR
+  SENATOR
+  MP
+  WOMAN_REPRESENTATIVE
+  COUNTY_ASSEMBLY_MEMBER
+}
+
+enum RegionType {
+  NATIONAL
+  COUNTY
+  CONSTITUENCY
+  WARD
+  POLLING_STATION
+}
+
+enum VoteSource {
+  KIEMS
+  MANUAL
+  CORRECTED
+}
+
+enum CertificationStatus {
+  PENDING
+  CERTIFIED
+  DISPUTED
+}
+
+enum ElectionStatusEnum {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  CERTIFIED
+}
+
+// Users table for IEBC admins
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  role      UserRole @default(PUBLIC)
+  auth0Id   String?  @unique
+  isActive  Boolean  @default(true)
+  lastLogin DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  auditLogs AuditLog[]
+  voteUpdates VoteUpdate[]
+  certifications Certification[]
+
+  @@map("users")
+}
+
+// Candidates table
+model Candidate {
+  id          String   @id @default(cuid())
+  name        String
+  party       String
+  position    Position
+  regionId    String
+  regionType  RegionType
+  bio         String?
+  photoUrl    String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  region      Region     @relation(fields: [regionId], references: [id])
+  votes       Vote[]
+  translations CandidateTranslation[]
+
+  @@unique([name, party, position, regionId])
+  @@map("candidates")
+}
+
+// Multilingual support for candidates
+model CandidateTranslation {
+  id          String   @id @default(cuid())
+  candidateId String
+  language    String   // en, sw, kk, lu, km, kl
+  bio         String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, language])
+  @@map("candidate_translations")
+}
+
+// Regions (Counties, Constituencies, Wards, Polling Stations)
+model Region {
+  id          String     @id @default(cuid())
+  name        String
+  code        String     @unique
+  type        RegionType
+  parentId    String?    // For hierarchical structure
+  geojson     Json?      // GeoJSON data for mapping
+  registeredVoters Int   @default(0)
+  isActive    Boolean    @default(true)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  // Relations
+  parent      Region?    @relation("RegionHierarchy", fields: [parentId], references: [id])
+  children    Region[]   @relation("RegionHierarchy")
+  candidates  Candidate[]
+  votes       Vote[]
+  certifications Certification[]
+
+  @@map("regions")
+}
+
+// Vote records
+model Vote {
+  id          String     @id @default(cuid())
+  candidateId String
+  regionId    String
+  position    Position
+  voteCount   Int
+  source      VoteSource @default(KIEMS)
+  timestamp   DateTime   @default(now())
+  checksum    String?    // For data integrity
+  isVerified  Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  // Relations
+  candidate   Candidate  @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  region      Region     @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  updates     VoteUpdate[]
+
+  @@unique([candidateId, regionId, position, timestamp])
+  @@map("votes")
+}
+
+// Vote updates for audit trail
+model VoteUpdate {
+  id          String     @id @default(cuid())
+  voteId      String
+  userId      String
+  oldValue    Int
+  newValue    Int
+  reason      String
+  timestamp   DateTime   @default(now())
+
+  // Relations
+  vote        Vote       @relation(fields: [voteId], references: [id], onDelete: Cascade)
+  user        User       @relation(fields: [userId], references: [id])
+
+  @@map("vote_updates")
+}
+
+// Certification records
+model Certification {
+  id          String             @id @default(cuid())
+  regionId    String
+  position    Position
+  status      CertificationStatus @default(PENDING)
+  certifiedBy String?
+  certifiedAt DateTime?
+  notes       String?
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  // Relations
+  region      Region             @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  certifier   User?              @relation(fields: [certifiedBy], references: [id])
+
+  @@unique([regionId, position])
+  @@map("certifications")
+}
+
+// Audit logs for all admin actions
+model AuditLog {
+  id          String   @id @default(cuid())
+  userId      String
+  action      String
+  resource    String
+  resourceId  String?
+  details     Json?
+  ipAddress   String?
+  userAgent   String?
+  timestamp   DateTime @default(now())
+
+  // Relations
+  user        User     @relation(fields: [userId], references: [id])
+
+  @@map("audit_logs")
+}
+
+// API keys for third-party access
+model ApiKey {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  name        String
+  description String?
+  permissions Json     // Array of allowed endpoints
+  rateLimit   Int      @default(1000) // Requests per hour
+  isActive    Boolean  @default(true)
+  expiresAt   DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("api_keys")
+}
+
+// Feedback from public users
+model Feedback {
+  id          String   @id @default(cuid())
+  type        String   // issue, suggestion, general
+  message     String
+  email       String?
+  userAgent   String?
+  ipAddress   String?
+  isResolved  Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("feedback")
+}
+
+// System configuration
+model SystemConfig {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  value       String
+  description String?
+  isPublic    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("system_config")
+}
+
+// Election status tracking
+model ElectionStatus {
+  id          String        @id @default(cuid())
+  position    Position
+  status      ElectionStatusEnum @default(NOT_STARTED)
+  startTime   DateTime?
+  endTime     DateTime?
+  totalStations Int         @default(0)
+  reportingStations Int     @default(0)
+  totalVotes  Int           @default(0)
+  lastUpdate  DateTime      @default(now())
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@unique([position])
+  @@map("election_status")
+}
+
+// Data backup tracking
+model DataBackup {
+  id          String   @id @default(cuid())
+  filename    String
+  size        Int
+  checksum    String
+  status      String   // pending, completed, failed
+  s3Url       String?
+  createdAt   DateTime @default(now())
+  completedAt DateTime?
+
+  @@map("data_backups")
+} 
