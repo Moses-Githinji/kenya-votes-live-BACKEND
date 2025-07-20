@@ -110,10 +110,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/kenya-votes-live.git"
+    "url": "https://github.com/Moses-Githinji/kenya-votes-live-BACKEND.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/kenya-votes-live/issues"
+    "url": "https://github.com/Moses-Githinji/kenya-votes-live-BACKEND.git/issues"
   },
-  "homepage": "https://github.com/your-org/kenya-votes-live#readme"
+  "homepage": "https://github.com/Moses-Githinji/kenya-votes-live-BACKEND.git#readme"
 }

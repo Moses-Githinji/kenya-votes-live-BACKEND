@@ -73,6 +73,8 @@ const logger = winston.createLogger({
     }),
   ],
 });
+// check if the logger is working
+logger.info("Logger initialized");
 
 if (process.env.NODE_ENV !== "production") {
   logger.add(
@@ -311,7 +313,7 @@ process.on("SIGINT", async () => {
 });
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
   logger.info(`Environment: ${process.env.NODE_ENV || "development"}`);

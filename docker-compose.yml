@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   # Backend API
@@ -22,6 +22,12 @@ services:
       - ./logs:/app/logs
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
 
   # PostgreSQL Database
   postgres:
@@ -36,6 +42,12 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
 
   # Redis Cache
   redis:
@@ -44,8 +56,16 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
 
   # Apache Kafka
   kafka:
@@ -64,6 +84,12 @@ services:
       - zookeeper
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
 
   # Zookeeper (required for Kafka)
   zookeeper:
@@ -73,6 +99,12 @@ services:
       - ZOOKEEPER_TICK_TIME=2000
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
 
   # Elasticsearch
   elasticsearch:
@@ -80,13 +112,19 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ES_JAVA_OPTS=-Xms256m -Xmx512m"
     ports:
       - "9200:9200"
     volumes:
       - elasticsearch_data:/usr/share/elasticsearch/data
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 512M
 
   # Kibana (for Elasticsearch visualization)
   kibana:
@@ -99,6 +137,12 @@ services:
       - elasticsearch
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
 
   # Redis Commander (for Redis visualization)
   redis-commander:
@@ -111,6 +155,12 @@ services:
       - redis
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
 
   # pgAdmin (for PostgreSQL visualization)
   pgadmin:
@@ -124,6 +174,12 @@ services:
       - postgres
     networks:
       - kenya-votes-network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
 
 volumes:
   postgres_data:
@@ -132,4 +188,4 @@ volumes:
 
 networks:
   kenya-votes-network:
-    driver: bridge 
+    driver: bridge

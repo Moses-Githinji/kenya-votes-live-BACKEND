@@ -1,6 +1,6 @@
 import rateLimit from "express-rate-limit";
 import slowDown from "express-slow-down";
-import { redis } from "../services/redis.js";
+import redis from "../services/redis.js";
 import logger from "../utils/logger.js";
 
 // DDoS Protection - Track IP addresses

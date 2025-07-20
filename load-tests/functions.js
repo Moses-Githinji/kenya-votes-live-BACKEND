@@ -135,18 +135,62 @@ function setRandomElectionData(requestParams, context, ee, next) {
     "county_assembly",
   ];
   const regionTypes = ["county", "constituency", "ward"];
-  const regionIds = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-    22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-    41, 42, 43, 44, 45, 46, 47,
+  const regionCodes = [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "018",
+    "019",
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026",
+    "027",
+    "028",
+    "029",
+    "030",
+    "031",
+    "032",
+    "033",
+    "034",
+    "035",
+    "036",
+    "037",
+    "038",
+    "039",
+    "040",
+    "041",
+    "042",
+    "043",
+    "044",
+    "045",
+    "046",
+    "047",
   ];
 
   context.vars.position =
     positions[Math.floor(Math.random() * positions.length)];
   context.vars.regionType =
     regionTypes[Math.floor(Math.random() * regionTypes.length)];
-  context.vars.regionId =
-    regionIds[Math.floor(Math.random() * regionIds.length)];
+  context.vars.regionCode =
+    regionCodes[Math.floor(Math.random() * regionCodes.length)];
 
   return next();
 }
@@ -180,16 +224,60 @@ function setRandomCandidateData(requestParams, context, ee, next) {
 // Set random map data for extreme stress test
 function setRandomMapData(requestParams, context, ee, next) {
   const regionTypes = ["county", "constituency", "ward"];
-  const regionIds = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-    22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-    41, 42, 43, 44, 45, 46, 47,
+  const regionCodes = [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "018",
+    "019",
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026",
+    "027",
+    "028",
+    "029",
+    "030",
+    "031",
+    "032",
+    "033",
+    "034",
+    "035",
+    "036",
+    "037",
+    "038",
+    "039",
+    "040",
+    "041",
+    "042",
+    "043",
+    "044",
+    "045",
+    "046",
+    "047",
   ];
 
   context.vars.regionType =
     regionTypes[Math.floor(Math.random() * regionTypes.length)];
-  context.vars.regionId =
-    regionIds[Math.floor(Math.random() * regionIds.length)];
+  context.vars.regionCode =
+    regionCodes[Math.floor(Math.random() * regionCodes.length)];
 
   return next();
 }

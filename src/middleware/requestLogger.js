@@ -12,9 +12,8 @@ export const requestLogger = (req, res, next) => {
     timestamp: new Date().toISOString(),
   });
 
-  // Override res.end to log response
-  const originalEnd = res.end;
-  res.end = function (chunk, encoding) {
+  // Use res.on('finish') instead of overriding res.end
+  res.on("finish", () => {
     const duration = Date.now() - start;
 
     // Log request completion
@@ -26,10 +25,7 @@ export const requestLogger = (req, res, next) => {
       contentLength: res.get("Content-Length") || 0,
       timestamp: new Date().toISOString(),
     });
-
-    // Call original end method
-    originalEnd.call(this, chunk, encoding);
-  };
+  });
 
   next();
 };

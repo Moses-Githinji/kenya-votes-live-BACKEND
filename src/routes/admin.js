@@ -476,7 +476,7 @@ router.get(
 
 // Data export
 router.get(
-  "/export/:position/:regionType/:regionId",
+  "/export/:position/:regionType/:regionCode",
   [
     param("position").isIn([
       "PRESIDENT",
@@ -493,7 +493,7 @@ router.get(
       "WARD",
       "POLLING_STATION",
     ]),
-    param("regionId").isString().notEmpty(),
+    param("regionCode").isString().notEmpty(),
     query("format").optional().isIn(["csv", "json"]),
   ],
   async (req, res) => {
@@ -503,15 +503,23 @@ router.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { position, regionType, regionId } = req.params;
+      const { position, regionType, regionCode } = req.params;
       const { format = "csv" } = req.query;
       const userId = req.user.id;
+
+      // Find the region by its code
+      const region = await prisma.region.findUnique({
+        where: { code: regionCode },
+      });
+      if (!region) {
+        return res.status(404).json({ error: "Region not found" });
+      }
 
       // Get vote data
       const votes = await prisma.vote.findMany({
         where: {
           position,
-          regionId,
+          regionId: region.id,
           candidate: {
             isActive: true,
           },
@@ -529,7 +537,7 @@ router.get(
         res.json({
           position,
           regionType,
-          regionId,
+          regionCode,
           regionName: votes[0]?.region.name,
           totalVotes: votes.reduce((sum, vote) => sum + vote.voteCount, 0),
           results: votes.map((vote) => ({
@@ -544,7 +552,7 @@ router.get(
       } else {
         // CSV export
         const csvWriter = createObjectCsvWriter({
-          path: `export_${position}_${regionId}_${Date.now()}.csv`,
+          path: `export_${position}_${regionCode}_${Date.now()}.csv`,
           header: [
             { id: "candidateName", title: "Candidate Name" },
             { id: "party", title: "Party" },
@@ -568,14 +576,14 @@ router.get(
         await auditLog(userId, "EXPORT_DATA", "Export", null, {
           position,
           regionType,
-          regionId,
+          regionCode,
           format,
           recordCount: records.length,
         });
 
         res.download(
           csvWriter.path,
-          `election_results_${position}_${regionId}.csv`
+          `election_results_${position}_${regionCode}.csv`
         );
       }
     } catch (error) {

@@ -103,9 +103,8 @@ class PerformanceMonitor {
     const startTime = performance.now();
     this.requestCount++;
 
-    // Override res.end to capture response time
-    const originalEnd = res.end;
-    res.end = function (chunk, encoding) {
+    // Use res.on('finish') instead of overriding res.end
+    res.on("finish", () => {
       const endTime = performance.now();
       const responseTime = endTime - startTime;
 
@@ -143,9 +142,7 @@ class PerformanceMonitor {
           `Slow response detected: ${responseTime}ms for ${req.method} ${req.url}`
         );
       }
-
-      originalEnd.call(this, chunk, encoding);
-    }.bind(this);
+    });
 
     next();
   }

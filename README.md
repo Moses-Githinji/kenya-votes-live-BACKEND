@@ -148,7 +148,7 @@ http://localhost:3000/api
 #### Get Election Results
 
 ```http
-GET /results/{position}/{regionType}/{regionId}
+GET /results/{position}/{regionType}/{regionCode}
 ```
 
 #### Get Candidate Profile
@@ -166,7 +166,7 @@ GET /candidates/search?q={query}&position={position}
 #### Get Map Data
 
 ```http
-GET /map/{regionType}/{regionId}?includeResults=true
+GET /map/{regionType}/{regionCode}?includeResults=true
 ```
 
 #### Get Election Status
@@ -178,7 +178,7 @@ GET /status
 #### Get Voter Turnout
 
 ```http
-GET /turnout/{regionType}/{regionId}
+GET /turnout/{regionType}/{regionCode}
 ```
 
 #### Get Performance Metrics
@@ -235,7 +235,7 @@ Content-Type: application/json
 #### Export Data
 
 ```http
-GET /admin/export/{position}/{regionType}/{regionId}?format=csv
+GET /admin/export/{position}/{regionType}/{regionCode}?format=csv
 Authorization: Bearer {jwt-token}
 ```
 

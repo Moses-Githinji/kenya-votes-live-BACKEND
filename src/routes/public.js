@@ -13,7 +13,7 @@ const redis = new Redis(process.env.REDIS_URL);
 
 // Real-time vote data retrieval
 router.get(
-  "/results/:position/:regionType/:regionId",
+  "/results/:position/:regionType/:regionCode",
   [
     param("position").isIn([
       "PRESIDENT",
@@ -30,10 +30,10 @@ router.get(
       "WARD",
       "POLLING_STATION",
     ]),
-    param("regionId").isString().notEmpty(),
+    param("regionCode").isString().notEmpty(),
     query("language").optional().isIn(["en", "sw", "kk", "lu", "km", "kl"]),
   ],
-  cacheMiddleware(60), // Cache for 60 seconds
+  cacheMiddleware(60),
   async (req, res) => {
     try {
       const errors = validationResult(req);
@@ -41,12 +41,12 @@ router.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { position, regionType, regionId } = req.params;
+      const { position, regionType, regionCode } = req.params;
       const { language = "en" } = req.query;
 
-      // First find the region by its code
+      // Find the region by its code
       const region = await prisma.region.findUnique({
-        where: { code: regionId },
+        where: { code: regionCode },
       });
 
       if (!region) {
@@ -97,13 +97,13 @@ router.get(
       const response = {
         position,
         regionType,
-        regionId,
+        regionCode,
         totalVotes,
         results: resultsWithPercentages,
         source: "IEBC KIEMS",
         lastUpdated: new Date().toISOString(),
         checksum: generateChecksum(resultsWithPercentages),
-        verificationUrl: `https://www.iebc.or.ke/results/${regionId}`,
+        verificationUrl: `https://www.iebc.or.ke/results/${regionCode}`,
       };
 
       res.json(response);
@@ -204,7 +204,7 @@ router.get(
         "WOMAN_REPRESENTATIVE",
         "COUNTY_ASSEMBLY_MEMBER",
       ]),
-    query("regionId").optional().isString(),
+    query("regionCode").optional().isString(),
     query("language").optional().isIn(["en", "sw", "kk", "lu", "km", "kl"]),
   ],
   cacheMiddleware(120), // Cache for 2 minutes
@@ -215,7 +215,7 @@ router.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { q, position, regionId, language = "en" } = req.query;
+      const { q, position, regionCode, language = "en" } = req.query;
 
       const whereClause = {
         isActive: true,
@@ -226,7 +226,14 @@ router.get(
       };
 
       if (position) whereClause.position = position;
-      if (regionId) whereClause.regionId = regionId;
+      if (regionCode) {
+        // Find region by code
+        const region = await prisma.region.findUnique({
+          where: { code: regionCode },
+        });
+        if (region) whereClause.regionId = region.id;
+        else whereClause.regionId = ""; // No match
+      }
 
       const candidates = await prisma.candidate.findMany({
         where: whereClause,
@@ -264,7 +271,7 @@ router.get(
     } catch (error) {
       logger.error("Error searching candidates:", error);
       res.status(500).json({
-        error: "Search temporarily unavailable",
+        error: "Candidate search temporarily unavailable",
       });
     }
   }
@@ -272,7 +279,7 @@ router.get(
 
 // Map data endpoint
 router.get(
-  "/map/:regionType/:regionId?",
+  "/map/:regionType/:regionCode?",
   [
     param("regionType").isIn([
       "NATIONAL",
@@ -281,7 +288,7 @@ router.get(
       "WARD",
       "POLLING_STATION",
     ]),
-    param("regionId").optional().isString(),
+    param("regionCode").optional().isString(),
     query("includeResults").optional().isBoolean(),
   ],
   cacheMiddleware(600), // Cache for 10 minutes
@@ -292,7 +299,7 @@ router.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { regionType, regionId } = req.params;
+      const { regionType, regionCode } = req.params;
       const { includeResults = false } = req.query;
 
       const whereClause = {
@@ -300,8 +307,13 @@ router.get(
         isActive: true,
       };
 
-      if (regionId) {
-        whereClause.parentId = regionId;
+      if (regionCode) {
+        // Find region by code
+        const region = await prisma.region.findUnique({
+          where: { code: regionCode },
+        });
+        if (region) whereClause.parentId = region.id;
+        else whereClause.parentId = ""; // No match
       }
 
       const regions = await prisma.region.findMany({
@@ -480,7 +492,7 @@ router.get(
 
 // Voter turnout metrics
 router.get(
-  "/turnout/:regionType/:regionId",
+  "/turnout/:regionType/:regionCode",
   [
     param("regionType").isIn([
       "NATIONAL",
@@ -489,7 +501,7 @@ router.get(
       "WARD",
       "POLLING_STATION",
     ]),
-    param("regionId").isString().notEmpty(),
+    param("regionCode").isString().notEmpty(),
   ],
   cacheMiddleware(60), // Cache for 1 minute
   async (req, res) => {
@@ -499,10 +511,11 @@ router.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { regionType, regionId } = req.params;
+      const { regionType, regionCode } = req.params;
 
+      // Find region by code
       const region = await prisma.region.findUnique({
-        where: { id: regionId },
+        where: { code: regionCode },
         include: {
           votes: {
             select: {
@@ -528,7 +541,7 @@ router.get(
           : "0.0";
 
       const response = {
-        regionId,
+        regionCode,
         regionName: region.name,
         regionType,
         registeredVoters: region.registeredVoters,

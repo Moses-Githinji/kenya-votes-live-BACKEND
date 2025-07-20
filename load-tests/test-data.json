@@ -2,329 +2,329 @@
   {
     "countyCode": "001",
     "position": "president",
-    "regionId": 1,
+    "regionCode": "001",
     "searchTerm": "Ruto",
     "candidateId": 1
   },
   {
     "countyCode": "002",
     "position": "governor",
-    "regionId": 2,
+    "regionCode": "002",
     "searchTerm": "Odinga",
     "candidateId": 2
   },
   {
     "countyCode": "003",
     "position": "senator",
-    "regionId": 3,
+    "regionCode": "003",
     "searchTerm": "Karua",
     "candidateId": 3
   },
   {
     "countyCode": "004",
     "position": "mp",
-    "regionId": 4,
+    "regionCode": "004",
     "searchTerm": "Wajackoyah",
     "candidateId": 4
   },
   {
     "countyCode": "005",
     "position": "woman_representative",
-    "regionId": 5,
+    "regionCode": "005",
     "searchTerm": "Kenyatta",
     "candidateId": 5
   },
   {
     "countyCode": "006",
     "position": "county_assembly",
-    "regionId": 6,
+    "regionCode": "006",
     "searchTerm": "Musyoka",
     "candidateId": 6
   },
   {
     "countyCode": "007",
     "position": "president",
-    "regionId": 7,
+    "regionCode": "007",
     "searchTerm": "Wetangula",
     "candidateId": 7
   },
   {
     "countyCode": "008",
     "position": "governor",
-    "regionId": 8,
+    "regionCode": "008",
     "searchTerm": "Mudavadi",
     "candidateId": 8
   },
   {
     "countyCode": "009",
     "position": "senator",
-    "regionId": 9,
+    "regionCode": "009",
     "searchTerm": "Kingi",
     "candidateId": 9
   },
   {
     "countyCode": "010",
     "position": "mp",
-    "regionId": 10,
+    "regionCode": "010",
     "searchTerm": "Moi",
     "candidateId": 10
   },
   {
     "countyCode": "011",
     "position": "woman_representative",
-    "regionId": 11,
+    "regionCode": "011",
     "searchTerm": "Kiprop",
     "candidateId": 11
   },
   {
     "countyCode": "012",
     "position": "county_assembly",
-    "regionId": 12,
+    "regionCode": "012",
     "searchTerm": "Ochieng",
     "candidateId": 12
   },
   {
     "countyCode": "013",
     "position": "president",
-    "regionId": 13,
+    "regionCode": "013",
     "searchTerm": "Kamau",
     "candidateId": 13
   },
   {
     "countyCode": "014",
     "position": "governor",
-    "regionId": 14,
+    "regionCode": "014",
     "searchTerm": "Wanjiku",
     "candidateId": 14
   },
   {
     "countyCode": "015",
     "position": "senator",
-    "regionId": 15,
+    "regionCode": "015",
     "searchTerm": "Ruto",
     "candidateId": 15
   },
   {
     "countyCode": "016",
     "position": "mp",
-    "regionId": 16,
+    "regionCode": "016",
     "searchTerm": "Odinga",
     "candidateId": 16
   },
   {
     "countyCode": "017",
     "position": "woman_representative",
-    "regionId": 17,
+    "regionCode": "017",
     "searchTerm": "Karua",
     "candidateId": 17
   },
   {
     "countyCode": "018",
     "position": "county_assembly",
-    "regionId": 18,
+    "regionCode": "018",
     "searchTerm": "Wajackoyah",
     "candidateId": 18
   },
   {
     "countyCode": "019",
     "position": "president",
-    "regionId": 19,
+    "regionCode": "019",
     "searchTerm": "Kenyatta",
     "candidateId": 19
   },
   {
     "countyCode": "020",
     "position": "governor",
-    "regionId": 20,
+    "regionCode": "020",
     "searchTerm": "Musyoka",
     "candidateId": 20
   },
   {
     "countyCode": "021",
     "position": "senator",
-    "regionId": 21,
+    "regionCode": "021",
     "searchTerm": "Wetangula",
     "candidateId": 21
   },
   {
     "countyCode": "022",
     "position": "mp",
-    "regionId": 22,
+    "regionCode": "022",
     "searchTerm": "Mudavadi",
     "candidateId": 22
   },
   {
     "countyCode": "023",
     "position": "woman_representative",
-    "regionId": 23,
+    "regionCode": "023",
     "searchTerm": "Kingi",
     "candidateId": 23
   },
   {
     "countyCode": "024",
     "position": "county_assembly",
-    "regionId": 24,
+    "regionCode": "024",
     "searchTerm": "Moi",
     "candidateId": 24
   },
   {
     "countyCode": "025",
     "position": "president",
-    "regionId": 25,
+    "regionCode": "025",
     "searchTerm": "Kiprop",
     "candidateId": 25
   },
   {
     "countyCode": "026",
     "position": "governor",
-    "regionId": 26,
+    "regionCode": "026",
     "searchTerm": "Ochieng",
     "candidateId": 26
   },
   {
     "countyCode": "027",
     "position": "senator",
-    "regionId": 27,
+    "regionCode": "027",
     "searchTerm": "Kamau",
     "candidateId": 27
   },
   {
     "countyCode": "028",
     "position": "mp",
-    "regionId": 28,
+    "regionCode": "028",
     "searchTerm": "Wanjiku",
     "candidateId": 28
   },
   {
     "countyCode": "029",
     "position": "woman_representative",
-    "regionId": 29,
+    "regionCode": "029",
     "searchTerm": "Ruto",
     "candidateId": 29
   },
   {
     "countyCode": "030",
     "position": "county_assembly",
-    "regionId": 30,
+    "regionCode": "030",
     "searchTerm": "Odinga",
     "candidateId": 30
   },
   {
     "countyCode": "031",
     "position": "president",
-    "regionId": 31,
+    "regionCode": "031",
     "searchTerm": "Karua",
     "candidateId": 31
   },
   {
     "countyCode": "032",
     "position": "governor",
-    "regionId": 32,
+    "regionCode": "032",
     "searchTerm": "Wajackoyah",
     "candidateId": 32
   },
   {
     "countyCode": "033",
     "position": "senator",
-    "regionId": 33,
+    "regionCode": "033",
     "searchTerm": "Kenyatta",
     "candidateId": 33
   },
   {
     "countyCode": "034",
     "position": "mp",
-    "regionId": 34,
+    "regionCode": "034",
     "searchTerm": "Musyoka",
     "candidateId": 34
   },
   {
     "countyCode": "035",
     "position": "woman_representative",
-    "regionId": 35,
+    "regionCode": "035",
     "searchTerm": "Wetangula",
     "candidateId": 35
   },
   {
     "countyCode": "036",
     "position": "county_assembly",
-    "regionId": 36,
+    "regionCode": "036",
     "searchTerm": "Mudavadi",
     "candidateId": 36
   },
   {
     "countyCode": "037",
     "position": "president",
-    "regionId": 37,
+    "regionCode": "037",
     "searchTerm": "Kingi",
     "candidateId": 37
   },
   {
     "countyCode": "038",
     "position": "governor",
-    "regionId": 38,
+    "regionCode": "038",
     "searchTerm": "Moi",
     "candidateId": 38
   },
   {
     "countyCode": "039",
     "position": "senator",
-    "regionId": 39,
+    "regionCode": "039",
     "searchTerm": "Kiprop",
     "candidateId": 39
   },
   {
     "countyCode": "040",
     "position": "mp",
-    "regionId": 40,
+    "regionCode": "040",
     "searchTerm": "Ochieng",
     "candidateId": 40
   },
   {
     "countyCode": "041",
     "position": "woman_representative",
-    "regionId": 41,
+    "regionCode": "041",
     "searchTerm": "Kamau",
     "candidateId": 41
   },
   {
     "countyCode": "042",
     "position": "county_assembly",
-    "regionId": 42,
+    "regionCode": "042",
     "searchTerm": "Wanjiku",
     "candidateId": 42
   },
   {
     "countyCode": "043",
     "position": "president",
-    "regionId": 43,
+    "regionCode": "043",
     "searchTerm": "Ruto",
     "candidateId": 43
   },
   {
     "countyCode": "044",
     "position": "governor",
-    "regionId": 44,
+    "regionCode": "044",
     "searchTerm": "Odinga",
     "candidateId": 44
   },
   {
     "countyCode": "045",
     "position": "senator",
-    "regionId": 45,
+    "regionCode": "045",
     "searchTerm": "Karua",
     "candidateId": 45
   },
   {
     "countyCode": "046",
     "position": "mp",
-    "regionId": 46,
+    "regionCode": "046",
     "searchTerm": "Wajackoyah",
     "candidateId": 46
   },
   {
     "countyCode": "047",
     "position": "woman_representative",
-    "regionId": 47,
+    "regionCode": "047",
     "searchTerm": "Kenyatta",
     "candidateId": 47
   }
