@@ -147,3 +147,5 @@ API_Improvements_Recommendations.pdf
 sysadmin_implementation_roadmap.txt 
 frontend-api-integration-example.txt 
 RECOMMENDATIONS.txt 
+# Performance analysis reports and data
+performance-analysis/ 
