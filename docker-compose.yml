@@ -8,7 +8,7 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=development
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/kenya_votes_live
+      - DATABASE_URL=postgresql://postgres:@35119930_MnG@postgres:5432/kenya_votes_live
       - REDIS_URL=redis://redis:6379
       - KAFKA_BROKERS=kafka:9092
       - ELASTICSEARCH_URL=http://elasticsearch:9200
@@ -35,7 +35,7 @@ services:
     environment:
       - POSTGRES_DB=kenya_votes_live
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_PASSWORD=@35119930_MnG
     ports:
       - "5432:5432"
     volumes:
@@ -57,7 +57,13 @@ services:
     volumes:
       - redis_data:/data
       - ./redis.conf:/usr/local/etc/redis/redis.conf
-    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    command:
+      [
+        "redis-server",
+        "/usr/local/etc/redis/redis.conf",
+        "--requirepass",
+        "kenya-votes-redis",
+      ]
     networks:
       - kenya-votes-network
     deploy:

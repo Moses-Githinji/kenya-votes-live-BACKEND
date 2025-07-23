@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{email_subject}} | Kenya Votes Live</title>
+    <style>
+      /* Tailwind-inspired inline CSS for email compatibility */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        background-color: #f3f4f6;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        padding: 24px;
+        text-align: center;
+        background-color: #1e3a8a;
+        color: #ffffff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .header img {
+        max-width: 150px;
+        height: auto;
+      }
+      .content {
+        padding: 24px;
+        color: #1f2937;
+      }
+      .content h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #2563eb;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .cta-button:hover {
+        background-color: #1d4ed8;
+      }
+      .card {
+        background-color: #f9fafb;
+        padding: 16px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: #e5e7eb;
+        color: #1f2937;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      .footer {
+        padding: 16px;
+        text-align: center;
+        background-color: #f3f4f6;
+        color: #6b7280;
+        font-size: 12px;
+      }
+      .footer a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        .container {
+          width: 100%;
+          border-radius: 0;
+        }
+        .header {
+          padding: 16px;
+        }
+        .content {
+          padding: 16px;
+        }
+        .cta-button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      /* Dark mode support (for compatible clients) */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1f2937;
+        }
+        .container {
+          background-color: #374151;
+          color: #f9fafb;
+        }
+        .header {
+          background-color: #1e40af;
+        }
+        .content {
+          color: #f9fafb;
+        }
+        .card {
+          background-color: #4b5563;
+        }
+        .badge {
+          background-color: #6b7280;
+          color: #f9fafb;
+        }
+        .footer {
+          background-color: #111827;
+          color: #d1d5db;
+        }
+      }
+      /* CSS animations as fallback for Framer Motion in web previews */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="container"
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="max-width: 600px"
+    >
+      <!-- Header -->
+      <tr>
+        <td class="header">
+          <img
+            src="{{backend_url}}/assets/logo.png"
+            alt="Kenya Votes Live Logo"
+            style="max-width: 150px; height: auto"
+          />
+          <h1 style="font-size: 20px; font-weight: bold; margin-top: 8px">
+            Kenya Votes Live
+          </h1>
+        </td>
+      </tr>
+      <!-- Content -->
+      <tr>
+        <td class="content">
+          <!-- Dynamic Greeting -->
+          <h1 class="animate-fadeIn">{{greeting}} {{user_name}},</h1>
+          <!-- Dynamic Content Based on Scenario -->
+          <p class="animate-fadeIn">{{main_message}}</p>
+          <!-- Scenario-Specific Card (e.g., Results, Dispute, Account Update) -->
+          <div class="card animate-fadeIn">
+            <p style="font-size: 16px">{{content_title}}</p>
+            <p style="font-size: 14px; color: #6b7280">{{content_details}}</p>
+            <!-- Optional Badge for Status -->
+            <span class="badge">{{status_label}}</span>
+          </div>
+          <!-- Call-to-Action Button -->
+          <a href="{{cta_url}}" class="cta-button animate-fadeIn"
+            >{{cta_text}}</a
+          >
+          <!-- Additional Information -->
+          <p style="margin-top: 16px">{{additional_info}}</p>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td class="footer">
+          <p>
+            &copy; {{current_year}} Kenya Votes Live. All rights reserved.
+            <br />
+            <a href="{{preferences_url}}">Manage Preferences</a> |
+            <a href="{{unsubscribe_url}}">Unsubscribe</a> |
+            <a href="{{feedback_url}}">Submit Feedback</a>
+          </p>
+          <p>
+            Powered by the Independent Electoral and Boundaries Commission
+            (IEBC).
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

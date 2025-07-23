@@ -13,17 +13,33 @@ const { PrismaClient } = pkg;
 import Redis from "ioredis";
 import { Kafka } from "kafkajs";
 import winston from "winston";
-import { ElasticsearchTransport } from "winston-elasticsearch";
+import esPkg from "winston-elasticsearch";
+const { ElasticsearchTransport } = esPkg;
 import path from "path";
 import { fileURLToPath } from "url";
 
 // Import routes
 import publicRoutes from "./routes/public.js";
-import adminRoutes from "./routes/admin.js";
 import websocketRoutes from "./routes/websocket.js";
+import commissionerRoutes from "./routes/commissionerRoutes.js";
+import returningOfficerRoutes from "./routes/returningOfficerRoutes.js";
+import presidingOfficerRoutes from "./routes/presidingOfficerRoutes.js";
+import electionClerkRoutes from "./routes/electionClerkRoutes.js";
+import sysAdminRoutes from "./routes/sysAdminRoutes.js";
 
 // Import middleware
-import { authMiddleware } from "./middleware/auth.js";
+import authenticateToken, {
+  requireRole,
+  requireIEBCCommissioner,
+  requireReturningOfficer,
+  requirePresidingOfficer,
+  requireElectionClerk,
+  requireSystemAdministrator,
+  apiKeyAuth,
+  requirePermission,
+  generateToken,
+  verifyAuth0Token,
+} from "./middleware/auth.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { requestLogger } from "./middleware/requestLogger.js";
 import { cacheMiddleware } from "./middleware/cache.js";
@@ -151,7 +167,7 @@ const limiter = rateLimit({
 const speedLimiter = slowDown({
   windowMs: 15 * 60 * 1000, // 15 minutes
   delayAfter: 500, // Increased from 50 to 500 requests per 15 minutes
-  delayMs: 200, // Reduced from 500ms to 200ms delay
+  delayMs: () => 200, // Use new behavior as per express-slow-down v2
   maxDelayMs: 2000, // Maximum delay of 2 seconds
 });
 
@@ -245,22 +261,22 @@ app.get("/api-docs", (req, res) => {
     description: "Real-time election monitoring API for Kenya 2027",
     endpoints: {
       public: {
-        results: "GET /api/results/:position/:regionType/:regionId",
+        results: "GET /api/results/:position/:regionType/:regionCode",
         candidates: "GET /api/candidates/:id",
         search: "GET /api/candidates/search",
-        map: "GET /api/map/:regionType/:regionId?",
-        historical: "GET /api/historical/:year/:regionId",
+        map: "GET /api/map/:regionType/:regionCode?",
+        historical: "GET /api/historical/:year/:regionCode",
         feedback: "POST /api/feedback",
         status: "GET /api/status",
-        turnout: "GET /api/turnout/:regionType/:regionId",
+        turnout: "GET /api/turnout/:regionType/:regionCode",
       },
       admin: {
         votes: "POST /api/admin/votes",
-        verify: "POST /api/admin/verify/:regionId",
-        certify: "POST /api/admin/certify/:regionId",
+        verify: "POST /api/admin/verify/:regionCode",
+        certify: "POST /api/admin/certify/:regionCode",
         candidates: "POST /api/admin/candidates",
         logs: "GET /api/admin/logs",
-        export: "GET /api/admin/export/:position/:regionType/:regionId",
+        export: "GET /api/admin/export/:position/:regionType/:regionCode",
         health: "GET /api/admin/health",
       },
     },
@@ -269,7 +285,11 @@ app.get("/api-docs", (req, res) => {
 
 // Mount routes
 app.use("/api", publicRoutes);
-app.use("/api/admin", authMiddleware, adminRoutes);
+app.use("/api/commissioner", commissionerRoutes);
+app.use("/api/returning", returningOfficerRoutes);
+app.use("/api/presiding", presidingOfficerRoutes);
+app.use("/api/clerk", electionClerkRoutes);
+app.use("/api/sysadmin", sysAdminRoutes);
 
 // WebSocket routes
 if (prisma) {

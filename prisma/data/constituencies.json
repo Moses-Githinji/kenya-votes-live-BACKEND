@@ -1,0 +1,62 @@
+[
+  {
+    "code": "C001",
+    "name": "Changamwe",
+    "countyCode": "001",
+    "registeredVoters": 123456
+  },
+  {
+    "code": "C002",
+    "name": "Jomvu",
+    "countyCode": "001",
+    "registeredVoters": 98765
+  },
+  {
+    "code": "C003",
+    "name": "Kisauni",
+    "countyCode": "001",
+    "registeredVoters": 112233
+  },
+  {
+    "code": "C004",
+    "name": "Nyali",
+    "countyCode": "001",
+    "registeredVoters": 104567
+  },
+  {
+    "code": "C005",
+    "name": "Likoni",
+    "countyCode": "001",
+    "registeredVoters": 95678
+  },
+  {
+    "code": "C006",
+    "name": "Mvita",
+    "countyCode": "001",
+    "registeredVoters": 87654
+  },
+  {
+    "code": "C007",
+    "name": "Msambweni",
+    "countyCode": "002",
+    "registeredVoters": 65432
+  },
+  {
+    "code": "C008",
+    "name": "Lunga Lunga",
+    "countyCode": "002",
+    "registeredVoters": 54321
+  },
+  {
+    "code": "C009",
+    "name": "Matuga",
+    "countyCode": "002",
+    "registeredVoters": 76543
+  },
+  {
+    "code": "C010",
+    "name": "Kinango",
+    "countyCode": "002",
+    "registeredVoters": 67890
+  }
+]

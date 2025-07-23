@@ -1,5 +1,57 @@
 # Kenya Votes Live - Backend API
 
+## 🆕 Recent Updates (July 2024)
+
+- **Database Seeding Reliability:**
+  - Fixed duplicate `ElectionStatus` creation by removing redundant seeding logic.
+  - Ensured all `ElectionStatus` records are seeded with the correct `regionId`, including national-level statuses.
+  - Corrected deletion order in the seed script to respect foreign key constraints.
+  - Improved error handling and logging in the seeding process.
+
+- **API Response Accuracy:**
+  - Ensured all API endpoints return the correct `region` name and accurate `status` fields for candidates and election statuses.
+  - Added `registeredVoters` and `turnoutPercentage` fields to candidate responses.
+
+- **Prisma & Migration:**
+  - Updated Prisma schema to include `regionId` in `ElectionStatus` and added necessary relations.
+  - Guided through safe migration and reset procedures to keep the database in sync with the schema.
+
+- **General Improvements:**
+  - Enhanced seed data for realism and completeness.
+  - Verified that all status values display correctly in the application.
+
+## 🛡️ Role-Based Access Control (RBAC)
+
+### Roles
+
+- **IEBC Commissioner**: High-level oversight, rule management, dispute review, compliance audit, observer facilitation. No access to raw election data.
+- **Returning Officer**: Submit and verify results for their jurisdiction, monitor polling stations, manage materials, escalate incidents, authorize provisional results.
+- **Presiding Officer**: Manage polling station operations, verify voters, issue ballots, submit results, log incidents, assist voters, verify materials.
+- **Election Clerk**: Assist Presiding Officer, verify voters (under supervision), issue ballots, update queue status, assist voters, log minor incidents, assist with ballot counting.
+- **System Administrator**: System monitoring, user management, technical logs, backups, and settings. No access to election data.
+- **PUBLIC**: General public, access to public endpoints only.
+
+### Endpoints (by Role)
+
+- **IEBC Commissioner**: `/api/commissioner/*` (see commissionerRoutes.js)
+- **Returning Officer**: `/api/returning/*` (see returningOfficerRoutes.js)
+- **Presiding Officer**: `/api/presiding/*` (see presidingOfficerRoutes.js)
+- **Election Clerk**: `/api/clerk/*` (see electionClerkRoutes.js)
+- **System Administrator**: `/api/sysadmin/*` (see sysAdminRoutes.js)
+
+### WebSocket Channels
+
+- `subscribeCommissioner` (commissioner notifications)
+- `subscribeReturningOfficer` (returning officer notifications)
+- `subscribePresidingOfficer` (presiding officer notifications)
+- `subscribeElectionClerk` (election clerk notifications)
+- `subscribeSysAdmin` (system administrator notifications)
+
+### Compliance
+
+- All roles, permissions, and endpoints are mapped to the Constitution of Kenya (2010), IEBC Act (2011), and global standards (UN, AU, ISO/IEC 27001).
+- System Administrator is strictly isolated from all election data.
+
 A comprehensive, enterprise-grade backend API for the Kenya Votes Live election monitoring system. Built with Node.js, Express, Prisma, PostgreSQL, Redis, Kafka, and Elasticsearch for real-time data processing and high availability. **Successfully tested to handle 200,000+ concurrent users with 99.9%+ uptime.**
 
 ## 🏆 Performance Achievements

@@ -1,4 +1,5 @@
-import { Client } from "@elastic/elasticsearch";
+import pkg from "@elastic/elasticsearch";
+const { Client } = pkg;
 import logger from "../utils/logger.js";
 
 // Create Elasticsearch client

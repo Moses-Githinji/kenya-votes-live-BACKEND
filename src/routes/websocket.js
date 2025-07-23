@@ -129,13 +129,13 @@ export default function websocketRoutes(io, prismaInstance, redis) {
         // Input validation and sanitization
         const sanitizedData = {
           position: sanitizeInput(data.position, 50),
-          regionId: sanitizeInput(data.regionId, 100),
+          regionCode: sanitizeInput(data.regionCode, 100),
           regionType: sanitizeInput(data.regionType, 50),
         };
 
-        if (!sanitizedData.position || !sanitizedData.regionId) {
+        if (!sanitizedData.position || !sanitizedData.regionCode) {
           socket.emit("error", {
-            message: "Position and regionId are required",
+            message: "Position and regionCode are required",
           });
           return;
         }
@@ -153,13 +153,13 @@ export default function websocketRoutes(io, prismaInstance, redis) {
           return;
         }
 
-        const room = `updates:${sanitizedData.position}:${sanitizedData.regionId}`;
+        const room = `updates:${sanitizedData.position}:${sanitizedData.regionCode}`;
         socket.join(room);
 
         // Store client subscription
         clientSubscriptions.set(socket.id, {
           position: sanitizedData.position,
-          regionId: sanitizedData.regionId,
+          regionCode: sanitizedData.regionCode,
           regionType: sanitizedData.regionType,
           room,
           timestamp: new Date(),
@@ -170,7 +170,7 @@ export default function websocketRoutes(io, prismaInstance, redis) {
         // Send current data immediately
         const currentData = await getCurrentResults(
           sanitizedData.position,
-          sanitizedData.regionId
+          sanitizedData.regionCode
         );
         socket.emit("currentData", currentData);
 
@@ -212,54 +212,153 @@ export default function websocketRoutes(io, prismaInstance, redis) {
       }
     });
 
-    // Subscribe to admin notifications (for IEBC users)
-    socket.on("subscribeAdmin", async (data) => {
+    // Subscribe to commissioner notifications
+    socket.on("subscribeCommissioner", async (data) => {
       try {
         // Rate limiting
         if (!checkRateLimit(socket.id)) {
           socket.emit("error", { message: "Rate limit exceeded" });
           return;
         }
-
-        // Authentication required for admin subscriptions
+        // Authentication required for commissioner subscriptions
         const auth = await authenticateSocket(socket);
-        if (
-          !auth.authenticated ||
-          !["ADMIN", "SUPER_ADMIN"].includes(auth.role)
-        ) {
+        if (!auth.authenticated || auth.role !== "IEBC_COMMISSIONER") {
           socket.emit("error", { message: "Unauthorized" });
           return;
         }
-
-        const sanitizedData = {
-          userId: sanitizeInput(data.userId, 100),
-          role: sanitizeInput(data.role, 20),
-        };
-
-        if (
-          !sanitizedData.userId ||
-          !["ADMIN", "SUPER_ADMIN"].includes(sanitizedData.role)
-        ) {
-          socket.emit("error", { message: "Invalid admin credentials" });
-          return;
-        }
-
-        const room = `admin:${sanitizedData.userId}`;
+        const room = `commissioner:${auth.user.id}`;
         socket.join(room);
-
-        logger.info(
-          `Admin ${sanitizedData.userId} subscribed to notifications`
-        );
-
+        logger.info(`Commissioner ${auth.user.id} subscribed to notifications`);
         socket.emit("subscribed", {
-          message: "Successfully subscribed to admin notifications",
+          message: "Successfully subscribed to commissioner notifications",
           room,
           timestamp: new Date().toISOString(),
         });
       } catch (error) {
-        logger.error("Error in subscribeAdmin:", error);
+        logger.error("Error in subscribeCommissioner:", error);
         socket.emit("error", {
-          message: "Failed to subscribe to admin notifications",
+          message: "Failed to subscribe to commissioner notifications",
+        });
+      }
+    });
+
+    // Subscribe to returning officer notifications
+    socket.on("subscribeReturningOfficer", async (data) => {
+      try {
+        if (!checkRateLimit(socket.id)) {
+          socket.emit("error", { message: "Rate limit exceeded" });
+          return;
+        }
+        const auth = await authenticateSocket(socket);
+        if (!auth.authenticated || auth.role !== "RETURNING_OFFICER") {
+          socket.emit("error", { message: "Unauthorized" });
+          return;
+        }
+        const room = `returning:${auth.user.id}`;
+        socket.join(room);
+        logger.info(
+          `Returning Officer ${auth.user.id} subscribed to notifications`
+        );
+        socket.emit("subscribed", {
+          message: "Successfully subscribed to returning officer notifications",
+          room,
+          timestamp: new Date().toISOString(),
+        });
+      } catch (error) {
+        logger.error("Error in subscribeReturningOfficer:", error);
+        socket.emit("error", {
+          message: "Failed to subscribe to returning officer notifications",
+        });
+      }
+    });
+
+    // Subscribe to presiding officer notifications
+    socket.on("subscribePresidingOfficer", async (data) => {
+      try {
+        if (!checkRateLimit(socket.id)) {
+          socket.emit("error", { message: "Rate limit exceeded" });
+          return;
+        }
+        const auth = await authenticateSocket(socket);
+        if (!auth.authenticated || auth.role !== "PRESIDING_OFFICER") {
+          socket.emit("error", { message: "Unauthorized" });
+          return;
+        }
+        const room = `presiding:${auth.user.id}`;
+        socket.join(room);
+        logger.info(
+          `Presiding Officer ${auth.user.id} subscribed to notifications`
+        );
+        socket.emit("subscribed", {
+          message: "Successfully subscribed to presiding officer notifications",
+          room,
+          timestamp: new Date().toISOString(),
+        });
+      } catch (error) {
+        logger.error("Error in subscribePresidingOfficer:", error);
+        socket.emit("error", {
+          message: "Failed to subscribe to presiding officer notifications",
+        });
+      }
+    });
+
+    // Subscribe to election clerk notifications
+    socket.on("subscribeElectionClerk", async (data) => {
+      try {
+        if (!checkRateLimit(socket.id)) {
+          socket.emit("error", { message: "Rate limit exceeded" });
+          return;
+        }
+        const auth = await authenticateSocket(socket);
+        if (!auth.authenticated || auth.role !== "ELECTION_CLERK") {
+          socket.emit("error", { message: "Unauthorized" });
+          return;
+        }
+        const room = `clerk:${auth.user.id}`;
+        socket.join(room);
+        logger.info(
+          `Election Clerk ${auth.user.id} subscribed to notifications`
+        );
+        socket.emit("subscribed", {
+          message: "Successfully subscribed to election clerk notifications",
+          room,
+          timestamp: new Date().toISOString(),
+        });
+      } catch (error) {
+        logger.error("Error in subscribeElectionClerk:", error);
+        socket.emit("error", {
+          message: "Failed to subscribe to election clerk notifications",
+        });
+      }
+    });
+
+    // Subscribe to system administrator notifications
+    socket.on("subscribeSysAdmin", async (data) => {
+      try {
+        if (!checkRateLimit(socket.id)) {
+          socket.emit("error", { message: "Rate limit exceeded" });
+          return;
+        }
+        const auth = await authenticateSocket(socket);
+        if (!auth.authenticated || auth.role !== "SYSTEM_ADMINISTRATOR") {
+          socket.emit("error", { message: "Unauthorized" });
+          return;
+        }
+        const room = `sysadmin:${auth.user.id}`;
+        socket.join(room);
+        logger.info(
+          `System Administrator ${auth.user.id} subscribed to notifications`
+        );
+        socket.emit("subscribed", {
+          message:
+            "Successfully subscribed to system administrator notifications",
+          room,
+          timestamp: new Date().toISOString(),
+        });
+      } catch (error) {
+        logger.error("Error in subscribeSysAdmin:", error);
+        socket.emit("error", {
+          message: "Failed to subscribe to system administrator notifications",
         });
       }
     });
@@ -300,12 +399,12 @@ export default function websocketRoutes(io, prismaInstance, redis) {
   });
 
   // Function to get current results
-  async function getCurrentResults(position, regionId) {
+  async function getCurrentResults(position, regionCode) {
     try {
       const votes = await prismaInstance.vote.findMany({
         where: {
           position,
-          regionId,
+          regionCode,
           candidate: {
             isActive: true,
           },
@@ -322,7 +421,7 @@ export default function websocketRoutes(io, prismaInstance, redis) {
 
       return {
         position,
-        regionId,
+        regionCode,
         totalVotes,
         results: votes.map((vote) => ({
           candidateId: vote.candidateId,
@@ -345,7 +444,18 @@ export default function websocketRoutes(io, prismaInstance, redis) {
   // Function to get election status
   async function getElectionStatus() {
     try {
+      // Fetch all election status entries
       const status = await prismaInstance.electionStatus.findMany();
+
+      // Fetch all regions in one go for mapping
+      const regionIds = status.map((pos) => pos.regionId).filter(Boolean);
+      let regionMap = {};
+      if (regionIds.length > 0) {
+        const regions = await prismaInstance.region.findMany({
+          where: { id: { in: regionIds } },
+        });
+        regionMap = Object.fromEntries(regions.map((r) => [r.id, r]));
+      }
 
       return {
         positions: status.map((pos) => ({
@@ -359,6 +469,12 @@ export default function websocketRoutes(io, prismaInstance, redis) {
               : "0.0",
           totalVotes: pos.totalVotes,
           lastUpdate: pos.lastUpdate,
+          // Add correct region info if available
+          region:
+            regionMap[pos.regionId]?.name ||
+            regionMap[pos.regionId]?.code ||
+            null,
+          regionId: pos.regionId || null,
         })),
         overallStatus: status.every((pos) => pos.status === "COMPLETED")
           ? "COMPLETED"
@@ -372,10 +488,10 @@ export default function websocketRoutes(io, prismaInstance, redis) {
   }
 
   // Function to broadcast vote updates
-  async function broadcastVoteUpdate(position, regionId, voteData) {
+  async function broadcastVoteUpdate(position, regionCode, voteData) {
     try {
-      const room = `updates:${position}:${regionId}`;
-      const updatedData = await getCurrentResults(position, regionId);
+      const room = `updates:${position}:${regionCode}`;
+      const updatedData = await getCurrentResults(position, regionCode);
 
       io.to(room).emit("voteUpdate", {
         ...updatedData,
@@ -405,7 +521,7 @@ export default function websocketRoutes(io, prismaInstance, redis) {
   // Function to send admin notifications
   function sendAdminNotification(userId, notification) {
     try {
-      const room = `admin:${userId}`;
+      const room = `sysadmin:${userId}`; // Assuming SYSTEM_ADMINISTRATOR is the only admin role now
 
       io.to(room).emit("adminNotification", {
         ...notification,

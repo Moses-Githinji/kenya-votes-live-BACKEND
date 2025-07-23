@@ -1,0 +1,12 @@
+[
+  { "code": "W001C001", "name": "Port Reitz", "constituencyCode": "C001" },
+  { "code": "W002C001", "name": "Kipevu", "constituencyCode": "C001" },
+  { "code": "W003C001", "name": "Airport", "constituencyCode": "C001" },
+  { "code": "W004C001", "name": "Changamwe", "constituencyCode": "C001" },
+  { "code": "W005C001", "name": "Chaani", "constituencyCode": "C001" },
+  { "code": "W006C001", "name": "Miritini", "constituencyCode": "C001" },
+  { "code": "W007C001", "name": "Mikindani", "constituencyCode": "C001" },
+  { "code": "W008C002", "name": "Jomvu Kuu", "constituencyCode": "C002" },
+  { "code": "W009C002", "name": "Miritini", "constituencyCode": "C002" },
+  { "code": "W010C002", "name": "Mikindani", "constituencyCode": "C002" }
+]

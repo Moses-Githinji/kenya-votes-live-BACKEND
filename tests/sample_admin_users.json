@@ -1,0 +1,57 @@
+[
+  {
+    "id": "admin-1",
+    "email": "sysadmin1@example.com",
+    "name": "System Admin One",
+    "role": "SYSTEM_ADMINISTRATOR",
+    "isActive": true,
+    "lastLogin": "2025-07-21T00:00:00.000Z",
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z",
+    "auth0Id": null
+  },
+  {
+    "id": "commissioner-1",
+    "email": "commissioner1@example.com",
+    "name": "Commissioner One",
+    "role": "IEBC_COMMISSIONER",
+    "isActive": true,
+    "lastLogin": "2025-07-21T00:00:00.000Z",
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z",
+    "auth0Id": null
+  },
+  {
+    "id": "returning-1",
+    "email": "returning1@example.com",
+    "name": "Returning Officer One",
+    "role": "RETURNING_OFFICER",
+    "isActive": true,
+    "lastLogin": "2025-07-21T00:00:00.000Z",
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z",
+    "auth0Id": null
+  },
+  {
+    "id": "presiding-1",
+    "email": "presiding1@example.com",
+    "name": "Presiding Officer One",
+    "role": "PRESIDING_OFFICER",
+    "isActive": true,
+    "lastLogin": "2025-07-21T00:00:00.000Z",
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z",
+    "auth0Id": null
+  },
+  {
+    "id": "clerk-1",
+    "email": "clerk1@example.com",
+    "name": "Election Clerk One",
+    "role": "ELECTION_CLERK",
+    "isActive": true,
+    "lastLogin": "2025-07-21T00:00:00.000Z",
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z",
+    "auth0Id": null
+  }
+]

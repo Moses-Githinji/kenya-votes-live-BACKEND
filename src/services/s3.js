@@ -1,4 +1,14 @@
-import AWS from "aws-sdk";
+import pkg from "@aws-sdk/client-s3";
+const {
+  S3Client,
+  PutObjectCommand,
+  GetObjectCommand,
+  DeleteObjectCommand,
+  ListObjectsV2Command,
+  HeadObjectCommand,
+  CopyObjectCommand,
+} = pkg;
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -12,22 +22,17 @@ const isAwsConfigured = () => {
   return process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY;
 };
 
-// Configure AWS only if credentials are available
-let s3 = null;
+// Configure AWS S3 client only if credentials are available
+let s3Client = null;
 if (isAwsConfigured()) {
-  AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  s3Client = new S3Client({
     region: process.env.AWS_REGION || "us-east-1",
-  });
-
-  s3 = new AWS.S3({
-    apiVersion: "2006-03-01",
-    maxRetries: 3,
-    httpOptions: {
-      timeout: 30000,
-      connectTimeout: 5000,
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     },
+    maxAttempts: 3,
+    requestHandler: undefined, // Use default
   });
 } else {
   logger.warn("AWS credentials not found, using local file storage");
@@ -60,7 +65,7 @@ const ensureLocalDirectories = async () => {
 export const initializeS3 = async () => {
   if (isAwsConfigured()) {
     logger.info("Initializing AWS S3 storage");
-    return s3;
+    return s3Client;
   } else {
     logger.info("Initializing local file storage");
     await ensureLocalDirectories();
@@ -77,8 +82,8 @@ export const uploadFile = async (
 ) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 upload
-      const params = {
+      // AWS S3 upload (v3)
+      const command = new PutObjectCommand({
         Bucket: bucket,
         Key: key,
         Body: data,
@@ -87,16 +92,16 @@ export const uploadFile = async (
           uploadedAt: new Date().toISOString(),
           uploadedBy: "kenya-votes-backend",
         },
-      };
-
-      const result = await s3.upload(params).promise();
-
-      logger.info(`File uploaded to S3: ${result.Location}`);
+      });
+      await s3Client.send(command);
+      // S3 v3 does not return Location, so construct it
+      const location = `https://${bucket}.s3.${process.env.AWS_REGION || "us-east-1"}.amazonaws.com/${key}`;
+      logger.info(`File uploaded to S3: ${location}`);
       return {
-        location: result.Location,
-        key: result.Key,
-        etag: result.ETag,
-        bucket: result.Bucket,
+        location,
+        key,
+        etag: undefined, // ETag not returned by default
+        bucket,
       };
     } else {
       // Local file upload
@@ -126,17 +131,20 @@ export const uploadFile = async (
 export const downloadFile = async (bucket, key) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 download
-      const params = {
+      const command = new GetObjectCommand({
         Bucket: bucket,
         Key: key,
-      };
-
-      const result = await s3.getObject(params).promise();
-
+      });
+      const result = await s3Client.send(command);
+      // result.Body is a stream, convert to Buffer
+      const chunks = [];
+      for await (const chunk of result.Body) {
+        chunks.push(chunk);
+      }
+      const data = Buffer.concat(chunks);
       logger.info(`File downloaded from S3: ${key}`);
       return {
-        data: result.Body,
+        data,
         contentType: result.ContentType,
         metadata: result.Metadata,
         lastModified: result.LastModified,
@@ -167,13 +175,11 @@ export const downloadFile = async (bucket, key) => {
 export const deleteFile = async (bucket, key) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 delete
-      const params = {
+      const command = new DeleteObjectCommand({
         Bucket: bucket,
         Key: key,
-      };
-
-      await s3.deleteObject(params).promise();
+      });
+      await s3Client.send(command);
       logger.info(`File deleted from S3: ${key}`);
     } else {
       // Local file delete
@@ -194,16 +200,13 @@ export const deleteFile = async (bucket, key) => {
 export const listFiles = async (bucket, prefix = "", maxKeys = 1000) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 list
-      const params = {
+      const command = new ListObjectsV2Command({
         Bucket: bucket,
         Prefix: prefix,
         MaxKeys: maxKeys,
-      };
-
-      const result = await s3.listObjectsV2(params).promise();
-
-      return result.Contents.map((item) => ({
+      });
+      const result = await s3Client.send(command);
+      return (result.Contents || []).map((item) => ({
         key: item.Key,
         size: item.Size,
         lastModified: item.LastModified,
@@ -254,15 +257,12 @@ export const generateUploadUrl = async (
 ) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 presigned URL
-      const params = {
+      const command = new PutObjectCommand({
         Bucket: bucket,
         Key: key,
         ContentType: contentType,
-        Expires: expiresIn,
-      };
-
-      const url = await s3.getSignedUrlPromise("putObject", params);
+      });
+      const url = await getSignedUrl(s3Client, command, { expiresIn });
       logger.info(`Generated S3 upload URL for: ${key}`);
       return url;
     } else {
@@ -281,14 +281,11 @@ export const generateUploadUrl = async (
 export const generateDownloadUrl = async (bucket, key, expiresIn = 3600) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 presigned URL
-      const params = {
+      const command = new GetObjectCommand({
         Bucket: bucket,
         Key: key,
-        Expires: expiresIn,
-      };
-
-      const url = await s3.getSignedUrlPromise("getObject", params);
+      });
+      const url = await getSignedUrl(s3Client, command, { expiresIn });
       logger.info(`Generated S3 download URL for: ${key}`);
       return url;
     } else {
@@ -363,9 +360,9 @@ export const uploadCandidatePhoto = async (
 };
 
 // Upload region GeoJSON
-export const uploadRegionGeoJSON = async (regionId, geojsonData) => {
+export const uploadRegionGeoJSON = async (regionCode, geojsonData) => {
   try {
-    const key = `regions/${regionId}/geojson.json`;
+    const key = `regions/${regionCode}/geojson.json`;
     const bucket = "data";
 
     const result = await uploadFile(
@@ -426,14 +423,11 @@ export const archiveData = async (data, archiveType, timestamp) => {
 export const getFileMetadata = async (bucket, key) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 metadata
-      const params = {
+      const command = new HeadObjectCommand({
         Bucket: bucket,
         Key: key,
-      };
-
-      const result = await s3.headObject(params).promise();
-
+      });
+      const result = await s3Client.send(command);
       return {
         contentType: result.ContentType,
         contentLength: result.ContentLength,
@@ -470,19 +464,16 @@ export const copyFile = async (
 ) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 copy
-      const params = {
+      const command = new CopyObjectCommand({
         Bucket: destBucket,
         Key: destKey,
         CopySource: `${sourceBucket}/${sourceKey}`,
-      };
-
-      const result = await s3.copyObject(params).promise();
-
+      });
+      const result = await s3Client.send(command);
       logger.info(`File copied in S3: ${sourceKey} -> ${destKey}`);
       return {
-        etag: result.CopyObjectResult.ETag,
-        lastModified: result.CopyObjectResult.LastModified,
+        etag: result.CopyObjectResult?.ETag,
+        lastModified: result.CopyObjectResult?.LastModified,
       };
     } else {
       // Local file copy
@@ -517,9 +508,12 @@ export const copyFile = async (
 export const healthCheck = async () => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 health check
       const bucket = process.env.AWS_BACKUP_BUCKET;
-      await s3.headBucket({ Bucket: bucket }).promise();
+      const command = new HeadObjectCommand({
+        Bucket: bucket,
+        Key: undefined,
+      });
+      await s3Client.send(command);
       return { status: "healthy", message: "S3 is operational" };
     } else {
       // Local storage health check
@@ -536,19 +530,15 @@ export const healthCheck = async () => {
 export const getBucketStats = async (bucket) => {
   try {
     if (isAwsConfigured()) {
-      // AWS S3 bucket stats
-      const params = {
+      const command = new ListObjectsV2Command({
         Bucket: bucket,
-      };
-
-      const result = await s3.listObjectsV2(params).promise();
-
-      const totalSize = result.Contents.reduce(
+      });
+      const result = await s3Client.send(command);
+      const totalSize = (result.Contents || []).reduce(
         (sum, item) => sum + item.Size,
         0
       );
-      const totalFiles = result.Contents.length;
-
+      const totalFiles = (result.Contents || []).length;
       return {
         bucket,
         totalFiles,
@@ -576,4 +566,4 @@ export const getBucketStats = async (bucket) => {
   }
 };
 
-export default s3;
+export default s3Client;

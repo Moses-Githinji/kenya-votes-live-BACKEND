@@ -282,19 +282,39 @@ export const securityLogging = (req, res, next) => {
 
   res.on("finish", () => {
     const duration = Date.now() - startTime;
+    const environment = process.env.NODE_ENV || "development";
+    const ip = req.ip || req.connection.remoteAddress;
+    const userAgent = req.get("User-Agent");
+    const isLocal = ip === "::1" || ip === "127.0.0.1";
+    const isTestUserAgent = userAgent && userAgent.includes("Postman");
     const logData = {
       timestamp: new Date().toISOString(),
-      ip: req.ip || req.connection.remoteAddress,
+      ip,
       method: req.method,
       url: req.url,
       statusCode: res.statusCode,
       duration,
-      userAgent: req.get("User-Agent"),
+      userAgent,
       apiKey: req.headers["x-api-key"] ? "present" : "none",
       contentLength: req.get("Content-Length") || 0,
+      environment,
+      isLocal,
+      isTestUserAgent,
+      userId: req.user?.id || null,
     };
 
-    // Log suspicious activities
+    // Suppress suspicious logs for local/test requests in development
+    if (
+      environment === "development" &&
+      isLocal &&
+      isTestUserAgent &&
+      (res.statusCode >= 400 || duration > 5000)
+    ) {
+      // Do not log suspicious request
+      return;
+    }
+
+    // Log suspicious activities with context
     if (res.statusCode >= 400 || duration > 5000) {
       logger.warn("Suspicious request detected:", logData);
     }

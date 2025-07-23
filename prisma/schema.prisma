@@ -14,9 +14,12 @@ datasource db {
 
 // User roles and permissions
 enum UserRole {
+  IEBC_COMMISSIONER
+  RETURNING_OFFICER
+  PRESIDING_OFFICER
+  ELECTION_CLERK
+  SYSTEM_ADMINISTRATOR
   PUBLIC
-  ADMIN
-  SUPER_ADMIN
 }
 
 enum Position {
@@ -133,6 +136,7 @@ model Region {
   candidates  Candidate[]
   votes       Vote[]
   certifications Certification[]
+  electionStatuses ElectionStatus[]
 
   @@map("regions")
 }
@@ -263,6 +267,8 @@ model SystemConfig {
 model ElectionStatus {
   id          String        @id @default(cuid())
   position    Position
+  regionId    String
+  region      Region        @relation(fields: [regionId], references: [id])
   status      ElectionStatusEnum @default(NOT_STARTED)
   startTime   DateTime?
   endTime     DateTime?
@@ -273,7 +279,7 @@ model ElectionStatus {
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 
-  @@unique([position])
+  @@unique([position, regionId])
   @@map("election_status")
 }
 

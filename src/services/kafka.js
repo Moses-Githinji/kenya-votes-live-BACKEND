@@ -92,7 +92,7 @@ export const sendVoteUpdate = async (voteData) => {
     source: "KIEMS",
   };
 
-  return await sendMessage("vote-updates", message, voteData.regionId);
+  return await sendMessage("vote-updates", message, voteData.regionCode);
 };
 
 // Send election status update
@@ -131,7 +131,7 @@ export const sendCertificationUpdate = async (certificationData) => {
   return await sendMessage(
     "certification-updates",
     message,
-    certificationData.regionId
+    certificationData.regionCode
   );
 };
 

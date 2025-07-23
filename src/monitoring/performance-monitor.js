@@ -1,6 +1,7 @@
+import pkg from "@prisma/client";
+const { PrismaClient } = pkg;
 import { performance } from "perf_hooks";
 import os from "os";
-import { PrismaClient } from "@prisma/client";
 import logger from "../utils/logger.js";
 
 const prisma = new PrismaClient();

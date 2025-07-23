@@ -1,0 +1,1451 @@
+gid,pop2009,county,subcounty,name,code,constituencyCode,cuid
+241,17431.000000000000000,ISIOLO,Isiolo Sub County,WABERA,rIdiIpv9fBt,I2LYLqKU6AW,bzOfj0iwfDH
+1455,18755.000000000000000,Migori,Rongo Sub County,North Kamagambo Ward,QC41mItjIzF,fT37q3rXQ35,fVra3Pwta0Q
+1456,27756.000000000000000,Migori,Rongo Sub County,Central Kamagambo Ward,M8rGveWTIMm,fT37q3rXQ35,fVra3Pwta0Q
+1457,27179.000000000000000,Migori,Rongo Sub County,South Kamagambo Ward,DABObbHgPMX,fT37q3rXQ35,fVra3Pwta0Q
+1458,22874.000000000000000,Migori,Awendo Sub County,North Sakwa Ward,EmSsP2C6A3h,ka9Uv3Ckcbd,fVra3Pwta0Q
+1459,36200.000000000000000,Migori,Awendo Sub County,South Sakwa Ward,OpbsijPbYuv,ka9Uv3Ckcbd,fVra3Pwta0Q
+1460,22278.000000000000000,Migori,Awendo Sub County,West Sakwa Ward,nLwQA56EFmD,ka9Uv3Ckcbd,fVra3Pwta0Q
+1461,27561.000000000000000,Migori,Awendo Sub County,Central Sakwa Ward,jmeydKjWYw7,ka9Uv3Ckcbd,fVra3Pwta0Q
+1462,18567.000000000000000,Migori,Suna East Sub County,God Jope  Ward,Fp2Wuqu3GAI,nHEr5EciFh0,fVra3Pwta0Q
+1463,27645.000000000000000,Migori,Suna East Sub County,Suna Central Ward,QAxizS8H0d7,nHEr5EciFh0,fVra3Pwta0Q
+1464,33642.000000000000000,Migori,Suna East Sub County,Kakrao Ward,SUvzbKCIzyN,nHEr5EciFh0,fVra3Pwta0Q
+1465,17267.000000000000000,Migori,Suna East Sub County,Kwa Ward,YKABD0bh2a7,nHEr5EciFh0,fVra3Pwta0Q
+1466,24096.000000000000000,Migori,Suna West Sub County,Wiga Ward,kxIw7ZzqXPq,VtuwXD7O1O9,fVra3Pwta0Q
+1467,17952.000000000000000,Migori,Suna West Sub County,Waseweta Ii Ward,KwrilS23iAS,VtuwXD7O1O9,fVra3Pwta0Q
+1468,32847.000000000000000,Migori,Suna West Sub County,Ragana-oruba Ward,PPEvdyHP6uZ,VtuwXD7O1O9,fVra3Pwta0Q
+1469,19232.000000000000000,Migori,Suna West Sub County,Wasimbete Ward,c2OOtR8JNjy,VtuwXD7O1O9,fVra3Pwta0Q
+1470,26786.000000000000000,Migori,Uriri Sub County,West Kanyamkago Ward,ziaLqezx6rb,fCInDXluNhx,fVra3Pwta0Q
+1471,30396.000000000000000,Migori,Uriri Sub County,North  Kanyamkago Ward,LXYI6dwqHoR,fCInDXluNhx,fVra3Pwta0Q
+1472,17814.000000000000000,Migori,Uriri Sub County,Central Kanyamkago Ward,P9SReXKzjbO,fCInDXluNhx,fVra3Pwta0Q
+1473,27719.000000000000000,Migori,Uriri Sub County,South Kanyamkago Ward,FdBel1HNlGu,fCInDXluNhx,fVra3Pwta0Q
+1474,13036.000000000000000,Migori,Uriri Sub County,East Kanyamkago Ward,IgyJtGgB69M,fCInDXluNhx,fVra3Pwta0Q
+1475,21775.000000000000000,Migori,Nyatike Sub County,Kachieng' Ward,yowhezRzMGg,D2lsuEzZAJP,fVra3Pwta0Q
+1486,22683.000000000000000,Migori,Kuria West Sub County,Masaba Ward,zTD1Z6ldaEx,jtBjNpL9FXS,fVra3Pwta0Q
+1490,20439.000000000000000,Migori,Kuria East Sub County,Ntimaru West Ward,dkHXkFhXXxJ,THm2tCJa2ZQ,fVra3Pwta0Q
+1520,28517.000000000000000,Machakos,Athi River Sub County,Mathatani Ward,ZlcAxf7QN8c,BxfsSc6Svrc,yhCUgGcCcOo
+1521,42154.000000000000000,Machakos,Athi River Sub County,Syokimau-mulolongo Ward,TcWlRA6LpLB,BxfsSc6Svrc,yhCUgGcCcOo
+1522,32055.000000000000000,Machakos,Machakos Sub County,Kalama Ward,X0dFLUEZDlw,KXc4ez8OAFz,yhCUgGcCcOo
+1523,25573.000000000000000,Machakos,Machakos Sub County,Mua Ward,aQ530J1wOWr,KXc4ez8OAFz,yhCUgGcCcOo
+1524,23736.000000000000000,Machakos,Machakos Sub County,Mutituni Ward,m6H14WsORB0,KXc4ez8OAFz,yhCUgGcCcOo
+1525,32530.000000000000000,Machakos,Machakos Sub County,Township Ward,bSXsHJ4bnCw,KXc4ez8OAFz,yhCUgGcCcOo
+1526,28319.000000000000000,Machakos,Machakos Sub County,Mumbuni North Ward,W5KRNT7qwnJ,KXc4ez8OAFz,yhCUgGcCcOo
+1527,32413.000000000000000,Machakos,Machakos Sub County,Muvuti-kiima-kimwe Ward,CJ0xDJy3ZZI,KXc4ez8OAFz,yhCUgGcCcOo
+1528,24585.000000000000000,Machakos,Machakos Sub County,Kola Ward,RWCExNJBqjw,KXc4ez8OAFz,yhCUgGcCcOo
+1529,32142.000000000000000,Machakos,Mwala Sub County,Mbiuni Ward,mTYNhOlvCK8,fYYivceocJ2,yhCUgGcCcOo
+1530,32127.000000000000000,Machakos,Mwala Sub County,Makutano-mwala Ward,LFDB6rHVYOg,fYYivceocJ2,yhCUgGcCcOo
+1531,32367.000000000000000,Machakos,Mwala Sub County,Masii Ward,aN66G7fGx3m,fYYivceocJ2,yhCUgGcCcOo
+1532,22805.000000000000000,Machakos,Mwala Sub County,Muthetheni Ward,p3N8fKKiVHr,fYYivceocJ2,yhCUgGcCcOo
+1533,25664.000000000000000,Machakos,Mwala Sub County,Wamunyu Ward,TlP41wTPt6a,fYYivceocJ2,yhCUgGcCcOo
+1534,17927.000000000000000,Machakos,Mwala Sub County,Kibauni Ward,vzUXLmjcQsv,fYYivceocJ2,yhCUgGcCcOo
+1535,25807.000000000000000,Homa Bay,Kasipul Sub County,West Kasipul Ward,tn1vEO9VD83,NhsAMiaS0TD,nK0A12Q7MvS
+1536,25691.000000000000000,Homa Bay,Kasipul Sub County,South Kasipul Ward,xiP5RKdvPTn,NhsAMiaS0TD,nK0A12Q7MvS
+1537,26016.000000000000000,Homa Bay,Kasipul Sub County,Central Kasipul Ward,UQYZGlkULva,NhsAMiaS0TD,nK0A12Q7MvS
+1538,14588.000000000000000,Homa Bay,Kasipul Sub County,East Kamagak Ward,RvsMMMCame7,NhsAMiaS0TD,nK0A12Q7MvS
+1539,21015.000000000000000,Homa Bay,Kasipul Sub County,West Kamagak Ward,pPN9DI12g5m,NhsAMiaS0TD,nK0A12Q7MvS
+1540,31962.000000000000000,Homa Bay,Kabondo Kasipul Sub County,Kabondo East Ward,nYfCFgklbTM,BzFBYZhF5fx,nK0A12Q7MvS
+1541,31131.000000000000000,Homa Bay,Kabondo Kasipul Sub County,Kabondo West Ward,zkOTNmaTloy,BzFBYZhF5fx,nK0A12Q7MvS
+1542,26532.000000000000000,Homa Bay,Kabondo Kasipul Sub County,Kokwanyo/kakelo Ward,dPxooReTfTv,BzFBYZhF5fx,nK0A12Q7MvS
+1543,17924.000000000000000,Homa Bay,Kabondo Kasipul Sub County,Kojwach Ward,FdJzxSJbjk3,BzFBYZhF5fx,nK0A12Q7MvS
+1544,26069.000000000000000,Homa Bay,Karachuonyo Sub County,West Karachuonyo Ward,DbwgMpyBfwd,fmsyW02tPng,nK0A12Q7MvS
+1545,23614.000000000000000,Homa Bay,Karachuonyo Sub County,North Karachuonyo Ward,bR7hQLC29rl,fmsyW02tPng,nK0A12Q7MvS
+1546,20475.000000000000000,Homa Bay,Karachuonyo Sub County,Central Ward,TzCE8I4W14b,fmsyW02tPng,nK0A12Q7MvS
+1547,18684.000000000000000,Homa Bay,Karachuonyo Sub County,Kanyaluo Ward,LX2KPfCBef4,fmsyW02tPng,nK0A12Q7MvS
+1553,30553.000000000000000,Homa Bay,Rangwe Sub County,Kagan Ward,V6fgSDAq913,iK2Jk2AxhlD,nK0A12Q7MvS
+1554,26554.000000000000000,Homa Bay,Rangwe Sub County,Kochia Ward,ODrYkIYLlui,iK2Jk2AxhlD,nK0A12Q7MvS
+1555,30575.000000000000000,Homa Bay,Homa Bay Town Sub County,Homa Bay Central Ward,zOOEW5td56i,Ur2xRBDtazT,nK0A12Q7MvS
+1556,24310.000000000000000,Homa Bay,Homa Bay Town Sub County,Homa Bay Arujo Ward,OOiImc9uz5A,Ur2xRBDtazT,nK0A12Q7MvS
+1558,27591.000000000000000,Homa Bay,Homa Bay Town Sub County,Homa Bay East Ward,C5EivIShRVo,Ur2xRBDtazT,nK0A12Q7MvS
+1559,31596.000000000000000,Homa Bay,Ndhiwa Sub County,Kwabwai Ward,Fsxrjp3QlVa,i2Y2fyNoFyZ,nK0A12Q7MvS
+1560,16331.000000000000000,Homa Bay,Ndhiwa Sub County,Kanyadoto Ward,MAZrrKvz7hU,i2Y2fyNoFyZ,nK0A12Q7MvS
+1561,6283.000000000000000,Homa Bay,Ndhiwa Sub County,Kanyikela Ward,JY7Gu5x4aGH,i2Y2fyNoFyZ,nK0A12Q7MvS
+1562,35270.000000000000000,Homa Bay,Ndhiwa Sub County,Kabouch North Ward,MLB4Nr73Nsh,i2Y2fyNoFyZ,nK0A12Q7MvS
+1563,26332.000000000000000,Homa Bay,Ndhiwa Sub County,Kabuoch South/pala Ward,eScf0oeCcVI,i2Y2fyNoFyZ,nK0A12Q7MvS
+1565,32958.000000000000000,Homa Bay,Ndhiwa Sub County,Kanyamwa Kosewe Ward,ccNnEThhT6C,i2Y2fyNoFyZ,nK0A12Q7MvS
+1566,26120.000000000000000,Homa Bay,Mbita Sub County,Mfangano Island Ward,SyS2T2z6JDZ,mCGytMcMf6y,nK0A12Q7MvS
+1567,24275.000000000000000,Homa Bay,Mbita Sub County,Rusinga Island Ward,OjYMSbDEKRc,mCGytMcMf6y,nK0A12Q7MvS
+1568,19653.000000000000000,Homa Bay,Mbita Sub County,Kasgunga Ward,eX9fqY9KVU8,mCGytMcMf6y,nK0A12Q7MvS
+1579,18452.000000000000000,Vihiga,Sabatia Sub County,Chavakali Ward,NHcPsj2IMSr,urtJSF5jcBC,sANMZ3lpqGs
+1582,23693.000000000000000,Vihiga,Sabatia Sub County,Busali Ward,cUBWuuQYISs,urtJSF5jcBC,sANMZ3lpqGs
+1583,22334.000000000000000,Vihiga,Hamisi Sub County,Shiru Ward,iphxMgFUJmE,BXaq5PxSfz2,sANMZ3lpqGs
+1584,21452.000000000000000,Vihiga,Hamisi Sub County,Gisambai Ward,d7jBlFuDPt7,BXaq5PxSfz2,sANMZ3lpqGs
+1585,16659.000000000000000,Vihiga,Hamisi Sub County,Muhudu Ward,tDKdg7EyyCj,BXaq5PxSfz2,sANMZ3lpqGs
+1586,18689.000000000000000,Vihiga,Hamisi Sub County,Tambua Ward,pyG6e1Uq18m,BXaq5PxSfz2,sANMZ3lpqGs
+1587,19055.000000000000000,Vihiga,Hamisi Sub County,Jepkoyai Ward,USg05TR1JwK,BXaq5PxSfz2,sANMZ3lpqGs
+1591,19994.000000000000000,Vihiga,Luanda Sub County,Luanda South Ward,P35Hsu3jEza,lkYdgjRSOoE,sANMZ3lpqGs
+1593,29991.000000000000000,Vihiga,Emuhaya Sub County,North East Bunyore Ward,AgnY1dRfILu,Lpy789vqRC6,sANMZ3lpqGs
+1596,22535.000000000000000,Vihiga,Hamisi Sub County,Banja Ward,r6KB3hMzaXh,BXaq5PxSfz2,sANMZ3lpqGs
+1597,19293.000000000000000,Vihiga,Vihiga Sub County,South Maragoli Ward,hTylTMl1aid,OOF3UX4yOt7,sANMZ3lpqGs
+1598,27535.000000000000000,Vihiga,Hamisi Sub County,Shamakhokho Ward,hXKwpKcEej9,BXaq5PxSfz2,sANMZ3lpqGs
+1600,28788.000000000000000,Bungoma,Cheptais Sub County,Cheptais Ward,iKvnghqTvSP,NZphHeczehh,KGHhQ5GLd4k
+1603,28668.000000000000000,Bungoma,Cheptais Sub County,Kakateny Ward,WIQaiUzKu6p,NZphHeczehh,KGHhQ5GLd4k
+1604,33555.000000000000000,Bungoma,Mt Elgon Sub County,Kaptama Ward,X2TaEHQHj6z,ZCYATXdLsL1,KGHhQ5GLd4k
+1607,35067.000000000000000,Bungoma,Sirisia Sub County,Malakisi/south Kulisiru Ward,ftbk97ko25V,whWfFA9D7td,KGHhQ5GLd4k
+1608,39802.000000000000000,Bungoma,Sirisia Sub County,Lwandanyi Ward,nNiOxPPdyhk,whWfFA9D7td,KGHhQ5GLd4k
+1610,33130.000000000000000,Bungoma,Kabuchai Sub County,West Nalondo Ward,gZqLcfKb6LQ,k1mze33jOs0,KGHhQ5GLd4k
+1612,37988.000000000000000,Bungoma,Kabuchai Sub County,Mukuyuni Ward,IVA8tzQOkNT,k1mze33jOs0,KGHhQ5GLd4k
+1616,20756.000000000000000,Bungoma,Bumula Sub County,Kabula  Ward,sIW2S02bdN0,jkQZEow83MX,KGHhQ5GLd4k
+1617,36539.000000000000000,Bungoma,Bumula Sub County,Kimaeti Ward,bMDzJFxR86n,jkQZEow83MX,KGHhQ5GLd4k
+1619,32507.000000000000000,Bungoma,Bumula Sub County,Siboti Ward,iKmwecDBqgX,jkQZEow83MX,KGHhQ5GLd4k
+1620,20311.000000000000000,Bungoma,Kanduyi Sub County,Bukembe West Ward,r6SlF5OJDxM,CUjthlounWV,KGHhQ5GLd4k
+1621,26749.000000000000000,Bungoma,Kanduyi Sub County,Bukembe East Ward,gsSTglpX3Wd,CUjthlounWV,KGHhQ5GLd4k
+1634,32891.000000000000000,Bungoma,Webuye West Sub County,Bokoli Ward,rAJO40KF2F6,aqYhbqKclsI,KGHhQ5GLd4k
+1635,34458.000000000000000,Bungoma,Kimilili Sub County,Kibingei Ward,pxOm9J6SORx,AphsS3lJwKU,KGHhQ5GLd4k
+1636,36267.000000000000000,Bungoma,Kimilili Sub County,Kimilili Ward,E9RhI4J0cKC,AphsS3lJwKU,KGHhQ5GLd4k
+1637,24209.000000000000000,Bungoma,Kimilili Sub County,Maeni Ward,ZZrtQfVb4kP,AphsS3lJwKU,KGHhQ5GLd4k
+1638,37888.000000000000000,Bungoma,Kimilili Sub County,Kamukuywa Ward,krBcnnShWw6,AphsS3lJwKU,KGHhQ5GLd4k
+1639,32229.000000000000000,Bungoma,Tongaren Sub County,Mbakalo Ward,dqhHnPkEqDH,orUwYD52An3,KGHhQ5GLd4k
+1640,38023.000000000000000,Bungoma,Tongaren Sub County,Naitiri/kabuyefwe Ward,AwkuNWBAvnV,orUwYD52An3,KGHhQ5GLd4k
+1641,33352.000000000000000,Bungoma,Tongaren Sub County,Milima Ward,ky9RthnIKqS,orUwYD52An3,KGHhQ5GLd4k
+1642,21148.000000000000000,Bungoma,Tongaren Sub County,Ndalu/ Tabani Ward,ZoZCpnAFcGo,orUwYD52An3,KGHhQ5GLd4k
+1643,33907.000000000000000,Bungoma,Tongaren Sub County,Tongaren Ward,Epj7vWxFyG0,orUwYD52An3,KGHhQ5GLd4k
+1644,28819.000000000000000,Bungoma,Tongaren Sub County,Soysambu/ Mitua Ward,pc8868uNy8r,orUwYD52An3,KGHhQ5GLd4k
+1645,25082.000000000000000,Kakamega,Lugari Sub County,Mautuma Ward,ceveVgwvcc7,ZOdhgR19Akq,BjC1xL40gHo
+1646,31381.000000000000000,Kakamega,Lugari Sub County,Lugari Ward,QDeZMYaTxpd,ZOdhgR19Akq,BjC1xL40gHo
+1647,29955.000000000000000,Kakamega,Lugari Sub County,Lumakanda Ward,F2TBdrJClsv,ZOdhgR19Akq,BjC1xL40gHo
+1648,19705.000000000000000,Kakamega,Lugari Sub County,Chekalini Ward,WU8NRoTwaDK,ZOdhgR19Akq,BjC1xL40gHo
+1649,33145.000000000000000,Kakamega,Lugari Sub County,Chevaywa Ward,T7ArssRHW3p,ZOdhgR19Akq,BjC1xL40gHo
+1650,27746.000000000000000,Kakamega,Lugari Sub County,Lwandeti Ward,nbaDAo4y7cH,ZOdhgR19Akq,BjC1xL40gHo
+1651,27243.000000000000000,Kakamega,Likuyani Sub County,Likuyani Ward,tzPsC2kiU56,wMv0s3U2nnG,BjC1xL40gHo
+1652,22853.000000000000000,Kakamega,Likuyani Sub County,Sango Ward,A7zboeNsKAz,wMv0s3U2nnG,BjC1xL40gHo
+1653,23701.000000000000000,Kakamega,Likuyani Sub County,Kongoni Ward,mluOaVta06m,wMv0s3U2nnG,BjC1xL40gHo
+1654,30321.000000000000000,Kakamega,Likuyani Sub County,Nzoia Ward,bWhvWmGfQqn,wMv0s3U2nnG,BjC1xL40gHo
+1655,21019.000000000000000,Kakamega,Likuyani Sub County,Sinoko Ward,clRPOipiZXp,wMv0s3U2nnG,BjC1xL40gHo
+1656,26114.000000000000000,Kakamega,Malava Sub County,West Kabras Ward,vwGFBoFGIlm,ES1CWa4AJmJ,BjC1xL40gHo
+1657,29745.000000000000000,Kakamega,Malava Sub County,Chemuche Ward,GCZB9Qc6zCO,ES1CWa4AJmJ,BjC1xL40gHo
+1658,22659.000000000000000,Kakamega,Malava Sub County,East Kabras Ward,lZT0FbLOn0I,ES1CWa4AJmJ,BjC1xL40gHo
+1659,31876.000000000000000,Kakamega,Malava Sub County,Butali Chegulo Ward,WlgJjiJVyHY,ES1CWa4AJmJ,BjC1xL40gHo
+1660,32194.000000000000000,Kakamega,Malava Sub County,Manda-shivanga Ward,oQbUJJHfsbX,ES1CWa4AJmJ,BjC1xL40gHo
+1661,25055.000000000000000,Kakamega,Malava Sub County,Shirungu-mugai Ward,pCenQt4VPGz,ES1CWa4AJmJ,BjC1xL40gHo
+1662,37523.000000000000000,Kakamega,Malava Sub County,South Kabras Ward,klgKsqqI93s,ES1CWa4AJmJ,BjC1xL40gHo
+1663,23227.000000000000000,Kakamega,Lurambi Sub County,Butsotso East Ward,dFH6aZXT2rd,Y3NjAhiBaZT,BjC1xL40gHo
+1664,17377.000000000000000,Kakamega,Lurambi Sub County,Butsotso South  Ward,t8eg6hgrHEp,Y3NjAhiBaZT,BjC1xL40gHo
+1665,25744.000000000000000,Kakamega,Lurambi Sub County,Butsotso Central Ward,IgadIOg14CX,Y3NjAhiBaZT,BjC1xL40gHo
+1666,48304.000000000000000,Kakamega,Lurambi Sub County,Sheywe Ward,QVwBQhJwtOG,Y3NjAhiBaZT,BjC1xL40gHo
+1667,12067.000000000000000,Kakamega,Lurambi Sub County,Mahiakalo Ward,OikFajghArn,Y3NjAhiBaZT,BjC1xL40gHo
+1668,33510.000000000000000,Kakamega,Lurambi Sub County,Shirere Ward,yKF1kdNdLqM,Y3NjAhiBaZT,BjC1xL40gHo
+1669,22091.000000000000000,Kakamega,Navakholo Sub County,Ingoste-matiha Ward,px3RqXi1FU6,G6PJ5kFVAuO,BjC1xL40gHo
+1670,25352.000000000000000,Kakamega,Navakholo Sub County,Shinoyi-shikomari-esumeiya Ward,rFlaJBkq35x,G6PJ5kFVAuO,BjC1xL40gHo
+1671,38407.000000000000000,Kakamega,Navakholo Sub County,Bunyala West Ward,soqBddsWHf5,G6PJ5kFVAuO,BjC1xL40gHo
+1672,22122.000000000000000,Kakamega,Navakholo Sub County,Bunyala East Ward,ddOJaw1OQwA,G6PJ5kFVAuO,BjC1xL40gHo
+1673,29193.000000000000000,Kakamega,Navakholo Sub County,Bunyala Central Ward,Qa2LjBCOXby,G6PJ5kFVAuO,BjC1xL40gHo
+1674,37214.000000000000000,Kakamega,Mumias West  Sub County,Mumias Central Ward,w6anQIp7OrZ,uRl5fBkhpcE,BjC1xL40gHo
+1796,28128.000000000000000,Mombasa,Changamwe Sub County,Kipevu Ward,Eswb97MIEP8,OvI6w06DhPJ,wsBsC6gjHvn
+961,19355.000000000000000,KERICHO,AINAMOI,BELGUT,,,
+94,24201.000000000000000,TANA RIVER,Galole Sub County,Chewani Ward,Fuc7wSQ4gkN,A4SNYCxrrnv,JsH2bnvNt2d
+92,13636.000000000000000,TANA RIVER,Galole Sub County,Kinakomba Ward,JRAYgvhoUEp,A4SNYCxrrnv,JsH2bnvNt2d
+1476,14331.000000000000000,Migori,Nyatike Sub County,Kanyasa Ward,ONNWmIVc48N,D2lsuEzZAJP,fVra3Pwta0Q
+1477,30697.000000000000000,Migori,Nyatike Sub County,North Kadem Ward,ry7pGVSoLwL,D2lsuEzZAJP,fVra3Pwta0Q
+1478,22691.000000000000000,Migori,Nyatike Sub County,Macalder/kanyarwanda Ward,NGRN2o3qN2r,D2lsuEzZAJP,fVra3Pwta0Q
+1479,9775.000000000000000,Migori,Nyatike Sub County,Kaler Ward,edSLoK3sx6W,D2lsuEzZAJP,fVra3Pwta0Q
+1480,22338.000000000000000,Migori,Nyatike Sub County,Got Kachola Ward,wQeQqCSAjRy,D2lsuEzZAJP,fVra3Pwta0Q
+1481,23018.000000000000000,Migori,Nyatike Sub County,Muhuru Ward,nQxxjPy6J5A,D2lsuEzZAJP,fVra3Pwta0Q
+1482,19476.000000000000000,Migori,Kuria West Sub County,Bukira East Ward,lOqK0cwQKaH,jtBjNpL9FXS,fVra3Pwta0Q
+1483,18140.000000000000000,Migori,Kuria West Sub County,Bukira Central/ikerege Ward,mLrXAhflEvn,jtBjNpL9FXS,fVra3Pwta0Q
+1484,23556.000000000000000,Migori,Kuria West Sub County,Isibania Ward,ItjmRWn5IsE,jtBjNpL9FXS,fVra3Pwta0Q
+1797,29662.000000000000000,Mombasa,Changamwe Sub County,Airport Ward,bmyrNLOPAAW,OvI6w06DhPJ,wsBsC6gjHvn
+101,13524.000000000000000,LAMU,LAMU EAST,FAZA,xDKzFE2qfHL,cwnqFyTJIgX,NjWSbQTwys4
+102,4265.000000000000000,LAMU,LAMU EAST,KIUNGA,fmWYhwoFxe8,cwnqFyTJIgX,NjWSbQTwys4
+103,1052.000000000000000,LAMU,LAMU EAST,BASUBA,YbfMLNQRxtf,cwnqFyTJIgX,NjWSbQTwys4
+104,3274.000000000000000,LAMU,LAMU WEST,SHELLA,hlwSQTsP5nU,Lfxw0DfD4jN,NjWSbQTwys4
+105,19092.000000000000000,LAMU,LAMU WEST,MKOMAMI,khU4bMjWLt6,Lfxw0DfD4jN,NjWSbQTwys4
+106,10700.000000000000000,LAMU,LAMU WEST,HINDI,yCylsEe6jSZ,Lfxw0DfD4jN,NjWSbQTwys4
+98,14105.000000000000000,TANA RIVER,Bura Sub County,Bangale Ward,SCxU4funihr,yWPcTwGwQ2B,JsH2bnvNt2d
+99,10370.000000000000000,TANA RIVER,Bura Sub County,Sala Ward,tc9MpZMV6yJ,yWPcTwGwQ2B,JsH2bnvNt2d
+108,9097.000000000000000,LAMU,LAMU WEST,HONGWE,att6OMwShzH,Lfxw0DfD4jN,NjWSbQTwys4
+1678,37609.000000000000000,Kakamega,Mumias East Sub County,Lusheya Lubinu Ward,V3ZV8jsqN0Z,FBteTV1eqB6,BjC1xL40gHo
+1679,31004.000000000000000,Kakamega,Mumias East Sub County,Malaha Isongo Makunga Ward,LFTRMczCZWE,FBteTV1eqB6,BjC1xL40gHo
+1680,32343.000000000000000,Kakamega,Mumias East Sub County,East Wanga Ward,ygKYcUMKsy2,FBteTV1eqB6,BjC1xL40gHo
+1681,35812.000000000000000,Kakamega,Matungu Sub County,Koyonzo Ward,gBgXSPT0eml,ssbO49f0iLN,BjC1xL40gHo
+1682,28821.000000000000000,Kakamega,Matungu Sub County,Kholera Ward,U7mZiE3Hvys,ssbO49f0iLN,BjC1xL40gHo
+1683,19778.000000000000000,Kakamega,Matungu Sub County,Khalaba Ward,ldYP7L1GA6f,ssbO49f0iLN,BjC1xL40gHo
+111,18065.000000000000000,TAITA TAVETA,Taveta Sub County,Chala Ward,uxxdF69wmFs,jNzRdAwjaQ1,QyGNX2DpR4h
+1485,20982.000000000000000,Migori,Kuria West Sub County,Mokerero Ward,CpQX2anrUJk,jtBjNpL9FXS,fVra3Pwta0Q
+115,9271.000000000000000,TAITA TAVETA,Taveta Sub County,Mata Ward,m1IPtRRgcm9,jNzRdAwjaQ1,QyGNX2DpR4h
+1487,22562.000000000000000,Migori,Kuria West Sub County,Tagare Ward,EFFhTqzNEYT,jtBjNpL9FXS,fVra3Pwta0Q
+116,19668.000000000000000,TAITA TAVETA,Wundanyi Sub County,Wundanyi/mbale Ward,mkbKajFxEDT,AM36DdkZ36Y,QyGNX2DpR4h
+118,16934.000000000000000,TAITA TAVETA,Wundanyi Sub County,Wumingu/kishushe Ward,MWZrkgY93fj,AM36DdkZ36Y,QyGNX2DpR4h
+1488,26542.000000000000000,Migori,Kuria West Sub County,Nyamosense/komosoko Ward,DfL4XXliaq1,jtBjNpL9FXS,fVra3Pwta0Q
+1489,20312.000000000000000,Migori,Kuria East Sub County,Gokeharaka/getambwega Ward,Y9n3cjtnU4R,THm2tCJa2ZQ,fVra3Pwta0Q
+1491,11730.000000000000000,Migori,Kuria East Sub County,Ntimaru East Ward,C6U23QgqMCn,THm2tCJa2ZQ,fVra3Pwta0Q
+1492,22293.000000000000000,Migori,Kuria East Sub County,Nyabasi East Ward,xUtluqIJmBZ,THm2tCJa2ZQ,fVra3Pwta0Q
+1493,27371.000000000000000,Migori,Kuria East Sub County,Nyabasi West Ward,k00olmG2C2e,THm2tCJa2ZQ,fVra3Pwta0Q
+1494,26857.000000000000000,Migori,Rongo Sub County,East Kamagambo Ward,l8btuTBphnw,fT37q3rXQ35,fVra3Pwta0Q
+1495,34092.000000000000000,Machakos,Masinga Sub County,Kivaa Ward,Z1lLfOZ4sab,hpcb7MYi6nc,yhCUgGcCcOo
+1496,32963.000000000000000,Machakos,Masinga Sub County,Masinga Central Ward,Gy8x7tShO72,hpcb7MYi6nc,yhCUgGcCcOo
+1497,19013.000000000000000,Machakos,Masinga Sub County,Ekalakala Ward,Ado6AndJdpf,hpcb7MYi6nc,yhCUgGcCcOo
+1498,17153.000000000000000,Machakos,Masinga Sub County,Muthesya Ward,mbGPooHKbdA,hpcb7MYi6nc,yhCUgGcCcOo
+1499,22719.000000000000000,Machakos,Masinga Sub County,Mananja Ward,PUxylhB5rfi,hpcb7MYi6nc,yhCUgGcCcOo
+1500,30256.000000000000000,Machakos,Yatta Sub County,Ndalani Ward,hVGX2N2vzsO,CeukNtGhW7J,yhCUgGcCcOo
+1501,27145.000000000000000,Machakos,Yatta Sub County,Matuu Ward,EhkLDtwfJnH,CeukNtGhW7J,yhCUgGcCcOo
+1502,33714.000000000000000,Machakos,Yatta Sub County,Kithimani Ward,LELK9LZb2qR,CeukNtGhW7J,yhCUgGcCcOo
+1503,34683.000000000000000,Machakos,Yatta Sub County,Ikombe Ward,Q4EsypvUANP,CeukNtGhW7J,yhCUgGcCcOo
+1504,21781.000000000000000,Machakos,Yatta Sub County,Katangi Ward,w0RAITw1HWe,CeukNtGhW7J,yhCUgGcCcOo
+1505,22396.000000000000000,Machakos,Kangundo Sub County,Kangundo North Ward,GCpjuDfIVDu,vMPhBuymSKt,yhCUgGcCcOo
+1506,24850.000000000000000,Machakos,Kangundo Sub County,Kangundo Central Ward,xcOIxh5GkD7,vMPhBuymSKt,yhCUgGcCcOo
+1507,21509.000000000000000,Machakos,Kangundo Sub County,Kangundo East Ward,hBftnwiDBHL,vMPhBuymSKt,yhCUgGcCcOo
+1508,25612.000000000000000,Machakos,Kangundo Sub County,Kangundo West Ward,Q66EmTxlCi3,vMPhBuymSKt,yhCUgGcCcOo
+1509,26297.000000000000000,Machakos,Matungulu Sub County,Tala Ward,fEYm1lDe2ES,GnixPSqaV6D,yhCUgGcCcOo
+1510,25041.000000000000000,Machakos,Matungulu Sub County,Matungulu North Ward,cYcOCBgwwwN,GnixPSqaV6D,yhCUgGcCcOo
+1511,21725.000000000000000,Machakos,Matungulu Sub County,Matungulu East Ward,raVM522IGju,GnixPSqaV6D,yhCUgGcCcOo
+1512,33935.000000000000000,Machakos,Matungulu Sub County,Matungulu West Ward,OMFDcpMhxBr,GnixPSqaV6D,yhCUgGcCcOo
+1513,17738.000000000000000,Machakos,Matungulu Sub County,Kyeleni Ward,XgDHRzDJYER,GnixPSqaV6D,yhCUgGcCcOo
+1514,30055.000000000000000,Machakos,Kathiani Sub County,Mitamboni Ward,kTPK3jU6vdp,iCey76HYgLP,yhCUgGcCcOo
+1515,24390.000000000000000,Machakos,Kathiani Sub County,Kathiani Central Ward,vviGMt93opf,iCey76HYgLP,yhCUgGcCcOo
+1516,26863.000000000000000,Machakos,Kathiani Sub County,Upper Kaewa-iveti Ward,nDNeAIZ7KRc,iCey76HYgLP,yhCUgGcCcOo
+1517,22909.000000000000000,Machakos,Kathiani Sub County,Lower Kaewa-kaani Ward,uRN4WDLAPSP,iCey76HYgLP,yhCUgGcCcOo
+1518,51293.000000000000000,Machakos,Athi River Sub County,Athi River Ward,CYAMnUYLITU,BxfsSc6Svrc,yhCUgGcCcOo
+1519,17538.000000000000000,Machakos,Athi River Sub County,Kinanie Ward,COrVDPRzUZp,BxfsSc6Svrc,yhCUgGcCcOo
+1548,19496.000000000000000,Homa Bay,Karachuonyo Sub County,Kibiri Ward,HUoTkec6KhI,fmsyW02tPng,nK0A12Q7MvS
+1549,33336.000000000000000,Homa Bay,Karachuonyo Sub County,Wang'chieng Ward,RcF7TZ3ciq5,fmsyW02tPng,nK0A12Q7MvS
+1550,20371.000000000000000,Homa Bay,Karachuonyo Sub County,Kendu Bay Town Ward,bBfvGmNakj6,fmsyW02tPng,nK0A12Q7MvS
+1551,19711.000000000000000,Homa Bay,Rangwe Sub County,West Gem Ward,XQSQgdwyxWP,iK2Jk2AxhlD,nK0A12Q7MvS
+1552,22930.000000000000000,Homa Bay,Rangwe Sub County,East Gem Ward,nUVin4tYKY2,iK2Jk2AxhlD,nK0A12Q7MvS
+1557,12184.000000000000000,Homa Bay,Homa Bay Town Sub County,Homa Bay West Ward,jjce8vXK50R,Ur2xRBDtazT,nK0A12Q7MvS
+131,20617.000000000000000,GARISSA,Garissa Sub County,Township Ward,OsuzTNGeh3u,lQkHbTC1iRg,uyOrcHZBpW0
+1564,23442.000000000000000,Homa Bay,Ndhiwa Sub County,Kanyamwa Kologi Ward,QlqqWw642lA,i2Y2fyNoFyZ,nK0A12Q7MvS
+1569,19046.000000000000000,Homa Bay,Mbita Sub County,Gembe Ward,acibphi1EGX,mCGytMcMf6y,nK0A12Q7MvS
+1570,22315.000000000000000,Homa Bay,Mbita Sub County,Lambwe Ward,vbgVuQPf9j7,mCGytMcMf6y,nK0A12Q7MvS
+1571,34563.000000000000000,Homa Bay,Suba Sub County,Gwassi South Ward,AuOsnrKcOMF,HoRW5aISmiD,nK0A12Q7MvS
+1572,30598.000000000000000,Homa Bay,Suba Sub County,Gwassi North Ward,gieorchg4LE,HoRW5aISmiD,nK0A12Q7MvS
+1573,26021.000000000000000,Homa Bay,Suba Sub County,Kaksingiri West Ward,zwpctzVflwm,HoRW5aISmiD,nK0A12Q7MvS
+134,30743.000000000000000,GARISSA,Garissa Sub County,Waberi Ward,moyjoMLymNA,lQkHbTC1iRg,uyOrcHZBpW0
+135,20329.000000000000000,GARISSA,Balambala Sub County,Balambala Ward,UuAQ2amLjtB,FGBNPr91pXH,uyOrcHZBpW0
+136,24820.000000000000000,GARISSA,Balambala Sub County,Danyere Ward,ap7BwqlvdFg,FGBNPr91pXH,uyOrcHZBpW0
+137,7356.000000000000000,GARISSA,Balambala Sub County,Jarajara Ward,OoG4wdaPLM8,FGBNPr91pXH,uyOrcHZBpW0
+138,9885.000000000000000,GARISSA,Balambala Sub County,Saka Ward,pSar0ObQa6I,FGBNPr91pXH,uyOrcHZBpW0
+139,10719.000000000000000,GARISSA,Garissa Sub County,Sankuri Ward,XSRJUTBck5b,lQkHbTC1iRg,uyOrcHZBpW0
+140,28877.000000000000000,GARISSA,Lagdera Sub County,Modogashe Ward,iIS797JydB4,J69iWev2zwu,uyOrcHZBpW0
+141,13133.000000000000000,GARISSA,Lagdera Sub County,Benane Ward,y8xlePXkWw3,J69iWev2zwu,uyOrcHZBpW0
+142,10232.000000000000000,GARISSA,Lagdera Sub County,Goreale Ward,iOIfrzq22kC,J69iWev2zwu,uyOrcHZBpW0
+1798,11013.000000000000000,Mombasa,Changamwe Sub County,Changamwe Ward,qyQg0b3mxEL,OvI6w06DhPJ,wsBsC6gjHvn
+1574,11872.000000000000000,Homa Bay,Suba Sub County,Ruma-kaksingiri East Ward,UGCu7Ut7H7M,HoRW5aISmiD,nK0A12Q7MvS
+1575,29153.000000000000000,Vihiga,Vihiga Sub County,Lugaga-wamuluma Ward,af8ohZ5YbyQ,OOF3UX4yOt7,sANMZ3lpqGs
+1576,23370.000000000000000,Vihiga,Vihiga Sub County,Central Maragoli Ward,W1gE3uts9Qh,OOF3UX4yOt7,sANMZ3lpqGs
+1577,25605.000000000000000,Vihiga,Sabatia Sub County,Lyaduywa/izava Ward,QbCSvi9H3CN,urtJSF5jcBC,sANMZ3lpqGs
+1578,21501.000000000000000,Vihiga,Sabatia Sub County,West Sabatia Ward,J5T5BAIIILr,urtJSF5jcBC,sANMZ3lpqGs
+156,7329.000000000000000,GARISSA,Fafi Sub County,Nanighi Ward,EmhVD7pSOTI,RScEHA3V38d,uyOrcHZBpW0
+157,20953.000000000000000,GARISSA,Hulugho Sub County,Hulugho Ward,RqPb2VP0OCA,uyeif4CPqHt,uyOrcHZBpW0
+158,23280.000000000000000,GARISSA,Hulugho Sub County,Sangailu Ward,rw3XdXqwht4,uyeif4CPqHt,uyOrcHZBpW0
+1580,18487.000000000000000,Vihiga,Sabatia Sub County,North Maragoli Ward,m9cV82YWKBf,urtJSF5jcBC,sANMZ3lpqGs
+1581,21940.000000000000000,Vihiga,Sabatia Sub County,Wodanga Ward,RaGcUBct8yg,urtJSF5jcBC,sANMZ3lpqGs
+1588,14403.000000000000000,Vihiga,Luanda Sub County,Luanda Township Ward,ZD3ThdrdoTN,lkYdgjRSOoE,sANMZ3lpqGs
+1589,23046.000000000000000,Vihiga,Luanda Sub County,Wemilabi Ward,VY0CncsctUg,lkYdgjRSOoE,sANMZ3lpqGs
+1590,17360.000000000000000,Vihiga,Luanda Sub County,Mwibona Ward,gvz1kfj99I3,lkYdgjRSOoE,sANMZ3lpqGs
+164,5886.000000000000000,WAJIR,Wajir North Sub County,Malkagufu Ward,pRYo5vME6Ca,qsjAa8FE8OS,CeLsrJOH0g9
+165,17334.000000000000000,WAJIR,Wajir North Sub County,Batalu Ward,eQSeYqhadbw,qsjAa8FE8OS,CeLsrJOH0g9
+1592,21119.000000000000000,Vihiga,Luanda Sub County,Emabungo Ward,rVwUPDEkBSy,lkYdgjRSOoE,sANMZ3lpqGs
+167,13712.000000000000000,WAJIR,Wajir North Sub County,Godoma Ward,cGxvLpMCjj9,qsjAa8FE8OS,CeLsrJOH0g9
+1594,27316.000000000000000,Vihiga,Emuhaya Sub County,Central Bunyore Ward,rF4SKTlT0XH,Lpy789vqRC6,sANMZ3lpqGs
+1595,31840.000000000000000,Vihiga,Emuhaya Sub County,West Bunyore Ward,HxODkmO42Nw,Lpy789vqRC6,sANMZ3lpqGs
+93,9568.000000000000000,TANA RIVER,Galole Sub County,Mikinduni Ward,Tj925bvDisP,A4SNYCxrrnv,JsH2bnvNt2d
+171,29772.000000000000000,WAJIR,Wajir East Sub County,Khorof/Harar Ward,PdtTwk95oki,uov0yFMw9Qm,CeLsrJOH0g9
+172,27014.000000000000000,WAJIR,Tarbaj Sub County,Elben Ward,dAuiI1KjvPd,fmNokBURXjM,CeLsrJOH0g9
+173,26064.000000000000000,WAJIR,Tarbaj Sub County,Sarman Ward,BtTdA2pR73q,fmNokBURXjM,CeLsrJOH0g9
+174,28819.000000000000000,WAJIR,Tarbaj Sub County,Tarbaj Ward,ua8MQfTav4q,fmNokBURXjM,CeLsrJOH0g9
+175,29949.000000000000000,WAJIR,Tarbaj Sub County,Wargadud Ward,mi3OaBYLsUz,fmNokBURXjM,CeLsrJOH0g9
+122,16885.000000000000000,TAITA TAVETA,Mwatate Sub County,Bura Ward,VDvkL0vcV5e,IBDoGsLdhvt,QyGNX2DpR4h
+177,19264.000000000000000,WAJIR,Wajir West Sub County,Hadado Athibohol Ward,avaUAA1j5ie,X98G0eIWdmP,CeLsrJOH0g9
+1800,38776.000000000000000,Mombasa,Jomvu  Sub County,Jomvu Kuu Ward,T0eflkFOYOF,vSISrsNNHwq,wsBsC6gjHvn
+1599,19800.000000000000000,Vihiga,Vihiga Sub County,Mungoma Ward,VmCvwovgPi4,OOF3UX4yOt7,sANMZ3lpqGs
+1601,24062.000000000000000,Bungoma,Cheptais Sub County,Chesikaki Ward,laOitoZMUgC,NZphHeczehh,KGHhQ5GLd4k
+1602,25442.000000000000000,Bungoma,Cheptais Sub County,Chepyuk Ward,dnN8o6fbT5I,NZphHeczehh,KGHhQ5GLd4k
+1605,31862.000000000000000,Bungoma,Mt Elgon Sub County,Elgon Ward,zxfCOXaz1ha,ZCYATXdLsL1,KGHhQ5GLd4k
+1691,19300.000000000000000,Kakamega,Khwisero Sub County,Kisa North Ward,XFOc3lfOj2x,UhQS2Mv0PCK,BjC1xL40gHo
+1717,32293.000000000000000,Busia,Nambale Sub County,Nambale Township Ward,IUsXLSNYp1f,e1J7R103h8I,Tvf1zgVZ0K4
+1718,22459.000000000000000,Busia,Nambale Sub County,Bukhayo North Walatsi Ward,YXM5WOeQkyO,e1J7R103h8I,Tvf1zgVZ0K4
+1719,21696.000000000000000,Busia,Nambale Sub County,Bukhayo East Ward,ov8OgPXuR5N,e1J7R103h8I,Tvf1zgVZ0K4
+1720,18189.000000000000000,Busia,Nambale Sub County,Bukhayo Central Ward,i26gx3p4d5E,e1J7R103h8I,Tvf1zgVZ0K4
+1721,33480.000000000000000,Busia,Matayos Sub County,Bukhayo West Ward,xMPuIHmGdYe,tvkI2HSIRW9,Tvf1zgVZ0K4
+203,13550.000000000000000,MANDERA,MANDERA NORTH,MAROTHILE,,,
+204,42422.000000000000000,MANDERA,MANDERA NORTH,RHAMU,d7Se8cdZnHg,jrm0uyLXnC1,R6f9znhg37c
+205,36596.000000000000000,MANDERA,MANDERA NORTH,RHAMU DIMTU,GpykXhXcYCT,jrm0uyLXnC1,R6f9znhg37c
+207,70329.000000000000000,MANDERA,MANDERA SOUTH,KOTULO,J9PHxsmBzgD,iGFdm333PJ2,R6f9znhg37c
+208,75270.000000000000000,MANDERA,MANDERA SOUTH,ELWAK SOUTH,AEMY7F8XyZT,qyhVIMG2rUw,R6f9znhg37c
+210,44274.000000000000000,MANDERA,MANDERA SOUTH,SHAMBIR FATUMA,Z9zNkBFLY9r,qyhVIMG2rUw,R6f9znhg37c
+211,27269.000000000000000,MANDERA,MANDERA EAST,ARABIA,o8RzRkx3x4Q,fGr9rRvaovO,R6f9znhg37c
+221,17542.000000000000000,MARSABIT,MOYALE,BUTIYE,g3PamYQCz5A,sZjPgbWI5ra,Eey8fT4Im3y
+222,8300.000000000000000,MARSABIT,MOYALE,SOLOLO,IdYKTiaR0Cy,sZjPgbWI5ra,Eey8fT4Im3y
+223,21152.000000000000000,MARSABIT,MOYALE,HEILLU/MANYATTA,RYHYagSQfDF,sZjPgbWI5ra,Eey8fT4Im3y
+224,29161.000000000000000,MARSABIT,MOYALE,GOLBO,jltiitEPkip,sZjPgbWI5ra,Eey8fT4Im3y
+231,17217.000000000000000,MARSABIT,NORTH HORR,NORTH HORR,J7hloFhkWdU,j6fqt5TYqPZ,Eey8fT4Im3y
+232,9790.000000000000000,MARSABIT,NORTH HORR,ILLERET,nhKIZhNozIv,j6fqt5TYqPZ,Eey8fT4Im3y
+233,16758.000000000000000,MARSABIT,SAKU,SAGANTE/JALDESA,G2LQpPk5BXU,WILszL634oZ,Eey8fT4Im3y
+1723,30874.000000000000000,Busia,Matayos Sub County,Matayos South Ward,UMeXjZoZxct,tvkI2HSIRW9,Tvf1zgVZ0K4
+1724,11328.000000000000000,Busia,Matayos Sub County,Busibwabo Ward,cgTC3oqgmKg,tvkI2HSIRW9,Tvf1zgVZ0K4
+1725,26493.000000000000000,Busia,Matayos Sub County,Burumba Ward,Yk6G4ret1OC,tvkI2HSIRW9,Tvf1zgVZ0K4
+240,13109.000000000000000,MARSABIT,LAISAMIS,LAISAMIS,WWr7jojWGHJ,eZpy65ooW0m,Eey8fT4Im3y
+251,22617.000000000000000,MERU,Igembe South Sub County,Maua Ward,cCF3yJfJOvA,wtuGWT7KjVm,Y52XNJ50hYb
+252,32285.000000000000000,MERU,Igembe South Sub County,Kiegoi/antubochiu Ward,ozZP0r92ysp,wtuGWT7KjVm,Y52XNJ50hYb
+253,26731.000000000000000,MERU,Igembe South Sub County,Athiru gaiti Ward,pK3bnoP5kpo,wtuGWT7KjVm,Y52XNJ50hYb
+254,26668.000000000000000,MERU,Igembe South Sub County,Akachiu Ward,mSPC54QXXiP,wtuGWT7KjVm,Y52XNJ50hYb
+255,26249.000000000000000,MERU,Igembe South Sub County,Kanuni Ward,A7U8KMUSpj1,wtuGWT7KjVm,Y52XNJ50hYb
+256,31426.000000000000000,MERU,Igembe Central Sub County,Akirang'ondu Ward,CsVYL5oWdjy,TPfcUHno8oP,Y52XNJ50hYb
+257,44075.000000000000000,MERU,Igembe Central Sub County,Athiru ruujine Ward,mOMLW8dXVuR,TPfcUHno8oP,Y52XNJ50hYb
+258,44489.000000000000000,MERU,Igembe Central Sub County,Kiengu/Igembe East ward,QRgp6qqEmVn,TPfcUHno8oP,Y52XNJ50hYb
+259,42759.000000000000000,MERU,Igembe Central Sub County,Njia Ward,k0edp6ATpN0,TPfcUHno8oP,Y52XNJ50hYb
+260,30643.000000000000000,MERU,Igembe Central Sub County,Kangeta Ward,cN3gQ1BXbVr,TPfcUHno8oP,Y52XNJ50hYb
+261,29231.000000000000000,MERU,Igembe North Sub County,Antuambui Ward,q5aojmYq2C4,G9DoZvSdGLx,Y52XNJ50hYb
+262,19560.000000000000000,MERU,Igembe North Sub County,Ntunene Ward,b7S83B5sQai,G9DoZvSdGLx,Y52XNJ50hYb
+263,32204.000000000000000,MERU,Igembe North Sub County,Antubetwe kiongo Ward,iNmCeQG70K0,G9DoZvSdGLx,Y52XNJ50hYb
+264,29555.000000000000000,MERU,Igembe North Sub County,Naathu Ward,NDRZbel9Pr4,G9DoZvSdGLx,Y52XNJ50hYb
+265,44264.000000000000000,MERU,Igembe North Sub County,Amwathi Ward,y1x13IydCG7,G9DoZvSdGLx,Y52XNJ50hYb
+266,18127.000000000000000,MERU,Tigania West Sub County,Athwana Ward,UE0iLMx0uAU,Q4xAPhWUnYC,Y52XNJ50hYb
+267,35646.000000000000000,MERU,Tigania West Sub County,Akithii Ward,bYsajNCrCgY,Q4xAPhWUnYC,Y52XNJ50hYb
+268,36874.000000000000000,MERU,Tigania West Sub County,Kianjai Ward,rjPvpKtHTus,Q4xAPhWUnYC,Y52XNJ50hYb
+269,24361.000000000000000,MERU,Tigania West Sub County,Nkomo Ward,TEMzqnMqi9A,Q4xAPhWUnYC,Y52XNJ50hYb
+270,20972.000000000000000,MERU,Tigania West Sub County,Mbeu Ward,diFMjWsMQda,Q4xAPhWUnYC,Y52XNJ50hYb
+271,40190.000000000000000,MERU,Tigania East Sub County,Thangatha Ward,ELYCgxhiudW,U3lGZ71W9Te,Y52XNJ50hYb
+272,33796.000000000000000,MERU,Tigania East Sub County,Mikinduri Ward,c0I654P6EkR,U3lGZ71W9Te,Y52XNJ50hYb
+273,19172.000000000000000,MERU,Tigania East Sub County,Kiguchwa Ward,EzxiXXOQex6,U3lGZ71W9Te,Y52XNJ50hYb
+274,39028.000000000000000,MERU,Tigania East Sub County,Muthara Ward,Zxy2exUTX7R,U3lGZ71W9Te,Y52XNJ50hYb
+275,25060.000000000000000,MERU,Tigania East Sub County,Karama Ward,HuKVPCdKkZ0,U3lGZ71W9Te,Y52XNJ50hYb
+276,27860.000000000000000,MERU,Imenti North Sub County,Municipality Ward,EossaGDQulP,BDxUGx86itV,Y52XNJ50hYb
+277,20983.000000000000000,MERU,Imenti North Sub County,Ntima east Ward,Ryj106sjw37,BDxUGx86itV,Y52XNJ50hYb
+278,33766.000000000000000,MERU,Imenti North Sub County,Ntima west Ward,Q1YmD34Z3It,BDxUGx86itV,Y52XNJ50hYb
+279,35575.000000000000000,MERU,Imenti North Sub County,Nyaki west Ward,danQPcsYu5G,BDxUGx86itV,Y52XNJ50hYb
+280,30960.000000000000000,MERU,Imenti North Sub County,Nyaki east Ward,hceoyGXIXhD,BDxUGx86itV,Y52XNJ50hYb
+281,34394.000000000000000,MERU,Buuri Sub County,Timau Ward,WnXi46WSP7B,xN5aPo4ZOIt,Y52XNJ50hYb
+282,29685.000000000000000,MERU,Buuri Sub County,Kisima Ward,jhoqnpxdZY7,xN5aPo4ZOIt,Y52XNJ50hYb
+283,27299.000000000000000,MERU,Buuri Sub County,Kiirua Naari Ward,SKXh3KXdbVU,xN5aPo4ZOIt,Y52XNJ50hYb
+284,18425.000000000000000,MERU,Buuri Sub County,Ruiru Rwawera Ward,LXCb2xO5iF7,xN5aPo4ZOIt,Y52XNJ50hYb
+285,24793.000000000000000,MERU,Imenti Central Sub County,Mwangathia Ward,FJJRq7O0QcB,OnNcTsJgfvL,Y52XNJ50hYb
+286,33981.000000000000000,MERU,Imenti Central Sub County,Abothuguchi central Ward,Ay0bToL5BTE,OnNcTsJgfvL,Y52XNJ50hYb
+287,35901.000000000000000,MERU,Imenti Central Sub County,Abothuguchi west Ward,ZVoIw8oAOWZ,OnNcTsJgfvL,Y52XNJ50hYb
+288,22243.000000000000000,MERU,Imenti Central Sub County,Kiagu Ward,zP5ACOAN4ty,OnNcTsJgfvL,Y52XNJ50hYb
+289,24850.000000000000000,MERU,Buuri Sub County,Kibirichia Ward,IuCkCzLOGau,xN5aPo4ZOIt,Y52XNJ50hYb
+290,20835.000000000000000,MERU,Imenti South Sub County,Mitunguu Ward,tIVOumb0Lh1,AFIlzKNxXST,Y52XNJ50hYb
+291,28915.000000000000000,MERU,Imenti South Sub County,Igoji east Ward,AzpgHxbLVoh,AFIlzKNxXST,Y52XNJ50hYb
+292,20412.000000000000000,MERU,Imenti South Sub County,Igoji west Ward,ST78NM0nd2J,AFIlzKNxXST,Y52XNJ50hYb
+293,33848.000000000000000,MERU,Imenti South Sub County,Abogeta east Ward,nDZvyhVwri1,AFIlzKNxXST,Y52XNJ50hYb
+294,30338.000000000000000,MERU,Imenti South Sub County,Abogeta west Ward,auJK9sKTX9b,AFIlzKNxXST,Y52XNJ50hYb
+295,45256.000000000000000,MERU,Imenti South Sub County,Nkuene Ward,SQ70Q8iG3l0,AFIlzKNxXST,Y52XNJ50hYb
+296,15309.000000000000000,THARAKA-NITHI,Muthambi Sub County,Mitheru Ward,iRQ3mxm14gi,gLD3Q9fHpvy,T4urHM47nlm
+297,19373.000000000000000,THARAKA-NITHI,Muthambi Sub County,Muthambi Ward,BkpZUfBGM9x,gLD3Q9fHpvy,T4urHM47nlm
+298,22935.000000000000000,THARAKA-NITHI,Mwimbi Sub County,Mwimbi Ward,VOpqnQgC8om,wQ8XjZ7zVwL,T4urHM47nlm
+1606,27553.000000000000000,Bungoma,Sirisia Sub County,Namwela Ward,CenIfdVZZdC,whWfFA9D7td,KGHhQ5GLd4k
+461,21824.000000000000000,NYANDARUA,Oljoroorok Sub County,Charagita Ward,Yh0tdzyDjHY,fVSw60UAC3W,mYZacFNIB3h
+1609,35855.000000000000000,Bungoma,Kabuchai Sub County,Kabuchai/chwele Ward,g9tqOcjTCbA,k1mze33jOs0,KGHhQ5GLd4k
+1611,34140.000000000000000,Bungoma,Kabuchai Sub County,Bwake/luuya Ward,sKD6tJgPfbh,k1mze33jOs0,KGHhQ5GLd4k
+333,34225.000000000000000,KITUI,Mwingi North Sub County,Mumoni Ward,uyBigxC7fHZ,KXM9VnhuLfP,j8o6iO4Njsi
+334,33836.000000000000000,KITUI,Mwingi North Sub County,Tseikuru Ward,RJxeNbjGm71,KXM9VnhuLfP,j8o6iO4Njsi
+335,13084.000000000000000,KITUI,Mwingi North Sub County,Tharaka Ward,bBYJtOmYctd,KXM9VnhuLfP,j8o6iO4Njsi
+336,26274.000000000000000,KITUI,Mwingi West Sub County,Kyome/thaana Ward,tKZn1p295Nb,svwbDnzhgik,j8o6iO4Njsi
+337,27265.000000000000000,KITUI,Mwingi West Sub County,Nguutani Ward,wBisHlJd2aK,svwbDnzhgik,j8o6iO4Njsi
+338,24338.000000000000000,KITUI,Mwingi West Sub County,Migwani Ward,Apa4iLKG02o,svwbDnzhgik,j8o6iO4Njsi
+339,25897.000000000000000,KITUI,Mwingi West Sub County,Kiomo/kyethani Ward,vpiZlB5cdK7,svwbDnzhgik,j8o6iO4Njsi
+340,18846.000000000000000,KITUI,Mwingi Central Sub- County,Central Ward,vvsB9Kldjzy,uE7HKhqPOtf,j8o6iO4Njsi
+341,24886.000000000000000,KITUI,Mwingi Central Sub- County,Kivou Ward,Xl4sI0chC8S,uE7HKhqPOtf,j8o6iO4Njsi
+342,29313.000000000000000,KITUI,Mwingi Central Sub- County,Nguni Ward,rPWcODiKrP8,uE7HKhqPOtf,j8o6iO4Njsi
+343,27644.000000000000000,KITUI,Mwingi Central Sub- County,Nuu Ward,WOJ90HLwb6o,uE7HKhqPOtf,j8o6iO4Njsi
+344,19628.000000000000000,KITUI,Mwingi Central Sub- County,Mui Ward,XBMMn5fIwkJ,uE7HKhqPOtf,j8o6iO4Njsi
+1613,23135.000000000000000,Bungoma,Bumula Sub County,South Bukusu Ward,kMwgldKtwou,jkQZEow83MX,KGHhQ5GLd4k
+484,24536.000000000000000,NYERI,Nyeri South Sub County,Iria-ini Ward,mKOh6Ubsn0x,dd7jowvUO95,ptWVfaCIdVx
+485,21899.000000000000000,NYERI,Nyeri South Sub County,Chinga Ward,rFsKRF8TYWO,dd7jowvUO95,ptWVfaCIdVx
+616,15488.000000000000000,TURKANA,Turkana West Sub County,Nakalale Ward,qTEN4LVoVVL,HK5SUCMQmsw,kphDeKClFch
+352,30732.000000000000000,KITUI,Kitui Rural Sub County,Kwavonza/yatta Ward,LHmp6sPE2w7,vbauk0RRq9N,j8o6iO4Njsi
+353,22094.000000000000000,KITUI,Kitui Rural Sub County,Kanyangi Ward,pesguszdkri,vbauk0RRq9N,j8o6iO4Njsi
+354,22164.000000000000000,KITUI,Kitui Central  Sub County,Miambani Ward,iu8wSlOZmfl,MWqQbxWqACn,j8o6iO4Njsi
+355,26016.000000000000000,KITUI,Kitui Central  Sub County,Township Ward,xM6qhREfp7o,MWqQbxWqACn,j8o6iO4Njsi
+356,26705.000000000000000,KITUI,Kitui Central  Sub County,Kyangwithya west Ward,ENDuWpU74vp,MWqQbxWqACn,j8o6iO4Njsi
+641,27527.000000000000000,WEST POKOT,West Pokot Sub County,Riwo Ward,NZYstvTB9u9,ylWg6VvADJE,XWALbfAPa6n
+651,23223.000000000000000,WEST POKOT,Pokot North Sub County,Suam Ward,ieOIyNJbMxc,YXpHG1Ez8V2,XWALbfAPa6n
+652,22539.000000000000000,WEST POKOT,Pokot North Sub County,Kodich Ward,wVGyi6a7FKs,YXpHG1Ez8V2,XWALbfAPa6n
+653,14765.000000000000000,WEST POKOT,Pokot North Sub County,Kasei Ward,WbEoZcJapjw,YXpHG1Ez8V2,XWALbfAPa6n
+654,23684.000000000000000,WEST POKOT,Pokot North Sub County,Kapchok Ward,AXu2vRnnxOt,YXpHG1Ez8V2,XWALbfAPa6n
+655,28235.000000000000000,WEST POKOT,Pokot North Sub County,Kiwawa Ward,Yvjwozdmf1M,YXpHG1Ez8V2,XWALbfAPa6n
+1801,25934.000000000000000,Mombasa,Jomvu  Sub County,Miritini Ward,KgGyWS1YxMx,vSISrsNNHwq,wsBsC6gjHvn
+960,19951.000000000000000,KERICHO,Belgut Sub County,Chaik Ward,YnEUPEUnejZ,YnIAWg1T4AY,ihZsJ8alvtb
+1614,31923.000000000000000,Bungoma,Bumula Sub County,Bumula Ward,dOJaTypeyA9,jkQZEow83MX,KGHhQ5GLd4k
+1615,14035.000000000000000,Bungoma,Bumula Sub County,Khasoko Ward,NuxGvo5cvb1,jkQZEow83MX,KGHhQ5GLd4k
+663,36755.000000000000000,SAMBURU,Samburu Central Sub County,Maralal Ward,IEBWo4HwEfq,EmQRGVtvWy3,o36zCRjSd4G
+162,26737.000000000000000,WAJIR,Wajir North Sub County,Bute Ward,hp28cyo1lbf,qsjAa8FE8OS,CeLsrJOH0g9
+360,18126.000000000000000,KITUI,Kitui East Sub County,Nzambani Ward,Ekb0OY8S4Jm,d0Gu8FrRM0Y,j8o6iO4Njsi
+1618,20002.000000000000000,Bungoma,Bumula Sub County,West Bukusu Ward,gJUwKJIUKEc,jkQZEow83MX,KGHhQ5GLd4k
+1622,19017.000000000000000,Bungoma,Kanduyi Sub County,Township Ward,ysCS3ZD38VF,CUjthlounWV,KGHhQ5GLd4k
+1623,24499.000000000000000,Bungoma,Kanduyi Sub County,Khalaba Ward,AqsJZWunWRF,CUjthlounWV,KGHhQ5GLd4k
+1624,37933.000000000000000,Bungoma,Kanduyi Sub County,Musikoma Ward,jmsoF18bsh0,CUjthlounWV,KGHhQ5GLd4k
+1625,32288.000000000000000,Bungoma,Kanduyi Sub County,East Sang'alo Ward,jhQaAr01YU5,CUjthlounWV,KGHhQ5GLd4k
+1626,35781.000000000000000,Bungoma,Kanduyi Sub County,Marakaru/tuuti Ward,thvW4MLkf3E,CUjthlounWV,KGHhQ5GLd4k
+1627,33123.000000000000000,Bungoma,Kanduyi Sub County,West Sang'alo Ward,uNCqGdTcjkh,CUjthlounWV,KGHhQ5GLd4k
+1628,37808.000000000000000,Bungoma,Webuye  East Sub County,Mihuu Ward,frzFOocEhiu,f4AOiG8fYtn,KGHhQ5GLd4k
+1629,39791.000000000000000,Bungoma,Webuye  East Sub County,Ndivisi Ward,WskHX9On3vR,f4AOiG8fYtn,KGHhQ5GLd4k
+1630,23875.000000000000000,Bungoma,Webuye  East Sub County,Maraka Ward,chWsC9TTyF3,f4AOiG8fYtn,KGHhQ5GLd4k
+1631,31382.000000000000000,Bungoma,Webuye West Sub County,Misikhu Ward,PyDYqhwBSoP,aqYhbqKclsI,KGHhQ5GLd4k
+1632,30055.000000000000000,Bungoma,Webuye West Sub County,Sitikho Ward,CYjWRY8PNTJ,aqYhbqKclsI,KGHhQ5GLd4k
+1633,34451.000000000000000,Bungoma,Webuye West Sub County,Matulo Ward,DfKdo0FepVq,aqYhbqKclsI,KGHhQ5GLd4k
+97,15383.000000000000000,TANA RIVER,Bura Sub County,Hirimani Ward,vKo6mot8397,yWPcTwGwQ2B,JsH2bnvNt2d
+1831,33375.000000000000000,Kilifi,Kilifi North Sub County,Mnarani Ward,QvkC6t7JwZB,MEkEH8ZmcOU,nrI2khZx3d0
+1675,15765.000000000000000,Kakamega,Mumias West  Sub County,Mumias North Ward,Ma35n0snJbX,uRl5fBkhpcE,BjC1xL40gHo
+95,13461.000000000000000,TANA RIVER,Galole Sub County,Wayu Ward,OycKfvEFK77,A4SNYCxrrnv,JsH2bnvNt2d
+368,26176.000000000000000,KITUI,Kitui South Sub County,Ikutha Ward,hwHZgY7hwgN,d3hSQ3EtnPk,j8o6iO4Njsi
+370,35437.000000000000000,KITUI,Kitui South Sub County,Athi Ward,amA6INYYpDG,d3hSQ3EtnPk,j8o6iO4Njsi
+411,35350.000000000000000,MAKUENI,Mbooni  Sub County,Tulimani Ward,FNq96CChp6E,jxjGWCdfsib,BoDytkJQ4Qi
+412,33774.000000000000000,MAKUENI,Mbooni  Sub County,Mbooni Ward,wp8DtxcZfwK,jxjGWCdfsib,BoDytkJQ4Qi
+413,28185.000000000000000,MAKUENI,Mbooni  Sub County,Kithungo/Kitundu Ward,kbwrNLg8qn9,jxjGWCdfsib,BoDytkJQ4Qi
+414,37059.000000000000000,MAKUENI,Mbooni  Sub County,Kiteta-Kisau Ward,Y9QRNvbj4ig,jxjGWCdfsib,BoDytkJQ4Qi
+415,23082.000000000000000,MAKUENI,Mbooni  Sub County,Waia/Kako Ward,aMAJt97Ksnm,jxjGWCdfsib,BoDytkJQ4Qi
+416,27174.000000000000000,MAKUENI,Mbooni  Sub County,Kalawa/ Kathulumbi Ward,EQCXKT8S5SE,jxjGWCdfsib,BoDytkJQ4Qi
+417,38348.000000000000000,MAKUENI,Kilome Sub County,Kasikeu Ward,GzIJxIa88Fg,XAy1bjurhLU,BoDytkJQ4Qi
+418,26525.000000000000000,MAKUENI,Kilome Sub County,Mukaa Ward,sZE7f9VLEbp,XAy1bjurhLU,BoDytkJQ4Qi
+419,22991.000000000000000,MAKUENI,Kilome Sub County,Kiima Kiu/Kalanzoni Ward,VnerQmEfHq1,XAy1bjurhLU,BoDytkJQ4Qi
+420,38490.000000000000000,MAKUENI,Kaiti  Sub County,Ukia ward,INKzs9VvqEs,pKJ4NZGPzTA,BoDytkJQ4Qi
+421,21025.000000000000000,MAKUENI,Kaiti  Sub County,Kee ward,hlz6Fo6Dr90,pKJ4NZGPzTA,BoDytkJQ4Qi
+422,33952.000000000000000,MAKUENI,Kaiti  Sub County,Kilungu ward,ObrcNOdPKpV,pKJ4NZGPzTA,BoDytkJQ4Qi
+423,26649.000000000000000,MAKUENI,Kaiti  Sub County,Ilima ward,xB9PrSz7UNP,pKJ4NZGPzTA,BoDytkJQ4Qi
+424,25326.000000000000000,MAKUENI,Makueni  Sub County,Wote Ward,MGxM50hGFBS,AIGIQpolMRn,BoDytkJQ4Qi
+425,24477.000000000000000,MAKUENI,Makueni  Sub County,Muvau/Kikumini Ward,bMFoCdyYs5e,AIGIQpolMRn,BoDytkJQ4Qi
+426,23274.000000000000000,MAKUENI,Makueni  Sub County,Mavindini Ward,jGvMus41myr,AIGIQpolMRn,BoDytkJQ4Qi
+427,22054.000000000000000,MAKUENI,Makueni  Sub County,Kitise/Kithuki Ward,Jcz6ykVTJxT,AIGIQpolMRn,BoDytkJQ4Qi
+428,31277.000000000000000,MAKUENI,Makueni  Sub County,Kathonzweni Ward,uBWnkt16xIs,AIGIQpolMRn,BoDytkJQ4Qi
+429,37042.000000000000000,MAKUENI,Makueni  Sub County,Nzaui/Kilili/Kalamba Ward,Amj9UOaw3tP,AIGIQpolMRn,BoDytkJQ4Qi
+430,30348.000000000000000,MAKUENI,Makueni  Sub County,Mbitini Ward,VUT7af8sHh5,AIGIQpolMRn,BoDytkJQ4Qi
+431,42094.000000000000000,MAKUENI,Kibwezi West  Sub County,Makindu Ward,HHjcyeBEO9W,toa2Hl7iVQI,BoDytkJQ4Qi
+432,28208.000000000000000,MAKUENI,Kibwezi West  Sub County,Nguumo Ward,ErVmSqffPmn,toa2Hl7iVQI,BoDytkJQ4Qi
+433,20314.000000000000000,MAKUENI,Kibwezi West  Sub County,Kikumbulyu North Ward,EvQ0fdCX5Qi,toa2Hl7iVQI,BoDytkJQ4Qi
+434,25892.000000000000000,MAKUENI,Kibwezi West  Sub County,Kikumbulyu South Ward,QuGPZs62NHX,toa2Hl7iVQI,BoDytkJQ4Qi
+435,23764.000000000000000,MAKUENI,Kibwezi West  Sub County,Nguu/Masumba Ward,SJ03kAWXPyt,toa2Hl7iVQI,BoDytkJQ4Qi
+1676,28162.000000000000000,Kakamega,Mumias West  Sub County,Etenje Ward,KcXeBdcYXss,uRl5fBkhpcE,BjC1xL40gHo
+1677,30721.000000000000000,Kakamega,Mumias West  Sub County,Musanda Ward,vi6Huowv9e7,uRl5fBkhpcE,BjC1xL40gHo
+113,11382.000000000000000,TAITA TAVETA,Taveta Sub County,Bomani Ward,umrac2I2Sg9,jNzRdAwjaQ1,QyGNX2DpR4h
+114,20648.000000000000000,TAITA TAVETA,Taveta Sub County,Mboghoni Ward,SRbWfuqghtn,jNzRdAwjaQ1,QyGNX2DpR4h
+129,13686.000000000000000,TAITA TAVETA,Voi Sub County,Kasigau Ward,kMQqsjpcUFH,yoGLpCTgjed,QyGNX2DpR4h
+154,67937.000000000000000,GARISSA,Fafi Sub County,Jarajila Ward,P8C6Fcb3Q8n,RScEHA3V38d,uyOrcHZBpW0
+155,5108.000000000000000,GARISSA,Fafi Sub County,Fafi Ward,kSajt3nW2ip,RScEHA3V38d,uyOrcHZBpW0
+163,20967.000000000000000,WAJIR,Wajir North Sub County,Korondile Ward,nbDWw7ouQOZ,qsjAa8FE8OS,CeLsrJOH0g9
+183,40403.000000000000000,WAJIR,Eldas Sub County,Elnur/tula tula Ward,CisxX3iXbp9,x6Z1sBeiyqQ,CeLsrJOH0g9
+191,42557.000000000000000,MANDERA,MANDERA WEST,TAKABA SOUTH,QPvTzWqCuvE,H5RvDZkoDJL,R6f9znhg37c
+192,33542.000000000000000,MANDERA,MANDERA WEST,TAKABA,cnOOaygI2G3,H5RvDZkoDJL,R6f9znhg37c
+184,24542.000000000000000,WAJIR,Wajir South Sub County,Benane Ward,TRdcXjEmmMS,U7KFQn3Up3o,CeLsrJOH0g9
+185,10618.000000000000000,WAJIR,Wajir South Sub County,Burder Ward,dFbf5rdQdI9,U7KFQn3Up3o,CeLsrJOH0g9
+1832,31752.000000000000000,Kilifi,Kilifi South Sub County,Junju Ward,FyFIsGw4IJR,xWAZBULwGxp,nrI2khZx3d0
+1684,30584.000000000000000,Kakamega,Matungu Sub County,Mayoni Ward,PXAviuGXJGl,ssbO49f0iLN,BjC1xL40gHo
+1685,31568.000000000000000,Kakamega,Matungu Sub County,Namamali Ward,LaVcN8NDdNa,ssbO49f0iLN,BjC1xL40gHo
+1686,31250.000000000000000,Kakamega,Butere Sub County,Marama West Ward,cYwe7Q54BbE,K7mZpm8COh7,BjC1xL40gHo
+1687,44717.000000000000000,Kakamega,Butere Sub County,Marama Central Ward,p8bUOZBUz0i,K7mZpm8COh7,BjC1xL40gHo
+1688,23065.000000000000000,Kakamega,Butere Sub County,Marenyo-shianda Ward,KqnktZiiyGZ,K7mZpm8COh7,BjC1xL40gHo
+1689,20796.000000000000000,Kakamega,Butere Sub County,Marama North Ward,CcUrOE5FsJW,K7mZpm8COh7,BjC1xL40gHo
+1690,19952.000000000000000,Kakamega,Butere Sub County,Marama South Ward,NTHccL0KJ5j,K7mZpm8COh7,BjC1xL40gHo
+1692,19905.000000000000000,Kakamega,Khwisero Sub County,Kisa East Ward,YROnQ32WW3W,UhQS2Mv0PCK,BjC1xL40gHo
+1693,21230.000000000000000,Kakamega,Khwisero Sub County,Kisa West Ward,S3ZBq5xn6AN,UhQS2Mv0PCK,BjC1xL40gHo
+1694,42200.000000000000000,Kakamega,Khwisero Sub County,Kisa Central Ward,gccbvaIlS0w,UhQS2Mv0PCK,BjC1xL40gHo
+1695,23496.000000000000000,Kakamega,Shinyalu Sub County,Isukha North Ward,w6TKm6OEgE7,sjlSPeRgl7d,BjC1xL40gHo
+1696,28285.000000000000000,Kakamega,Shinyalu Sub County,Murhanda Ward,MtRX8xhwq3F,sjlSPeRgl7d,BjC1xL40gHo
+1697,34545.000000000000000,Kakamega,Shinyalu Sub County,Isukha Central Ward,msMd2VRjWK8,sjlSPeRgl7d,BjC1xL40gHo
+1698,35807.000000000000000,Kakamega,Shinyalu Sub County,Isukha South Ward,xBOLvibwvDH,sjlSPeRgl7d,BjC1xL40gHo
+1699,17930.000000000000000,Kakamega,Shinyalu Sub County,Isukha East Ward,LwmmrE9075H,sjlSPeRgl7d,BjC1xL40gHo
+1700,19412.000000000000000,Kakamega,Shinyalu Sub County,Isukha West Ward,O32Jm6NiiBu,sjlSPeRgl7d,BjC1xL40gHo
+1701,20917.000000000000000,Kakamega,Ikolomani Sub County,Idakho South Ward,gAnhNKgtbOq,BE6HMtlHyl1,BjC1xL40gHo
+1702,26757.000000000000000,Kakamega,Ikolomani Sub County,Idakho East Ward,WVPQgX90uxe,BE6HMtlHyl1,BjC1xL40gHo
+1703,25861.000000000000000,Kakamega,Ikolomani Sub County,Idakho North Ward,bW4Zp3tt8W7,BE6HMtlHyl1,BjC1xL40gHo
+1704,31134.000000000000000,Kakamega,Ikolomani Sub County,Idakho Central Ward,Hh55s4mboMi,BE6HMtlHyl1,BjC1xL40gHo
+1705,25192.000000000000000,Busia,Teso North Sub County,Malaba Central Ward,UpSuhJyWAIc,GpEIlwz3FvT,Tvf1zgVZ0K4
+1706,13765.000000000000000,Busia,Teso North Sub County,Malaba North Ward,jvY4ig8JLYY,GpEIlwz3FvT,Tvf1zgVZ0K4
+1707,20791.000000000000000,Busia,Teso North Sub County,Ang'urai South Ward,OSO67hxKiUf,GpEIlwz3FvT,Tvf1zgVZ0K4
+1708,23400.000000000000000,Busia,Teso North Sub County,Ang'urai North Ward,oOa6cVAodY5,GpEIlwz3FvT,Tvf1zgVZ0K4
+1709,15549.000000000000000,Busia,Teso North Sub County,Ang'urai East Ward,pVLJ4TYVNAR,GpEIlwz3FvT,Tvf1zgVZ0K4
+1710,19250.000000000000000,Busia,Teso North Sub County,Malaba South Ward,VG4qlKr4Z2A,GpEIlwz3FvT,Tvf1zgVZ0K4
+1711,26162.000000000000000,Busia,Teso South Sub County,Ang'orom Ward,umi4GRQTwG0,EhchjCHkhJ9,Tvf1zgVZ0K4
+1712,30707.000000000000000,Busia,Teso South Sub County,Chakol South Ward,Ksb8Prco66C,EhchjCHkhJ9,Tvf1zgVZ0K4
+1713,18655.000000000000000,Busia,Teso South Sub County,Chakol North Ward,rthnyPewuyf,EhchjCHkhJ9,Tvf1zgVZ0K4
+1714,17423.000000000000000,Busia,Teso South Sub County,Amukura West Ward,GcsaAX4B8x8,EhchjCHkhJ9,Tvf1zgVZ0K4
+1715,23357.000000000000000,Busia,Teso South Sub County,Amukura East Ward,xPmSqaPoPFT,EhchjCHkhJ9,Tvf1zgVZ0K4
+452,20037.000000000000000,NYANDARUA,Kipipiri Sub County,Githioro Ward,xK8OudWDlHV,KlVgeHmvG6n,mYZacFNIB3h
+351,24858.000000000000000,KITUI,Kitui Rural Sub County,Mbitini Ward,MLjJaYTdwrs,vbauk0RRq9N,j8o6iO4Njsi
+454,25834.000000000000000,NYANDARUA,Olkalou Sub County,Kanjuiri range Ward,QetTI3w7Tfe,Lm9RMwhIu3G,mYZacFNIB3h
+1716,20756.000000000000000,Busia,Teso South Sub County,Amukura Central Ward,VAOZFeKsbAT,EhchjCHkhJ9,Tvf1zgVZ0K4
+359,25452.000000000000000,KITUI,Kitui East Sub County,Zombe/mwitika Ward,fgZAe9zffHF,d0Gu8FrRM0Y,j8o6iO4Njsi
+225,12695.000000000000000,MARSABIT,MOYALE,MOYALE TOWNSHIP,kHOR6vEvDdY,sZjPgbWI5ra,Eey8fT4Im3y
+226,9754.000000000000000,MARSABIT,MOYALE,URAN,KKOlWI3X5nP,sZjPgbWI5ra,Eey8fT4Im3y
+227,5195.000000000000000,MARSABIT,MOYALE,OBBU,fBMKIsnV2ZV,sZjPgbWI5ra,Eey8fT4Im3y
+228,18628.000000000000000,MARSABIT,NORTH HORR,DUKANA,kSbjSiQEQ91,j6fqt5TYqPZ,Eey8fT4Im3y
+229,19225.000000000000000,MARSABIT,NORTH HORR,MAIKONA,hratVLq4Zft,j6fqt5TYqPZ,Eey8fT4Im3y
+206,30399.000000000000000,MANDERA,MANDERA SOUTH,WARGADUD,Pp4y0VFaeLg,qyhVIMG2rUw,R6f9znhg37c
+457,23952.000000000000000,NYANDARUA,Olkalou Sub County,Rurii Ward,eBk1tdli8XV,Lm9RMwhIu3G,mYZacFNIB3h
+96,16403.000000000000000,TANA RIVER,Bura Sub County,Chewele Ward,SDz17fk0X0k,yWPcTwGwQ2B,JsH2bnvNt2d
+234,8960.000000000000000,MARSABIT,SAKU,KARARE,MhwOKHDNTsU,WILszL634oZ,Eey8fT4Im3y
+235,20784.000000000000000,MARSABIT,SAKU,MARSABIT CENTRAL,PVB8iZMsHnd,WILszL634oZ,Eey8fT4Im3y
+236,16358.000000000000000,MARSABIT,LAISAMIS,LOIYANGALANI,xjbfzSmFPMk,eZpy65ooW0m,Eey8fT4Im3y
+100,26284.000000000000000,TANA RIVER,Bura Sub County,Madogo Ward,yTb02ghmk0V,yWPcTwGwQ2B,JsH2bnvNt2d
+1722,9170.000000000000000,Busia,Matayos Sub County,Mayenje Ward,Fh0N1GDepVx,tvkI2HSIRW9,Tvf1zgVZ0K4
+1726,20211.000000000000000,Busia,Butula Sub County,Marachi West Ward,WnuuhfEMxBf,RIBiZFJxB1K,Tvf1zgVZ0K4
+486,19093.000000000000000,NYERI,Nyeri South Sub County,Karima Ward,jrWulcAQIzP,dd7jowvUO95,ptWVfaCIdVx
+487,18533.000000000000000,NYERI,Mukurweini Sub County,Gikondi Ward,ohWtG7fskG2,zT8Zj5vNYCy,ptWVfaCIdVx
+488,20699.000000000000000,NYERI,Mukurweini Sub County,Rugi Ward,EitnMJgAT0z,zT8Zj5vNYCy,ptWVfaCIdVx
+489,18417.000000000000000,NYERI,Mukurweini Sub County,Mukurwe-ini west Ward,WQtfFgLYHGe,zT8Zj5vNYCy,ptWVfaCIdVx
+490,26283.000000000000000,NYERI,Mukurweini Sub County,Mukurwe-ini central Ward,GAsUkSqRL2f,zT8Zj5vNYCy,ptWVfaCIdVx
+491,23872.000000000000000,NYERI,Nyeri Central Sub County,Kiganjo/mathari Ward,Jf0JOsPw0vn,GXnD5lHeanK,ptWVfaCIdVx
+492,25018.000000000000000,NYERI,Nyeri Central Sub County,Rware Ward,At5MPktCh4M,GXnD5lHeanK,ptWVfaCIdVx
+493,21804.000000000000000,NYERI,Nyeri Central Sub County,Gatitu/muruguru Ward,fYc1aD2k4cK,GXnD5lHeanK,ptWVfaCIdVx
+494,22160.000000000000000,NYERI,Nyeri Central Sub County,RURING'U / Karia Ward,h8Uo12ri0RF,GXnD5lHeanK,ptWVfaCIdVx
+495,26419.000000000000000,NYERI,Nyeri Central Sub County,Kamakwa/mukaro Ward,iQw990SbVXY,GXnD5lHeanK,ptWVfaCIdVx
+496,26864.000000000000000,KIRINYAGA,Kirinyaga North/Mwea West Sub County,Mutithi Ward,K3uHCihezz7,f6EOn3xI9YH,Ulj33KBau7V
+497,19300.000000000000000,KIRINYAGA,Kirinyaga North/Mwea West Sub County,Kangai Ward,fghL5DnydV2,f6EOn3xI9YH,Ulj33KBau7V
+498,23219.000000000000000,KIRINYAGA,Kirinyaga North/Mwea West Sub County,Thiba Ward,Fx3891QAEv0,f6EOn3xI9YH,Ulj33KBau7V
+499,17881.000000000000000,KIRINYAGA,Kirinyaga North/Mwea West Sub County,Wamumu Ward,zMPe9KHPLp0,f6EOn3xI9YH,Ulj33KBau7V
+500,25016.000000000000000,KIRINYAGA,Kirinyaga South Sub County,Nyangati Ward,Gsl9Z7f1kbX,jHmpQUlnkQk,Ulj33KBau7V
+501,28250.000000000000000,KIRINYAGA,Kirinyaga South Sub County,Murinduko Ward,yXzhbb6Zwi8,jHmpQUlnkQk,Ulj33KBau7V
+502,18337.000000000000000,KIRINYAGA,Kirinyaga South Sub County,Gathigiriri Ward,tWc3XLOEMO1,jHmpQUlnkQk,Ulj33KBau7V
+503,31645.000000000000000,KIRINYAGA,Kirinyaga South Sub County,Tebere Ward,qrCcjRw4mdw,jHmpQUlnkQk,Ulj33KBau7V
+504,38489.000000000000000,KIRINYAGA,Kirinyaga East Sub County,Kabare Ward,E8dTFNJYgtl,yOaHQLOLd1H,Ulj33KBau7V
+505,20027.000000000000000,KIRINYAGA,Kirinyaga East Sub County,Baragwi Ward,zY1T5H8vk9z,yOaHQLOLd1H,Ulj33KBau7V
+506,24190.000000000000000,KIRINYAGA,Kirinyaga East Sub County,Njukiine Ward,hnLq51q52zo,yOaHQLOLd1H,Ulj33KBau7V
+507,18064.000000000000000,KIRINYAGA,Kirinyaga East Sub County,Ngariama Ward,ClOFuXgqcFJ,yOaHQLOLd1H,Ulj33KBau7V
+508,23902.000000000000000,KIRINYAGA,Kirinyaga East Sub County,Karumandi Ward,jlthZ0Rz41H,yOaHQLOLd1H,Ulj33KBau7V
+509,30536.000000000000000,KIRINYAGA,Kirinyaga West Sub County,Mukure Ward,fCiM1MhUvOj,A34NiI4rgnf,Ulj33KBau7V
+510,41036.000000000000000,KIRINYAGA,Kirinyaga West Sub County,Kiine Ward,BSHD4ORT4xu,A34NiI4rgnf,Ulj33KBau7V
+511,27943.000000000000000,KIRINYAGA,Kirinyaga West Sub County,Kariti Ward,LAhI3yCEdB1,A34NiI4rgnf,Ulj33KBau7V
+1729,20865.000000000000000,Busia,Butula Sub County,Marachi East Ward,IS2J5mu8wNo,RIBiZFJxB1K,Tvf1zgVZ0K4
+1730,24054.000000000000000,Busia,Butula Sub County,Marachi North Ward,uHObeeBxuHY,RIBiZFJxB1K,Tvf1zgVZ0K4
+1731,18654.000000000000000,Busia,Butula Sub County,Elugulu Ward,rIwgAyjb2JZ,RIBiZFJxB1K,Tvf1zgVZ0K4
+1732,28143.000000000000000,Busia,Samia Sub County,Namboboto Nambuku Ward,TXzHtrNrFeb,NHRktMsAkO1,Tvf1zgVZ0K4
+1733,20193.000000000000000,Busia,Samia Sub County,Nangina Ward,nuZowpCKvMd,NHRktMsAkO1,Tvf1zgVZ0K4
+1734,25378.000000000000000,Busia,Samia Sub County,Ageng'a Nanguba Ward,soQ5zdUZi2H,NHRktMsAkO1,Tvf1zgVZ0K4
+1735,19786.000000000000000,Busia,Samia Sub County,Bwiri Ward,fKK4JksHULe,NHRktMsAkO1,Tvf1zgVZ0K4
+2097,33583.000000000000000,Muranga,Mathioya Sub County,Kiru Ward,g28fToPCZhp,u7Gkh63FYe4,ahwTMNAJvrL
+2098,20905.000000000000000,Muranga,Mathioya Sub County,Kamacharia Ward,NJeG4zy8zci,u7Gkh63FYe4,ahwTMNAJvrL
+2099,28898.000000000000000,Muranga,Kiharu Sub County,Wangu Ward,zjVTfkcrCb6,VDlzh6w4LKv,ahwTMNAJvrL
+2100,29192.000000000000000,Muranga,Kiharu Sub County,Mugoiri Ward,EVc3FnW4kcm,VDlzh6w4LKv,ahwTMNAJvrL
+2101,33171.000000000000000,Muranga,Kiharu Sub County,Mbiri Ward,sG1YvrNWJTV,VDlzh6w4LKv,ahwTMNAJvrL
+2102,27484.000000000000000,Muranga,Kiharu Sub County,Township Ward,ELXBhFCPcHC,VDlzh6w4LKv,ahwTMNAJvrL
+2103,28943.000000000000000,Muranga,Kiharu Sub County,Murarandia Ward,d0uIgkgHOaB,VDlzh6w4LKv,ahwTMNAJvrL
+1741,43438.000000000000000,Nakuru,Molo  Sub County,Elburgon Ward,X5bxxQN8nP5,RJ4LGJiSHFg,ob6SxuRcqU4
+1749,57429.000000000000000,Nakuru,Njoro  Sub County,Njoro Ward,TaCopZQ4jLn,gSJXzH1DM75,ob6SxuRcqU4
+1750,15692.000000000000000,Nakuru,Naivasha  Sub County,Biashara Ward,lW5g42Bv4Rk,yZJJPoSGhY6,ob6SxuRcqU4
+1751,39209.000000000000000,Nakuru,Naivasha  Sub County,Hells Gate Ward,ZphUbBMB5yv,yZJJPoSGhY6,ob6SxuRcqU4
+2104,33388.000000000000000,Muranga,Kiharu Sub County,Gaturi Ward,K8rhUYNmJhw,VDlzh6w4LKv,ahwTMNAJvrL
+2105,19586.000000000000000,Muranga,Kigumo Sub County,Kahumbu Ward,X7arkK99dq7,tyfDsdZ1h3R,ahwTMNAJvrL
+1763,21086.000000000000000,Nakuru,Kuresoi South  Sub County,Amalo Ward,okaRgHkp8W5,QwGkDS0DNls,ob6SxuRcqU4
+1764,33549.000000000000000,Nakuru,Kuresoi South  Sub County,Keringet Ward,ZSBD8btR2UC,QwGkDS0DNls,ob6SxuRcqU4
+1765,26193.000000000000000,Nakuru,Kuresoi South  Sub County,Kiptagich Ward,wKz9Uw8QczF,QwGkDS0DNls,ob6SxuRcqU4
+1766,34607.000000000000000,Nakuru,Kuresoi South  Sub County,Tinet Ward,fi569D0zk8J,QwGkDS0DNls,ob6SxuRcqU4
+611,21338.000000000000000,TURKANA,Turkana North Sub County,Kaeris Ward,PfM59R0hE2L,mWpq607yRXh,kphDeKClFch
+612,34289.000000000000000,TURKANA,Turkana North Sub County,Lakezone Ward,yVMtm0p4OeM,mWpq607yRXh,kphDeKClFch
+613,21932.000000000000000,TURKANA,Turkana North Sub County,Lapur Ward,sKV3BVTK2cJ,mWpq607yRXh,kphDeKClFch
+614,29855.000000000000000,TURKANA,Kibish Sub County,Kaaleng/kaikor Ward,nVDsZkKZSil,AXNntZ7T30a,kphDeKClFch
+2106,23419.000000000000000,Muranga,Kigumo Sub County,Muthithi Ward,qe32Mlgh56x,tyfDsdZ1h3R,ahwTMNAJvrL
+2107,23320.000000000000000,Muranga,Kigumo Sub County,Kigumo Ward,H8uphttPusS,tyfDsdZ1h3R,ahwTMNAJvrL
+2108,29195.000000000000000,Muranga,Kigumo Sub County,Kangari Ward,PyVnQFcBqOT,tyfDsdZ1h3R,ahwTMNAJvrL
+2109,28246.000000000000000,Muranga,Kigumo Sub County,Kinyona Ward,bpbzvOdMDqN,tyfDsdZ1h3R,ahwTMNAJvrL
+2110,32365.000000000000000,Muranga,Muranga South Sub County,Kimorori/wempa Ward,D8f8vrysA4J,l46g2PZUjoh,ahwTMNAJvrL
+2111,26910.000000000000000,Muranga,Muranga South Sub County,Makuyu Ward,U3N4bJZ2BL0,l46g2PZUjoh,ahwTMNAJvrL
+2112,21195.000000000000000,Muranga,Muranga South Sub County,Kambiti Ward,ul9ur7nq171,l46g2PZUjoh,ahwTMNAJvrL
+2113,24189.000000000000000,Muranga,Muranga South Sub County,Kamahuhu Ward,H7KVdIvj4Sp,l46g2PZUjoh,ahwTMNAJvrL
+2114,23253.000000000000000,Muranga,Muranga South Sub County,Ichagaki Ward,pjBltTaHYUz,l46g2PZUjoh,ahwTMNAJvrL
+2115,24360.000000000000000,Muranga,Muranga South Sub County,Nginda Ward,JqeBiHQ9lNI,l46g2PZUjoh,ahwTMNAJvrL
+2116,18005.000000000000000,Muranga,Kandara Sub County,Ng'araria Ward,GqsqQj9CDst,gwYTo0wITYX,ahwTMNAJvrL
+2117,23535.000000000000000,Muranga,Kandara Sub County,Muruka Ward,X7rwLIDSf7d,gwYTo0wITYX,ahwTMNAJvrL
+2118,28847.000000000000000,Muranga,Kandara Sub County,Kagundu-ini Ward,qNMJbWjRI45,gwYTo0wITYX,ahwTMNAJvrL
+2119,28363.000000000000000,Muranga,Kandara Sub County,Gaichanjiru Ward,H3V7py1sKHI,gwYTo0wITYX,ahwTMNAJvrL
+2120,27182.000000000000000,Muranga,Kandara Sub County,Ithiru Ward,Wdh5QDM2Ov1,gwYTo0wITYX,ahwTMNAJvrL
+2121,30731.000000000000000,Muranga,Kandara Sub County,Ruchu Ward,WE5SA6SLnRY,gwYTo0wITYX,ahwTMNAJvrL
+2122,19359.000000000000000,Muranga,Gatanga Sub County,Ithanga Ward,qduwDtFCdfH,Z7ALMtFNfeZ,ahwTMNAJvrL
+2123,31144.000000000000000,Muranga,Gatanga Sub County,Kakuzi/mitubiri Ward,v5Uz1hZEGu3,Z7ALMtFNfeZ,ahwTMNAJvrL
+1727,18270.000000000000000,Busia,Butula Sub County,Kingandole Ward,uHJ0GgTgj0p,RIBiZFJxB1K,Tvf1zgVZ0K4
+462,19066.000000000000000,NYANDARUA,Ndaragwa Sub County,Leshau/pondo Ward,Nv8G0Ki2owJ,EESGLsSLTqH,mYZacFNIB3h
+618,45664.000000000000000,TURKANA,Turkana West Sub County,Lopur Ward,Mdegig3qDW9,HK5SUCMQmsw,kphDeKClFch
+619,43262.000000000000000,TURKANA,Turkana West Sub County,Letea Ward,be0Y1B0phrY,HK5SUCMQmsw,kphDeKClFch
+620,17624.000000000000000,TURKANA,Turkana West Sub County,Songot Ward,wMAoxOk8ORf,HK5SUCMQmsw,kphDeKClFch
+2124,23832.000000000000000,Muranga,Gatanga Sub County,Mugumo-ini Ward,WnEb4RUZg21,Z7ALMtFNfeZ,ahwTMNAJvrL
+2125,27131.000000000000000,Muranga,Gatanga Sub County,Kihumbu-ini Ward,xaHRe14dY0G,Z7ALMtFNfeZ,ahwTMNAJvrL
+2126,23959.000000000000000,Muranga,Gatanga Sub County,Gatanga Ward,yg2YesgFsrG,Z7ALMtFNfeZ,ahwTMNAJvrL
+2127,38172.000000000000000,Muranga,Gatanga Sub County,Kariara Ward,F0uYRw2XYg5,Z7ALMtFNfeZ,ahwTMNAJvrL
+2128,30142.000000000000000,Uasin Gishu,Soy Sub County,Moi's Bridge Ward,wyQ3FlLalVy,lmr1q6dTaso,pZqQRRW7PHP
+160,32375.000000000000000,GARISSA,Ijara Sub County,Masalani Ward,WRLhcN3G2DL,l5E6PiIUs1J,uyOrcHZBpW0
+2129,19076.000000000000000,Uasin Gishu,Soy Sub County,Kapkures Ward,cSNEKHwtiWH,lmr1q6dTaso,pZqQRRW7PHP
+2130,31433.000000000000000,Uasin Gishu,Soy Sub County,Ziwa Ward,DUsGbpnzvet,lmr1q6dTaso,pZqQRRW7PHP
+2133,25068.000000000000000,Uasin Gishu,Soy Sub County,Soy Ward,m7g3tve46XL,lmr1q6dTaso,pZqQRRW7PHP
+2134,12150.000000000000000,Uasin Gishu,Soy Sub County,Kuinet/kapsuswa Ward,HglOFYGPmKB,lmr1q6dTaso,pZqQRRW7PHP
+2135,30805.000000000000000,Uasin Gishu,Turbo Sub County,Ngenyilel Ward,NXNdgSCo71E,KuprsuBe1l0,pZqQRRW7PHP
+2136,30512.000000000000000,Uasin Gishu,Turbo Sub County,Tapsagoi Ward,w6dTkyKAgzB,KuprsuBe1l0,pZqQRRW7PHP
+2137,28290.000000000000000,Uasin Gishu,Turbo Sub County,Kamagut Ward,P1RSkho9WMu,KuprsuBe1l0,pZqQRRW7PHP
+2138,53659.000000000000000,Uasin Gishu,Turbo Sub County,Kiplombe Ward,U9vp5b6AuGm,KuprsuBe1l0,pZqQRRW7PHP
+2139,28593.000000000000000,Uasin Gishu,Turbo Sub County,Kapsaos Ward,Itj44Rse7au,KuprsuBe1l0,pZqQRRW7PHP
+2140,38545.000000000000000,Uasin Gishu,Turbo Sub County,Huruma Ward,GCgCUcOL0Mz,KuprsuBe1l0,pZqQRRW7PHP
+161,20434.000000000000000,WAJIR,Wajir North Sub County,Gurar Ward,w7fqbD2ws7l,qsjAa8FE8OS,CeLsrJOH0g9
+345,20890.000000000000000,KITUI,Mwingi Central Sub- County,Waita Ward,sTm9i4x7TTQ,uE7HKhqPOtf,j8o6iO4Njsi
+346,34140.000000000000000,KITUI,Kitui West  Sub County,Mutongoni Ward,IgBhlSMshmk,cmWAJB5kCDW,j8o6iO4Njsi
+347,25385.000000000000000,KITUI,Kitui West  Sub County,Kauwi Ward,T9ZjyItHbW9,cmWAJB5kCDW,j8o6iO4Njsi
+348,24081.000000000000000,KITUI,Kitui West  Sub County,Matinyani Ward,fIEkqCnDeKD,cmWAJB5kCDW,j8o6iO4Njsi
+349,18708.000000000000000,KITUI,Kitui West  Sub County,Kwamutonga/kithumula Ward,rWDqxS3mGCY,cmWAJB5kCDW,j8o6iO4Njsi
+482,27670.000000000000000,NYERI,Mathira East Sub County,Karatina town Ward,oCDeWaZZImt,vznKK4IegIL,ptWVfaCIdVx
+483,21846.000000000000000,NYERI,Nyeri South Sub County,Mahiga Ward,t5i5lYBO7C5,dd7jowvUO95,ptWVfaCIdVx
+362,23011.000000000000000,KITUI,Kitui East Sub County,Voo/kyamatu Ward,fYDplrDSXQI,d0Gu8FrRM0Y,j8o6iO4Njsi
+363,15506.000000000000000,KITUI,Kitui East Sub County,Endau/malalani Ward,p0vnle5S7g2,d0Gu8FrRM0Y,j8o6iO4Njsi
+364,19098.000000000000000,KITUI,Kitui East Sub County,Mutitu/kaliku Ward,qWZAzrzTN2v,d0Gu8FrRM0Y,j8o6iO4Njsi
+365,36185.000000000000000,KITUI,Kitui South Sub County,Ikanga/kyatune Ward,BLSmZHA1d92,d3hSQ3EtnPk,j8o6iO4Njsi
+436,25657.000000000000000,MAKUENI,Kibwezi West  Sub County,Emali/Mulala Ward,Q1FhAEC0Ode,toa2Hl7iVQI,BoDytkJQ4Qi
+437,32270.000000000000000,MAKUENI,Kibwezi East  Sub County,Masongaleni Ward,oVE1UXXDGcA,ZhhyithPNoI,BoDytkJQ4Qi
+438,35123.000000000000000,MAKUENI,Kibwezi East  Sub County,Mtito Andei Ward,LAm2YbBslNB,ZhhyithPNoI,BoDytkJQ4Qi
+439,32160.000000000000000,MAKUENI,Kibwezi East  Sub County,Thange Ward,zU0IodQbzMz,ZhhyithPNoI,BoDytkJQ4Qi
+440,32643.000000000000000,MAKUENI,Kibwezi East  Sub County,Ivingoni/Nzambani Ward,wFxBj0Hldme,ZhhyithPNoI,BoDytkJQ4Qi
+441,26977.000000000000000,NYANDARUA,Kinangop Sub County,Engineer Ward,lcpTYDEAUs9,RAnL5kBKMIt,mYZacFNIB3h
+442,26656.000000000000000,NYANDARUA,Kinangop Sub County,Gathara Ward,vH5k45ZRgZG,RAnL5kBKMIt,mYZacFNIB3h
+443,20898.000000000000000,NYANDARUA,Kinangop Sub County,North kinangop Ward,UU5SWe7Tv1P,RAnL5kBKMIt,mYZacFNIB3h
+444,26920.000000000000000,NYANDARUA,Kinangop Sub County,Murungaru Ward,ZvHXuhKoAuI,RAnL5kBKMIt,mYZacFNIB3h
+449,32051.000000000000000,NYANDARUA,Kipipiri Sub County,Wanjohi Ward,d5qc4G0CclB,KlVgeHmvG6n,mYZacFNIB3h
+450,22991.000000000000000,NYANDARUA,Kipipiri Sub County,Kipipiri Ward,EAMXljqgEhV,KlVgeHmvG6n,mYZacFNIB3h
+512,23359.000000000000000,KIRINYAGA,Kirinyaga Central Sub County,Mutira Ward,xFI9cbIii9H,JKNaaTjVapG,Ulj33KBau7V
+513,32333.000000000000000,KIRINYAGA,Kirinyaga Central Sub County,Kanyekini Ward,WtvrxP6Ra8K,JKNaaTjVapG,Ulj33KBau7V
+514,30336.000000000000000,KIRINYAGA,Kirinyaga Central Sub County,Kerugoya Ward,pToDCseGSVa,JKNaaTjVapG,Ulj33KBau7V
+515,27327.000000000000000,KIRINYAGA,Kirinyaga Central Sub County,Inoi Ward,upv9qERTCCI,JKNaaTjVapG,Ulj33KBau7V
+624,34212.000000000000000,TURKANA,Turkana Central Sub County,Kerio Delta Ward,zwhTzysKfKc,zd8rhYqGowE,kphDeKClFch
+625,22695.000000000000000,TURKANA,Turkana Central Sub County,KANG'ATOTHA Ward,qQtpJ2wdCay,zd8rhYqGowE,kphDeKClFch
+626,19477.000000000000000,TURKANA,Turkana Central Sub County,Kalokol Ward,DaWvBbVWP0W,zd8rhYqGowE,kphDeKClFch
+2044,55158.000000000000000,Nairobi,Ruaraka  Sub County,Mathare North Ward,dOQTHZsuaIb,Cc8uEFkzfVf,jkG3zaihdSs
+1728,19816.000000000000000,Busia,Butula Sub County,Marachi Central Ward,vURFh88SwIe,RIBiZFJxB1K,Tvf1zgVZ0K4
+1736,10381.000000000000000,Busia,Bunyala Sub County,Bunyala Central Ward,L8VRh5JlUik,zI6vnsXresW,Tvf1zgVZ0K4
+2047,70641.000000000000000,Nairobi,Embakasi South Sub County,Imara Daima Ward,Nt7PPe0Vdou,aDp1odOWYC1,jkG3zaihdSs
+2141,28021.000000000000000,Uasin Gishu,Moiben Sub County,Tembelio Ward,ZDarbsCJmOy,q8R0FA1hxnP,pZqQRRW7PHP
+2142,16220.000000000000000,Uasin Gishu,Moiben Sub County,Sergoit Ward,TCTO059sj6I,q8R0FA1hxnP,pZqQRRW7PHP
+2143,26048.000000000000000,Uasin Gishu,Moiben Sub County,Karuna/meibeki Ward,AwwBKeGhmam,q8R0FA1hxnP,pZqQRRW7PHP
+2144,25774.000000000000000,Uasin Gishu,Moiben Sub County,Moiben Ward,mKtIgRuq39B,q8R0FA1hxnP,pZqQRRW7PHP
+2145,60965.000000000000000,Uasin Gishu,Moiben Sub County,Kimumu Ward,VUb1Te4ZsaL,q8R0FA1hxnP,pZqQRRW7PHP
+2146,33438.000000000000000,Uasin Gishu,Ainabkoi Sub County,Kapsoya Ward,H9e1tEercdW,mYlMs4xTj82,pZqQRRW7PHP
+2147,36173.000000000000000,Uasin Gishu,Ainabkoi Sub County,Kaptagat Ward,cYwuj1W0Wux,mYlMs4xTj82,pZqQRRW7PHP
+2148,33431.000000000000000,Uasin Gishu,Ainabkoi Sub County,Ainabkoi/olare Ward,keTxMrb6Oag,mYlMs4xTj82,pZqQRRW7PHP
+2149,31030.000000000000000,Uasin Gishu,Kapseret Sub County,Simat/ Kapseret Ward,G30113eUpwM,u9yagZzK49q,pZqQRRW7PHP
+2150,20367.000000000000000,Uasin Gishu,Kapseret Sub County,Kipkenyo Ward,JZrMfy0ZEjq,u9yagZzK49q,pZqQRRW7PHP
+1737,20948.000000000000000,Busia,Bunyala Sub County,Bunyala North Ward,FrPqZ0quyrF,zI6vnsXresW,Tvf1zgVZ0K4
+1738,21237.000000000000000,Busia,Bunyala Sub County,Bunyala West Ward,XqcnCg0VZ7k,zI6vnsXresW,Tvf1zgVZ0K4
+1739,14157.000000000000000,Busia,Bunyala Sub County,Bunyala South Ward,BBkS40b5WG7,zI6vnsXresW,Tvf1zgVZ0K4
+1740,12454.000000000000000,Nakuru,Molo  Sub County,Mariashoni Ward,BbJmtHW0518,RJ4LGJiSHFg,ob6SxuRcqU4
+1742,25448.000000000000000,Nakuru,Molo  Sub County,Turi Ward,PBAbBC0gDLA,RJ4LGJiSHFg,ob6SxuRcqU4
+1743,43098.000000000000000,Nakuru,Molo  Sub County,Molo Ward,STQIvkltmOp,RJ4LGJiSHFg,ob6SxuRcqU4
+1744,35429.000000000000000,Nakuru,Njoro  Sub County,Mau Narok Ward,DSk12NKnyRR,gSJXzH1DM75,ob6SxuRcqU4
+1745,34044.000000000000000,Nakuru,Njoro  Sub County,Mauche Ward,KHWDXyBa4i6,gSJXzH1DM75,ob6SxuRcqU4
+1746,26607.000000000000000,Nakuru,Njoro  Sub County,Kihingo Ward,rb2nGblpg8l,gSJXzH1DM75,ob6SxuRcqU4
+1747,13488.000000000000000,Nakuru,Njoro  Sub County,Nessuit Ward,KqMw0Knznhu,gSJXzH1DM75,ob6SxuRcqU4
+1748,17862.000000000000000,Nakuru,Njoro  Sub County,Lare Ward,BB9s4d9DV70,gSJXzH1DM75,ob6SxuRcqU4
+2158,41977.000000000000000,Narok,Transmara West Sub County,Kilgoris Central  Ward,bFIJdjEp5Kl,Nb6e34jNGAq,kqJ83J2D72s
+1752,20082.000000000000000,Nakuru,Naivasha  Sub County,Lake View Ward,xbHueeSJ4j8,yZJJPoSGhY6,ob6SxuRcqU4
+1753,29796.000000000000000,Nakuru,Naivasha  Sub County,Mai Mahiu Ward,l7oNy9qaqWe,yZJJPoSGhY6,ob6SxuRcqU4
+1754,27498.000000000000000,Nakuru,Naivasha  Sub County,Maeilla Ward,fRDUt04TIg5,yZJJPoSGhY6,ob6SxuRcqU4
+1755,25437.000000000000000,Nakuru,Naivasha  Sub County,Olkaria Ward,CTX9LIAvrFK,yZJJPoSGhY6,ob6SxuRcqU4
+1756,20884.000000000000000,Nakuru,Naivasha  Sub County,Naivasha East Ward,A20qmlqFi5D,yZJJPoSGhY6,ob6SxuRcqU4
+1757,45543.000000000000000,Nakuru,Naivasha  Sub County,Viwandani Ward,quIiSx3L8OJ,yZJJPoSGhY6,ob6SxuRcqU4
+1758,47603.000000000000000,Nakuru,Gilgil Sub County,Gilgil Ward,xK7G5Lg2CEW,hBU8B1KI12P,ob6SxuRcqU4
+1759,27504.000000000000000,Nakuru,Gilgil Sub County,Elementaita Ward,RSps1nz09HH,hBU8B1KI12P,ob6SxuRcqU4
+1760,33395.000000000000000,Nakuru,Gilgil Sub County,Mbaruk/eburu Ward,iIdFbrVody5,hBU8B1KI12P,ob6SxuRcqU4
+1761,21915.000000000000000,Nakuru,Gilgil Sub County,Malewa West Ward,xCH1F3gEsNr,hBU8B1KI12P,ob6SxuRcqU4
+1762,21685.000000000000000,Nakuru,Gilgil Sub County,Murindat Ward,mxshI67tMFJ,hBU8B1KI12P,ob6SxuRcqU4
+615,21673.000000000000000,TURKANA,Kibish Sub County,Kibish Ward,dRuMh3lozxY,AXNntZ7T30a,kphDeKClFch
+622,29267.000000000000000,TURKANA,Turkana West Sub County,Lokichoggio Ward,U3CWX2tDcnG,HK5SUCMQmsw,kphDeKClFch
+630,47399.000000000000000,TURKANA,Loima Sub County,Turkwel Ward,vpERRHtFCWg,OZiGQn2R8kK,kphDeKClFch
+632,21056.000000000000000,TURKANA,Loima Sub County,Lokiriama/Lorengippi Ward,eQng6vyva8H,OZiGQn2R8kK,kphDeKClFch
+633,15119.000000000000000,TURKANA,Turkana South Sub County,Kaputir Ward,AR58QjsFekn,iTw0sFjlqZ2,kphDeKClFch
+635,11128.000000000000000,TURKANA,Turkana South Sub County,Lobokat Ward,p8Vk2rQT2gg,iTw0sFjlqZ2,kphDeKClFch
+636,23509.000000000000000,TURKANA,Turkana South Sub County,Kalapata Ward,H6EZtZr2dWo,iTw0sFjlqZ2,kphDeKClFch
+642,29759.000000000000000,WEST POKOT,West Pokot Sub County,Kapenguria Ward,sXlDThMXKIG,ylWg6VvADJE,XWALbfAPa6n
+643,34966.000000000000000,WEST POKOT,West Pokot Sub County,Mnagei Ward,OEuGotz3swq,ylWg6VvADJE,XWALbfAPa6n
+644,17332.000000000000000,WEST POKOT,West Pokot Sub County,Siyoi Ward,zf52hYIUeSz,ylWg6VvADJE,XWALbfAPa6n
+645,17502.000000000000000,WEST POKOT,West Pokot Sub County,Endugh Ward,WteTgAtzuJP,ylWg6VvADJE,XWALbfAPa6n
+646,12414.000000000000000,WEST POKOT,West Pokot Sub County,Sook Ward,UZ1D4NEN1qb,ylWg6VvADJE,XWALbfAPa6n
+647,16936.000000000000000,WEST POKOT,Pokot Central Sub County,Sekerr Ward,LTr0Kfbxu9C,SCbMzaOeTuR,XWALbfAPa6n
+648,14744.000000000000000,WEST POKOT,Pokot Central Sub County,Masool Ward,abEfttdBmpZ,SCbMzaOeTuR,XWALbfAPa6n
+166,30435.000000000000000,WAJIR,Wajir North Sub County,Danaba Ward,b1Z4WVS2owC,qsjAa8FE8OS,CeLsrJOH0g9
+649,24768.000000000000000,WEST POKOT,Pokot Central Sub County,Lomut Ward,V9GqRwFec0l,SCbMzaOeTuR,XWALbfAPa6n
+650,28631.000000000000000,WEST POKOT,Pokot Central Sub County,Wei wei Ward,hS0lXNVsykJ,SCbMzaOeTuR,XWALbfAPa6n
+2172,29562.000000000000000,Narok,Narok North Sub County,Olorropil Ward,pN8AuYvqE0e,fNROL0qm8De,kqJ83J2D72s
+2173,37223.000000000000000,Narok,Narok North Sub County,Melili Ward,hfUlTD9PANt,fNROL0qm8De,kqJ83J2D72s
+2174,27463.000000000000000,Narok,Narok East Sub County,Mosiro Ward,fF2CijNSPDI,gZM3NbHaugk,kqJ83J2D72s
+2175,15643.000000000000000,Narok,Narok East Sub County,Ildamat Ward,N27Hb5r1QR5,gZM3NbHaugk,kqJ83J2D72s
+2176,20613.000000000000000,Narok,Narok East Sub County,Keekonyokie Ward,YpEIAl1lcFe,gZM3NbHaugk,kqJ83J2D72s
+2177,19237.000000000000000,Narok,Narok East Sub County,Suswa Ward,iZN31WZZycN,gZM3NbHaugk,kqJ83J2D72s
+2178,39530.000000000000000,Narok,Narok South Sub County,Maji Moto/naroosura Ward,u5iwkT3DDNJ,bnYzgzYe2Z7,kqJ83J2D72s
+2179,34633.000000000000000,Narok,Narok South Sub County,Ololulung'a Ward,aoZxerJJSBz,bnYzgzYe2Z7,kqJ83J2D72s
+2180,35069.000000000000000,Narok,Narok South Sub County,Melelo Ward,kBWwkKdW9Rh,bnYzgzYe2Z7,kqJ83J2D72s
+2181,22873.000000000000000,Narok,Narok South Sub County,Loita Ward,Xo0N7hDyvPP,bnYzgzYe2Z7,kqJ83J2D72s
+2182,28743.000000000000000,Narok,Narok South Sub County,Sogoo Ward,xlp4GwINQiC,bnYzgzYe2Z7,kqJ83J2D72s
+2183,21057.000000000000000,Narok,Narok South Sub County,Sagamian Ward,Tn1grqaqx7v,bnYzgzYe2Z7,kqJ83J2D72s
+2184,46135.000000000000000,Narok,Narok West Sub County,Ilmotiook Ward,ckpYcQagZdJ,ouA247cg58A,kqJ83J2D72s
+2185,33201.000000000000000,Narok,Narok West Sub County,Mara Ward,mX734z5OjqI,ouA247cg58A,kqJ83J2D72s
+2186,34095.000000000000000,Narok,Narok West Sub County,Siana Ward,amNn0DeeFdo,ouA247cg58A,kqJ83J2D72s
+664,10240.000000000000000,SAMBURU,Samburu Central Sub County,Loosuk Ward,cZkc98eBxNL,EmQRGVtvWy3,o36zCRjSd4G
+665,10578.000000000000000,SAMBURU,Samburu Central Sub County,Porro Ward,b4HPJJEYEsS,EmQRGVtvWy3,o36zCRjSd4G
+666,13675.000000000000000,SAMBURU,Samburu North Sub County,El-barta Ward,x8gYdLEuy5Y,E2DGjZRlwbY,o36zCRjSd4G
+667,11622.000000000000000,SAMBURU,Samburu North Sub County,Nachola Ward,hV1NZb8gSOe,E2DGjZRlwbY,o36zCRjSd4G
+668,14912.000000000000000,SAMBURU,Samburu North Sub County,Ndoto Ward,w6u8SoSKkmn,E2DGjZRlwbY,o36zCRjSd4G
+669,19592.000000000000000,SAMBURU,Samburu North Sub County,Nyiro Ward,UpMVKpuABHz,E2DGjZRlwbY,o36zCRjSd4G
+670,9747.000000000000000,SAMBURU,Samburu Central Sub County,Angata nayokie Ward,O57e90leR9M,EmQRGVtvWy3,o36zCRjSd4G
+671,11807.000000000000000,SAMBURU,Samburu Central Sub County,Baawa Ward,W4gx1OjSjzp,EmQRGVtvWy3,o36zCRjSd4G
+672,17796.000000000000000,SAMBURU,Samburu East Sub County,Waso Ward,l2uOoW4cwIa,ldZ10N9unC9,o36zCRjSd4G
+673,13713.000000000000000,SAMBURU,Samburu East Sub County,Wamba west Ward,KnKoadZgQjY,ldZ10N9unC9,o36zCRjSd4G
+674,16063.000000000000000,SAMBURU,Samburu East Sub County,Wamba east Ward,WieLheAfLdw,ldZ10N9unC9,o36zCRjSd4G
+675,11522.000000000000000,SAMBURU,Samburu East Sub County,Wamba north Ward,p2OJcxIoP6e,ldZ10N9unC9,o36zCRjSd4G
+676,56082.000000000000000,TRANS NZOIA,Kwanza  Sub County,Kapomboi Ward,zkVfk8cWPc2,ABy8CNqf2e7,mThvosEflAU
+677,55647.000000000000000,TRANS NZOIA,Kwanza  Sub County,Kwanza Ward,PXmcdkpTB68,ABy8CNqf2e7,mThvosEflAU
+1841,15021.000000000000000,Kilifi,Rabai Sub County,Mwawesa Ward,eT3Udm3xjFw,hJf4rt7cvI6,nrI2khZx3d0
+680,36485.000000000000000,TRANS NZOIA,Endebess Sub County,Chepchoina Ward,IAEQih35LOS,PsjxYLsJSIp,mThvosEflAU
+681,23338.000000000000000,TRANS NZOIA,Endebess Sub County,Endebess Ward,t4cjnduc4dV,PsjxYLsJSIp,mThvosEflAU
+682,31369.000000000000000,TRANS NZOIA,Endebess Sub County,Matumbei Ward,ds38yFIWSBY,PsjxYLsJSIp,mThvosEflAU
+683,39645.000000000000000,TRANS NZOIA,Saboti  Sub County,Kinyoro Ward,Qc2e6oVTp0G,y2M16lesMsF,mThvosEflAU
+684,40662.000000000000000,TRANS NZOIA,Saboti  Sub County,Matisi Ward,kBH2TFh9qab,y2M16lesMsF,mThvosEflAU
+1803,27285.000000000000000,Mombasa,Kisauni  Sub County,Mjambere Ward,YCeebXtrvTd,C1hO6wNOgrH,wsBsC6gjHvn
+2187,22508.000000000000000,Narok,Narok West Sub County,Naikarra Ward,Ay904HxgFbw,ouA247cg58A,kqJ83J2D72s
+2188,30911.000000000000000,Kiambu,Githunguri Sub County,Githiga Ward,jALskID8BQS,E7tkGikenbD,qKzosKQPl6G
+2189,23668.000000000000000,Kiambu,Githunguri Sub County,Ikinu Ward,zvhM3m7bIIh,E7tkGikenbD,qKzosKQPl6G
+2190,26292.000000000000000,Kiambu,Githunguri Sub County,Ngewa Ward,bkMHxVGDIcL,E7tkGikenbD,qKzosKQPl6G
+2191,30514.000000000000000,Kiambu,Githunguri Sub County,Komothai Ward,Tqs3YLWw30B,E7tkGikenbD,qKzosKQPl6G
+2192,19727.000000000000000,Kiambu,Kiambu Town Sub County,Ting'ang'a Ward,G5RaW09czpW,SBz4c48i24Y,qKzosKQPl6G
+2193,35823.000000000000000,Kiambu,Kiambu Town Sub County,Ndumberi Ward,B7Ek2TSSkr9,SBz4c48i24Y,qKzosKQPl6G
+2194,25909.000000000000000,Kiambu,Kiambu Town Sub County,Riabai Ward,xgHhSzo3AuN,SBz4c48i24Y,qKzosKQPl6G
+2195,27239.000000000000000,Kiambu,Kiambu Town Sub County,Kiambu Township Ward,byxif4bfwvo,SBz4c48i24Y,qKzosKQPl6G
+2196,15119.000000000000000,Kiambu,Kiambaa Sub County,Cianda Ward,woYqYmbk8hx,oMaQgNIs85x,qKzosKQPl6G
+2197,30660.000000000000000,Kiambu,Kiambaa Sub County,Karuri Ward,eCWu3IedbJm,oMaQgNIs85x,qKzosKQPl6G
+2198,35853.000000000000000,Kiambu,Kiambaa Sub County,Ndenderu Ward,NQ4XWNy3RM0,oMaQgNIs85x,qKzosKQPl6G
+2199,26544.000000000000000,Kiambu,Kiambaa Sub County,Muchatha Ward,v46jgbTAri7,oMaQgNIs85x,qKzosKQPl6G
+2200,36877.000000000000000,Kiambu,Kiambaa Sub County,Kihara Ward,L4eA6Nld41v,oMaQgNIs85x,qKzosKQPl6G
+1767,37590.000000000000000,Nakuru,Kuresoi North  Sub County,Kiptororo Ward,ZHKOkipqYxf,QBwORnYdu0e,ob6SxuRcqU4
+1768,39455.000000000000000,Nakuru,Kuresoi North  Sub County,Nyota Ward,jWX4knhb96j,QBwORnYdu0e,ob6SxuRcqU4
+1769,17042.000000000000000,Nakuru,Kuresoi North  Sub County,Sirikwa Ward,aGRpaeG5ziX,QBwORnYdu0e,ob6SxuRcqU4
+2201,29177.000000000000000,Kiambu,Kabete Sub County,Gitaru,P3TwXvbGu0Y,lb5LzWiUX8Y,qKzosKQPl6G
+2202,27527.000000000000000,Kiambu,Kabete Sub County,Muguga,LSpZcRA9tgp,lb5LzWiUX8Y,qKzosKQPl6G
+2203,28771.000000000000000,Kiambu,Kabete Sub County,Nyadhuna Ward,S5vdlHabZzv,lb5LzWiUX8Y,qKzosKQPl6G
+2204,30657.000000000000000,Kiambu,Kabete Sub County,Kabete Ward,ERl76hzXrr7,lb5LzWiUX8Y,qKzosKQPl6G
+688,33764.000000000000000,TRANS NZOIA,Kiminini  Sub County,Kiminini Ward,pco0T7Zsd6V,pzZHpL2ueIn,mThvosEflAU
+689,40377.000000000000000,TRANS NZOIA,Kiminini  Sub County,Waitaluk Ward,rPVkyP8OlZW,pzZHpL2ueIn,mThvosEflAU
+690,23677.000000000000000,TRANS NZOIA,Kiminini  Sub County,Sirende Ward,FXjBryC2ysZ,pzZHpL2ueIn,mThvosEflAU
+1771,32242.000000000000000,Nakuru,Subukia  Sub County,Subukia Ward,obOP2eWg8EX,zQEuNRaPYgE,ob6SxuRcqU4
+189,19926.000000000000000,WAJIR,Wajir South Sub County,Ibrahim ure Ward,bhhINffrIu8,U7KFQn3Up3o,CeLsrJOH0g9
+1774,27881.000000000000000,Nakuru,Rongai  Sub County,Menengai West Ward,PL9Y6PrB2oV,OK0hW8DFHq3,ob6SxuRcqU4
+2216,26007.000000000000000,Kiambu,Lari Sub County,Kinale Ward,DnlusvsKIKj,nCziQtZ49jj,qKzosKQPl6G
+2218,23454.000000000000000,Kiambu,Lari Sub County,Nyanduma Ward,aR3qJ3GyWeP,nCziQtZ49jj,qKzosKQPl6G
+2219,18951.000000000000000,Kiambu,Lari Sub County,Kamburu Ward,rq7Y1sxGfgN,nCziQtZ49jj,qKzosKQPl6G
+2220,27871.000000000000000,Kiambu,Lari Sub County,Lari/kirenga Ward,NfJb3vThwG5,nCziQtZ49jj,qKzosKQPl6G
+2221,20371.000000000000000,Kiambu,Gatundu South Sub County,Kiamwangi Ward,ORuLgjaAGBo,EcRytSSIkUq,qKzosKQPl6G
+2222,27134.000000000000000,Kiambu,Gatundu South Sub County,Kiganjo Ward,YEjn4x9gyXR,EcRytSSIkUq,qKzosKQPl6G
+2223,20245.000000000000000,Kiambu,Gatundu South Sub County,Ndarugu Ward,BWRIH7ocbHB,EcRytSSIkUq,qKzosKQPl6G
+2224,46430.000000000000000,Kiambu,Gatundu South Sub County,Ngenda Ward,l4MV7dNKjrG,EcRytSSIkUq,qKzosKQPl6G
+2225,27731.000000000000000,Kiambu,Gatundu North Sub County,Gituamba Ward,vR89p0TyICU,HEsM6W2ImQR,qKzosKQPl6G
+2226,21415.000000000000000,Kiambu,Gatundu North Sub County,Githobokoni Ward,Dg4t78ouq8h,HEsM6W2ImQR,qKzosKQPl6G
+2227,26642.000000000000000,Kiambu,Gatundu North Sub County,Chania Ward,ReDzOcQ8mT1,HEsM6W2ImQR,qKzosKQPl6G
+2228,24823.000000000000000,Kiambu,Gatundu North Sub County,Mang'u Ward,C5gJnXO6h1Y,HEsM6W2ImQR,qKzosKQPl6G
+2229,15887.000000000000000,Kiambu,Juja Sub County,Murera Ward,OW3dhCE5nw8,aiqi2bz0IMI,qKzosKQPl6G
+2230,23134.000000000000000,Kiambu,Juja Sub County,Theta Ward,fxLikKorklY,aiqi2bz0IMI,qKzosKQPl6G
+1776,31368.000000000000000,Nakuru,Rongai  Sub County,Visoi Ward,bKCcKfnNznJ,OK0hW8DFHq3,ob6SxuRcqU4
+2231,34134.000000000000000,Kiambu,Juja Sub County,Juja Ward,WsPnZQHN2CZ,aiqi2bz0IMI,qKzosKQPl6G
+2232,25777.000000000000000,Kiambu,Juja Sub County,Witeithie Ward,OqnujBG8mvl,aiqi2bz0IMI,qKzosKQPl6G
+2233,19861.000000000000000,Kiambu,Juja Sub County,Kalimoni Ward,Cqn7anNruE5,aiqi2bz0IMI,qKzosKQPl6G
+2234,39100.000000000000000,Kiambu,Thika Town Sub County,Thika Township Ward,x1SnGzy9rZL,YZAZ1a9MIvX,qKzosKQPl6G
+2235,74149.000000000000000,Kiambu,Thika Town Sub County,Kamenu Ward,A7a1GZJvTGD,YZAZ1a9MIvX,qKzosKQPl6G
+2236,25523.000000000000000,Kiambu,Thika Town Sub County,Hospital Ward,UPplEbma7DN,YZAZ1a9MIvX,qKzosKQPl6G
+1779,24316.000000000000000,Nakuru,Nakuru North  Sub County,Dundori Ward,Ff1CJ0oXLRy,nwh9bXKykiS,ob6SxuRcqU4
+1842,21709.000000000000000,Kilifi,Rabai Sub County,Rurumaward,u36eldinqnE,hJf4rt7cvI6,nrI2khZx3d0
+695,18362.000000000000000,TRANS NZOIA,Cherangany Sub County,Makutano Ward,s38X4K1qhST,f18kGo9yXWo,mThvosEflAU
+696,25257.000000000000000,TRANS NZOIA,Cherangany Sub County,Kaplamai Ward,wCRljUGZJCA,f18kGo9yXWo,mThvosEflAU
+697,33185.000000000000000,TRANS NZOIA,Cherangany Sub County,Motosiet Ward,XXbVgPo8AY8,f18kGo9yXWo,mThvosEflAU
+698,36556.000000000000000,TRANS NZOIA,Cherangany Sub County,Cherangany/suwerwa Ward,OrWMyDLtm7r,f18kGo9yXWo,mThvosEflAU
+699,29559.000000000000000,TRANS NZOIA,Cherangany Sub County,Chepsiro/kiptoror Ward,wC4nO2SVsQH,f18kGo9yXWo,mThvosEflAU
+1808,28830.000000000000000,Mombasa,Kisauni  Sub County,Magogoni Ward,dUh1anGaJK6,C1hO6wNOgrH,wsBsC6gjHvn
+1876,21245.000000000000000,Siaya,Rarieda Sub County,North Uyoma Ward,c8htRsEJD2W,XcRpb1xsM64,u4t9H8XyU9P
+1877,19536.000000000000000,Siaya,Rarieda Sub County,South Uyoma Ward,VlWsveTXbi3,XcRpb1xsM64,u4t9H8XyU9P
+1878,27819.000000000000000,Siaya,Rarieda Sub County,West Uyoma Ward,IqPuAjRYM1t,XcRpb1xsM64,u4t9H8XyU9P
+1891,38629.000000000000000,Kwale,Msambweni Sub County,Ukunda Ward,iBuXrh8ESS2,ADMywdLwoRX,N7YETT3A9r1
+1892,22857.000000000000000,Kwale,Msambweni Sub County,Kinondo Ward,pOKIONEzUyF,ADMywdLwoRX,N7YETT3A9r1
+1893,38707.000000000000000,Kwale,Msambweni Sub County,Ramisi Ward,VGENlt3MTt7,ADMywdLwoRX,N7YETT3A9r1
+1894,41098.000000000000000,Kwale,Lunga Lunga Sub County,Pongwe Kikoneni Ward,oJkRlx56eac,TdcYaufNV4p,N7YETT3A9r1
+1895,41509.000000000000000,Kwale,Lunga Lunga Sub County,Dzombo Ward,lijbuerznbA,TdcYaufNV4p,N7YETT3A9r1
+1896,34628.000000000000000,Kwale,Lunga Lunga Sub County,Mwereni Ward,PBhYjIVYdhk,TdcYaufNV4p,N7YETT3A9r1
+1897,36119.000000000000000,Kwale,Lunga Lunga Sub County,Vanga Ward,HEKTLM0EwH0,TdcYaufNV4p,N7YETT3A9r1
+1780,29629.000000000000000,Nakuru,Nakuru North  Sub County,Kabatini Ward,KYyRxF09EOm,nwh9bXKykiS,ob6SxuRcqU4
+1898,34002.000000000000000,Kwale,Matuga Sub County,Tsimba Golini Ward,HLbG24kuSHF,wUNEDOnx9uB,N7YETT3A9r1
+1899,37783.000000000000000,Kwale,Matuga Sub County,Waa Ngombeni Ward,XZNJ3zaiaZH,wUNEDOnx9uB,N7YETT3A9r1
+1770,29963.000000000000000,Nakuru,Kuresoi North  Sub County,Kamara Ward,lkMaj1oAFk0,QBwORnYdu0e,ob6SxuRcqU4
+1900,19409.000000000000000,Kwale,Matuga Sub County,Tiwi Ward,JBSYO3skSW5,wUNEDOnx9uB,N7YETT3A9r1
+1901,23466.000000000000000,Kwale,Matuga Sub County,Kubo South Ward,dQkHuP0kVjq,wUNEDOnx9uB,N7YETT3A9r1
+1772,27345.000000000000000,Nakuru,Subukia  Sub County,Waseges Ward,DCV7v4zjEnm,zQEuNRaPYgE,ob6SxuRcqU4
+1773,34891.000000000000000,Nakuru,Subukia  Sub County,Kabazi Ward,JwFjLbUSxbO,zQEuNRaPYgE,ob6SxuRcqU4
+731,17057.000000000000000,ELGEYO-MARAKWET,Marakwet East sub-county,Kapyego Ward,SNs5tEDSO0k,EZraJgLdRLX,MqnLxQBigG0
+732,22745.000000000000000,ELGEYO-MARAKWET,Marakwet East sub-county,Sambirir Ward,OvRvzstUL5A,EZraJgLdRLX,MqnLxQBigG0
+1902,37318.000000000000000,Kwale,Matuga Sub County,Mkongani Ward,rzPzDuVVuqw,wUNEDOnx9uB,N7YETT3A9r1
+1903,27816.000000000000000,Kwale,Kinango Sub County,Ndavaya Ward,YZvux1SW3bs,LOgbecTRkbp,N7YETT3A9r1
+1904,19860.000000000000000,Kwale,Kinango Sub County,Puma Ward,QEGPqON6Zcj,LOgbecTRkbp,N7YETT3A9r1
+1905,32571.000000000000000,Kwale,Kinango Sub County,Kinango Ward,PrGoCfZ06gm,LOgbecTRkbp,N7YETT3A9r1
+1906,31128.000000000000000,Kwale,Kinango Sub County,Mackinon Road Ward,wfUbX2QagwS,LOgbecTRkbp,N7YETT3A9r1
+1907,32641.000000000000000,Kwale,Kinango Sub County,Chengoni/samburu Ward,TwX1KTjb8Qp,LOgbecTRkbp,N7YETT3A9r1
+1908,31902.000000000000000,Kwale,Kinango Sub County,Mwavumbo Ward,vjeHNVWOsRk,LOgbecTRkbp,N7YETT3A9r1
+1781,31345.000000000000000,Nakuru,Nakuru North  Sub County,Kiamaina Ward,wgKfulEq1ZH,nwh9bXKykiS,ob6SxuRcqU4
+1909,33642.000000000000000,Kwale,Kinango Sub County,Kasemeni Ward,aom47Uzq1RZ,LOgbecTRkbp,N7YETT3A9r1
+2237,14934.000000000000000,Kiambu,Thika Town Sub County,Gatuanyaga Ward,t7COLdUthus,YZAZ1a9MIvX,qKzosKQPl6G
+2238,11636.000000000000000,Kiambu,Thika Town Sub County,Ngoliba Ward,VWuMYjG4YX4,YZAZ1a9MIvX,qKzosKQPl6G
+2239,18083.000000000000000,Kiambu,Ruiru Sub County,Gitothua,Gf7UYKPruI2,TPRNJqSm4lK,qKzosKQPl6G
+112,8299.000000000000000,TAITA TAVETA,Taveta Sub County,Mahoo Ward,AUs81wSmXra,jNzRdAwjaQ1,QyGNX2DpR4h
+2269,22735.000000000000000,Bomet,Konoin Sub County,Kimulot Ward,OFb6pB88hNT,PLFoYJO8MVS,HMNARUV2CW4
+2270,30734.000000000000000,Bomet,Konoin Sub County,Mogogosiek Ward,rWijSZrVU5U,PLFoYJO8MVS,HMNARUV2CW4
+2271,31964.000000000000000,Bomet,Konoin Sub County,Boito Ward,w8SzXPBdjgq,PLFoYJO8MVS,HMNARUV2CW4
+2272,33920.000000000000000,Bomet,Konoin Sub County,Embomos Ward,QMzAkzZkH34,PLFoYJO8MVS,HMNARUV2CW4
+2273,23724.000000000000000,Kisii,Bomachoge Borabu Sub County,BOMBABA BORABU,q6eyMKDnFA0,ntRK47D5dYL,sPkRcDvhGWA
+1775,24969.000000000000000,Nakuru,Rongai  Sub County,Soin Ward,RLv6Wg2Eo8m,OK0hW8DFHq3,ob6SxuRcqU4
+757,35085.000000000000000,NANDI,Aldai Sub County,Kemeloi-maraba Ward,H2b8KHTcJqM,Sq2fLWnOCGg,t0J75eHKxz5
+758,26539.000000000000000,NANDI,Aldai Sub County,Kobujoi Ward,YxP90gGjD63,Sq2fLWnOCGg,t0J75eHKxz5
+759,24464.000000000000000,NANDI,Aldai Sub County,Kaptumo/kaboi Ward,qj48MUGxhs9,Sq2fLWnOCGg,t0J75eHKxz5
+760,19905.000000000000000,NANDI,Aldai Sub County,Koyo/ndurio Ward,UBMIBBujflT,Sq2fLWnOCGg,t0J75eHKxz5
+761,33545.000000000000000,NANDI,Nandi East Sub County,Nandi hills Ward,iWDqdgd87nd,W6Err8cQf5J,t0J75eHKxz5
+762,36775.000000000000000,NANDI,Nandi East Sub County,Chepkunyuk Ward,O4tmt5AWnNr,W6Err8cQf5J,t0J75eHKxz5
+119,13322.000000000000000,TAITA TAVETA,Wundanyi Sub County,Mwanda/mgange Ward,RXoThrI8OjU,AM36DdkZ36Y,QyGNX2DpR4h
+120,10805.000000000000000,TAITA TAVETA,Mwatate Sub County,Ronge Ward,px49ejbHkuk,IBDoGsLdhvt,QyGNX2DpR4h
+305,30160.000000000000000,THARAKA-NITHI,Igambang'ombe Sub County,Igambang`ombe Ward,SYuNHyY118o,yXwsnpFBIPW,T4urHM47nlm
+767,23354.000000000000000,NANDI,Chesumei Sub County,Lelmoko/ngechek Ward,iZNVvlnVxm6,xLWuQq3DjOR,t0J75eHKxz5
+121,14508.000000000000000,TAITA TAVETA,Mwatate Sub County,Mwatate Ward,i6WDSy6LjRp,IBDoGsLdhvt,QyGNX2DpR4h
+124,13282.000000000000000,TAITA TAVETA,Mwatate Sub County,Wusi/kishamba Ward,Xc5oMwMoQcz,IBDoGsLdhvt,QyGNX2DpR4h
+329,16728.000000000000000,EMBU,Mbeere North  Sub County,Muminji Ward,HpGxgPszuYN,eYBXetGx8xF,PFu8alU2KWG
+330,45582.000000000000000,EMBU,Mbeere North  Sub County,Evurore Ward,LlyKi6c8KbT,eYBXetGx8xF,PFu8alU2KWG
+1782,28011.000000000000000,Nakuru,Nakuru North  Sub County,Lanet/umoja Ward,uojD9lkbubw,nwh9bXKykiS,ob6SxuRcqU4
+770,21283.000000000000000,NANDI,Emgwen Sub County,Chepkumia Ward,J5JM3Ud8ASG,Njv37QXxNy2,t0J75eHKxz5
+1783,30965.000000000000000,Nakuru,Nakuru North  Sub County,Bahati Ward,oK2KwbL5Dzx,nwh9bXKykiS,ob6SxuRcqU4
+1786,70352.000000000000000,Nakuru,Nakuru West  Sub County,Kaptembwo Ward,q6DoWWo1dCR,KTayLusaU5I,ob6SxuRcqU4
+479,27652.000000000000000,NYERI,Mathira East Sub County,Iriaini Ward,kgPF6QHfrWT,vznKK4IegIL,ptWVfaCIdVx
+480,21959.000000000000000,NYERI,Mathira East Sub County,Konyu Ward,rGu0Fh2c3kI,vznKK4IegIL,ptWVfaCIdVx
+772,35962.000000000000000,NANDI,Emgwen Sub County,Kapsabet Ward,VjsUVNylWoY,Njv37QXxNy2,t0J75eHKxz5
+773,48845.000000000000000,NANDI,Emgwen Sub County,Kilibwoni Ward,kHfVrUAnNlI,Njv37QXxNy2,t0J75eHKxz5
+1810,41678.000000000000000,Mombasa,Nyali  Sub County,Frere Town Ward,EDosdjVkXb6,sr8WEz03EnP,wsBsC6gjHvn
+481,28898.000000000000000,NYERI,Mathira West Sub County,Kirimukuyu Ward,xPtYtS4uaVJ,msIc1uFAY6B,ptWVfaCIdVx
+1787,8956.000000000000000,Nakuru,Nakuru West  Sub County,Kapkures Ward,pZuA4cJd4bl,KTayLusaU5I,ob6SxuRcqU4
+662,11905.000000000000000,SAMBURU,Samburu Central Sub County,Suguta Marmar Ward,i5te7PTlUjg,EmQRGVtvWy3,o36zCRjSd4G
+1788,24596.000000000000000,Nakuru,Nakuru West  Sub County,Rhoda Ward,eQNgjFoG2ct,KTayLusaU5I,ob6SxuRcqU4
+1789,17989.000000000000000,Nakuru,Nakuru West  Sub County,Shaabab Ward,lTh2MSvx02l,KTayLusaU5I,ob6SxuRcqU4
+747,14457.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Soy North Ward,k3OQIur2Wia,SOEG546PqbA,MqnLxQBigG0
+748,20370.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Soy South Ward,SZAo3nP3jDj,SOEG546PqbA,MqnLxQBigG0
+1790,35916.000000000000000,Nakuru,Nakuru East  Sub County,Biashara Ward,BA2zKL0pmeI,FBJ9Y11esHS,ob6SxuRcqU4
+755,22807.000000000000000,NANDI,Aldai Sub County,Kabwareng Ward,Wh8ROphCMld,Sq2fLWnOCGg,t0J75eHKxz5
+778,18651.000000000000000,NANDI,Mosop Sub County,Ndalat Ward,JsaOcykkym2,Xtb7tbJpk9p,t0J75eHKxz5
+1791,20574.000000000000000,Nakuru,Nakuru East  Sub County,Kivumbini Ward,OFGHDVtVGOl,FBJ9Y11esHS,ob6SxuRcqU4
+1792,31733.000000000000000,Nakuru,Nakuru East  Sub County,Flamingo Ward,QIMIjxzpGyb,FBJ9Y11esHS,ob6SxuRcqU4
+1793,32926.000000000000000,Nakuru,Nakuru East  Sub County,Menengai Ward,sJ50zpy9iBV,FBJ9Y11esHS,ob6SxuRcqU4
+781,23669.000000000000000,BARINGO,Tiaty Sub County,Tirioko Ward,HTbw8gm6kms,Mk4bMOSMRTB,vvOK1BxTbet
+782,19499.000000000000000,BARINGO,Tiaty Sub County,Kolowa Ward,LTWLjOZQMqk,Mk4bMOSMRTB,vvOK1BxTbet
+783,14572.000000000000000,BARINGO,Tiaty Sub County,Ribkwo Ward,XLsFzNATUQ2,Mk4bMOSMRTB,vvOK1BxTbet
+784,21947.000000000000000,BARINGO,Tiaty Sub County,Silale Ward,k2oUoGgQ9Nd,Mk4bMOSMRTB,vvOK1BxTbet
+785,13885.000000000000000,BARINGO,Tiaty Sub County,Loiyamorok Ward,A7kJTCLxqNq,Mk4bMOSMRTB,vvOK1BxTbet
+1813,33417.000000000000000,Mombasa,Nyali  Sub County,Kongowea Ward,LMCJ2zXfHyL,sr8WEz03EnP,wsBsC6gjHvn
+814,42629.000000000000000,LAIKIPIA,Laikipia West Sub County,Marmanet Ward,OhvgVomhsMZ,pXbWrnFPpKb,xuFdFy6t9AH
+815,69491.000000000000000,LAIKIPIA,Laikipia West Sub County,Igwamiti Ward,q38k1nKzsRS,pXbWrnFPpKb,xuFdFy6t9AH
+816,23876.000000000000000,LAIKIPIA,Laikipia West Sub County,Salama Ward,vU9560o42tL,pXbWrnFPpKb,xuFdFy6t9AH
+817,23978.000000000000000,LAIKIPIA,Laikipia East Sub County,Ngobit Ward,pxHH7AAkfR6,pF6qPMIlHte,xuFdFy6t9AH
+818,27062.000000000000000,LAIKIPIA,Laikipia East Sub County,Tigithi Ward,ccNXklFrzuP,pF6qPMIlHte,xuFdFy6t9AH
+819,20836.000000000000000,LAIKIPIA,Laikipia East Sub County,Thingithu Ward,AMlucMGQuxK,pF6qPMIlHte,xuFdFy6t9AH
+820,28485.000000000000000,LAIKIPIA,Laikipia East Sub County,Nanyuki Ward,DpYpJ6E1vRc,pF6qPMIlHte,xuFdFy6t9AH
+1821,32100.000000000000000,Mombasa,Mvita  Sub County,Tudor Ward,oLZDP6nDlYc,C1xuoa1NAMm,wsBsC6gjHvn
+1777,27047.000000000000000,Nakuru,Rongai  Sub County,Mosop Ward,PUv9Q5hrTYP,OK0hW8DFHq3,ob6SxuRcqU4
+1778,18867.000000000000000,Nakuru,Rongai  Sub County,Solai Ward,qjDeBQFEB19,OK0hW8DFHq3,ob6SxuRcqU4
+117,8676.000000000000000,TAITA TAVETA,Wundanyi Sub County,Werugha Ward,vwpMqmZzByo,AM36DdkZ36Y,QyGNX2DpR4h
+1784,7404.000000000000000,Nakuru,Nakuru West  Sub County,Barut Ward,pfFWXloU0jC,KTayLusaU5I,ob6SxuRcqU4
+1785,23583.000000000000000,Nakuru,Nakuru West  Sub County,London Ward,LdShr7Egg6N,KTayLusaU5I,ob6SxuRcqU4
+1799,30110.000000000000000,Mombasa,Changamwe Sub County,Chaani Ward,PeLH4hGTO17,OvI6w06DhPJ,wsBsC6gjHvn
+911,41641.000000000000000,KAJIADO,Kajiado North Sub County,Olkeri Ward,RHwexebB7PD,BLz1HkvvMkA,Hsk1YV8kHkT
+912,44678.000000000000000,KAJIADO,Kajiado North Sub County,Ongata rongai Ward,RZsWJRZ4mIG,BLz1HkvvMkA,Hsk1YV8kHkT
+913,55406.000000000000000,KAJIADO,Kajiado North Sub County,Nkaimurunya Ward,pp24Rb9gQ9W,BLz1HkvvMkA,Hsk1YV8kHkT
+914,33754.000000000000000,KAJIADO,Kajiado North Sub County,Oloolua Ward,xvmwT1IuPuK,BLz1HkvvMkA,Hsk1YV8kHkT
+915,18091.000000000000000,KAJIADO,Kajiado North Sub County,Ngong Ward,nioMzFVoQ7l,BLz1HkvvMkA,Hsk1YV8kHkT
+916,5342.000000000000000,KAJIADO,Kajiado Central Sub County,Purko Ward,LeE5Ma7cpT6,SZapM1R0Kti,Hsk1YV8kHkT
+917,9990.000000000000000,KAJIADO,Kajiado Central Sub County,Ildamat Ward,yS9HZLzM3Ah,SZapM1R0Kti,Hsk1YV8kHkT
+918,27830.000000000000000,KAJIADO,Kajiado Central Sub County,Dalalekutuk Ward,oqGH96tt2v4,SZapM1R0Kti,Hsk1YV8kHkT
+919,29830.000000000000000,KAJIADO,Kajiado Central Sub County,Matapato north Ward,quFXokobrnW,SZapM1R0Kti,Hsk1YV8kHkT
+920,31161.000000000000000,KAJIADO,Kajiado Central Sub County,Matapato south Ward,PPE8hAClees,SZapM1R0Kti,Hsk1YV8kHkT
+921,29488.000000000000000,KAJIADO,Kajiado East Sub County,Kaputiei north Ward,BQ7G5kGe1Cv,g6gTzQ5nfYq,Hsk1YV8kHkT
+922,30663.000000000000000,KAJIADO,Kajiado East Sub County,Kitengela Ward,L6v0cndEtYB,g6gTzQ5nfYq,Hsk1YV8kHkT
+923,34175.000000000000000,KAJIADO,Kajiado East Sub County,Oloosirkon/sholinke Ward,oXm4Fpl0iEr,g6gTzQ5nfYq,Hsk1YV8kHkT
+924,24559.000000000000000,KAJIADO,Kajiado East Sub County,Kenyawa-poka Ward,KONREaUfSht,g6gTzQ5nfYq,Hsk1YV8kHkT
+925,17096.000000000000000,KAJIADO,Kajiado East Sub County,Imaroro Ward,ZvbwkucYq4T,g6gTzQ5nfYq,Hsk1YV8kHkT
+926,38912.000000000000000,KAJIADO,Kajiado West Sub County,Keekonyokie Ward,ZwZ7vxnP9WF,wYsCfCAUWNB,Hsk1YV8kHkT
+1912,27952.000000000000000,Kisumu,Kisumu East Sub County,Manyatta B Ward,It7fWcKbcZX,PRpKwAloU5b,tAbBVBbueqD
+943,31177.000000000000000,KERICHO,Kipkelion West Sub County,Chilchila Ward,aNuklGLRul5,Taw0Zg7nArd,ihZsJ8alvtb
+944,27845.000000000000000,KERICHO,Ainamoi Sub County,Kapsoit Ward,oNPVt1oUD8L,GshNTMZJ5r1,ihZsJ8alvtb
+945,17377.000000000000000,KERICHO,Ainamoi Sub County,Ainamoi Ward,ZJyTpeyEcK5,GshNTMZJ5r1,ihZsJ8alvtb
+946,28345.000000000000000,KERICHO,Ainamoi Sub County,Kapkugerwet Ward,D2NqKgPvDTJ,GshNTMZJ5r1,ihZsJ8alvtb
+947,29765.000000000000000,KERICHO,Ainamoi Sub County,Kipchebor Ward,H7KO7IjHYfk,GshNTMZJ5r1,ihZsJ8alvtb
+948,11860.000000000000000,KERICHO,Ainamoi Sub County,Kipchimchim Ward,pI2ju7BZsfE,GshNTMZJ5r1,ihZsJ8alvtb
+949,29121.000000000000000,KERICHO,Ainamoi Sub County,Kapsaos Ward,V4rpRD8L2PY,GshNTMZJ5r1,ihZsJ8alvtb
+950,21402.000000000000000,KERICHO,Bureti Sub County,Kisiara Ward,isMgPdVs6v0,wt8cPHWfkfu,ihZsJ8alvtb
+951,20912.000000000000000,KERICHO,Bureti Sub County,Tebesonik Ward,Fz7L53g5qRy,wt8cPHWfkfu,ihZsJ8alvtb
+952,22834.000000000000000,KERICHO,Bureti Sub County,Cheboin Ward,hLTIOtzQE9w,wt8cPHWfkfu,ihZsJ8alvtb
+953,26553.000000000000000,KERICHO,Bureti Sub County,Chemosot Ward,dbSH3rqE3n1,wt8cPHWfkfu,ihZsJ8alvtb
+954,26275.000000000000000,KERICHO,Bureti Sub County,Litein Ward,rkbxH4r1ceD,wt8cPHWfkfu,ihZsJ8alvtb
+955,26940.000000000000000,KERICHO,Bureti Sub County,Cheplanget Ward,qqTlgrxWdkY,wt8cPHWfkfu,ihZsJ8alvtb
+957,33674.000000000000000,KERICHO,Belgut Sub County,Waldai Ward,yG5oV3cleu9,YnIAWg1T4AY,ihZsJ8alvtb
+958,35091.000000000000000,KERICHO,Belgut Sub County,Kabianga Ward,yr6iJLD5JmG,YnIAWg1T4AY,ihZsJ8alvtb
+1814,38133.000000000000000,Mombasa,Nyali  Sub County,Kadzandani Ward,FydnlJp81aR,sr8WEz03EnP,wsBsC6gjHvn
+1794,35395.000000000000000,Nakuru,Nakuru East  Sub County,Nakuru East Ward,W1Kv7kfFzub,FBJ9Y11esHS,ob6SxuRcqU4
+1795,33779.000000000000000,Mombasa,Changamwe Sub County,Port Reitz Ward,oflRkUjvrdd,OvI6w06DhPJ,wsBsC6gjHvn
+962,36175.000000000000000,KERICHO,Sigowet/Soin Sub County,Sigowet Ward,BzWaUDxCn6y,ScLzA7tQxrH,ihZsJ8alvtb
+963,31753.000000000000000,KERICHO,Sigowet/Soin Sub County,Kaplelartet Ward,pPJvbpIWpvb,ScLzA7tQxrH,ihZsJ8alvtb
+964,16124.000000000000000,KERICHO,Sigowet/Soin Sub County,Soliat Ward,dUgf0oEF9if,ScLzA7tQxrH,ihZsJ8alvtb
+965,21072.000000000000000,KERICHO,Sigowet/Soin Sub County,Soin Ward,bHrDi28DWdF,ScLzA7tQxrH,ihZsJ8alvtb
+1816,26036.000000000000000,Mombasa,Likoni  Sub County,Shika Adabu Ward,cFjb7QOxAMu,iy93Mmi73Or,wsBsC6gjHvn
+1804,39432.000000000000000,Mombasa,Kisauni  Sub County,Junda Ward,sHr1V63b6gP,C1hO6wNOgrH,wsBsC6gjHvn
+1805,24918.000000000000000,Mombasa,Kisauni  Sub County,Bamburi Ward,J9QXQIm43fW,C1hO6wNOgrH,wsBsC6gjHvn
+1806,8929.000000000000000,Mombasa,Kisauni  Sub County,Mwakirunge Ward,zkZxEdH45U1,C1hO6wNOgrH,wsBsC6gjHvn
+1807,26603.000000000000000,Mombasa,Kisauni  Sub County,Mtopanga Ward,hi7bKqPsdhE,C1hO6wNOgrH,wsBsC6gjHvn
+1913,28269.000000000000000,Kisumu,Kisumu East Sub County,Nyalenda A Ward,roJc7UkCD2l,PRpKwAloU5b,tAbBVBbueqD
+1809,38067.000000000000000,Mombasa,Kisauni  Sub County,Shanzu Ward,ZvkGsTVOoog,C1hO6wNOgrH,wsBsC6gjHvn
+1811,42187.000000000000000,Mombasa,Nyali  Sub County,Ziwa La Ng'ombe Ward,XhBDUNeFqF6,sr8WEz03EnP,wsBsC6gjHvn
+1812,30576.000000000000000,Mombasa,Nyali  Sub County,Mkomani Ward,FXRGaOT9JD8,sr8WEz03EnP,wsBsC6gjHvn
+1815,28168.000000000000000,Mombasa,Likoni  Sub County,Mtongwe Ward,SwcDu8wwQiR,iy93Mmi73Or,wsBsC6gjHvn
+125,25991.000000000000000,TAITA TAVETA,Voi Sub County,Mbololo Ward,arVnioHdpH6,yoGLpCTgjed,QyGNX2DpR4h
+1817,29154.000000000000000,Mombasa,Likoni  Sub County,Bofu Ward,dHlamDlw0NG,iy93Mmi73Or,wsBsC6gjHvn
+1826,35027.000000000000000,Kilifi,Kilifi North Sub County,Sokoni Ward,M5NeUqFK6KO,MEkEH8ZmcOU,nrI2khZx3d0
+1828,29603.000000000000000,Kilifi,Kilifi North Sub County,Dabaso Ward,rgdgbj0yHfG,MEkEH8ZmcOU,nrI2khZx3d0
+1830,25982.000000000000000,Kilifi,Kilifi North Sub County,Watamu Ward,FmnSathgx18,MEkEH8ZmcOU,nrI2khZx3d0
+1833,25072.000000000000000,Kilifi,Kilifi South Sub County,Mwarakaya Ward,sWZmeA6lkx9,xWAZBULwGxp,nrI2khZx3d0
+1835,29294.000000000000000,Kilifi,Kilifi South Sub County,Chasimba Ward,yi6G0JRSjwo,xWAZBULwGxp,nrI2khZx3d0
+1836,34643.000000000000000,Kilifi,Kilifi South Sub County,Mtepeni Ward,Z6pxPuARGdF,xWAZBULwGxp,nrI2khZx3d0
+1837,43199.000000000000000,Kilifi,Kaloleni Sub County,Mariakani Ward,utg5SKGYTGO,tSKDWoVKiPo,nrI2khZx3d0
+1838,35040.000000000000000,Kilifi,Kaloleni Sub County,Kayafungo Ward,FzfEfKdj7p6,tSKDWoVKiPo,nrI2khZx3d0
+1839,56026.000000000000000,Kilifi,Kaloleni Sub County,Kaloleni Ward,KOJIrVBHq0c,tSKDWoVKiPo,nrI2khZx3d0
+1840,21474.000000000000000,Kilifi,Kaloleni Sub County,Mwanamwinga Ward,B2L7OVm0ZO1,tSKDWoVKiPo,nrI2khZx3d0
+1843,17311.000000000000000,Kilifi,Rabai Sub County,Kambe/ribe Ward,rJRyj2PndJ3,hJf4rt7cvI6,nrI2khZx3d0
+1922,14806.000000000000000,Kisumu,Kisumu Central Sub County,Shauri Moyo Kaloleni Ward,UqLylL8NY0G,OpLt8IgyHop,tAbBVBbueqD
+1846,37830.000000000000000,Kilifi,Ganze Sub County,Bamba Ward,BE24fZlEXxt,x7qUMtZZvo9,nrI2khZx3d0
+1847,24958.000000000000000,Kilifi,Ganze Sub County,Jaribuni Ward,JLTt8kf6vtA,x7qUMtZZvo9,nrI2khZx3d0
+1849,17497.000000000000000,Kilifi,Malindi Sub County,Jilore Ward,nqJwUrOo66m,lGg3wEy784X,nrI2khZx3d0
+1850,17965.000000000000000,Kilifi,Malindi Sub County,Kakuyuni Ward,ckJv892Aokb,lGg3wEy784X,nrI2khZx3d0
+1853,43434.000000000000000,Kilifi,Malindi Sub County,Shella Ward,kKIgRAJckI3,lGg3wEy784X,nrI2khZx3d0
+1854,16847.000000000000000,Kilifi,Magarini Sub County,Marafa Ward,Icchyn9Ob1j,KMWrMZrlO5u,nrI2khZx3d0
+1855,40694.000000000000000,Kilifi,Magarini Sub County,Magarini Ward,uI1MltAs8p3,KMWrMZrlO5u,nrI2khZx3d0
+1879,30325.000000000000000,Siaya,Ugenya Sub County,West Ugenya Ward,XdZKE7HcK5B,InECuIlzJGx,u4t9H8XyU9P
+1880,21270.000000000000000,Siaya,Ugenya Sub County,Ukwala Ward,AxesNVgsvhq,InECuIlzJGx,u4t9H8XyU9P
+1881,27081.000000000000000,Siaya,Ugenya Sub County,North Ugenya Ward,quAHj7k172D,InECuIlzJGx,u4t9H8XyU9P
+1882,30258.000000000000000,Siaya,Ugenya Sub County,East Ugenya Ward,XIgwnIXyBx0,InECuIlzJGx,u4t9H8XyU9P
+1883,24527.000000000000000,Siaya,Ugunja Sub County,Sidindi Ward,rngZkqTBd03,m9nsQ1MXlVU,u4t9H8XyU9P
+1884,29632.000000000000000,Siaya,Ugunja Sub County,Sigomere Ward,WrmJKkvfjDl,m9nsQ1MXlVU,u4t9H8XyU9P
+1885,39213.000000000000000,Siaya,Ugunja Sub County,Ugunja Ward,pHKNjOmIqg4,m9nsQ1MXlVU,u4t9H8XyU9P
+1886,13601.000000000000000,Siaya,Alego Usonga Sub County,Usonga Ward,utYTK2xBC3k,Cu46otDi1RO,u4t9H8XyU9P
+1887,32234.000000000000000,Siaya,Alego Usonga Sub County,West Alego Ward,zaHyyp9lXME,Cu46otDi1RO,u4t9H8XyU9P
+1888,30993.000000000000000,Siaya,Alego Usonga Sub County,Central Alego Ward,fpnhZCEZEGQ,Cu46otDi1RO,u4t9H8XyU9P
+1889,32252.000000000000000,Siaya,Alego Usonga Sub County,Siaya Township Ward,bcaDvBIDj6b,Cu46otDi1RO,u4t9H8XyU9P
+1890,34846.000000000000000,Kwale,Msambweni Sub County,Gombato Bongwe Ward,ByAmsolBen5,ADMywdLwoRX,N7YETT3A9r1
+126,12030.000000000000000,TAITA TAVETA,Voi Sub County,Sagala Ward,IawwjaYnKtR,yoGLpCTgjed,QyGNX2DpR4h
+1915,22126.000000000000000,Kisumu,Kisumu West Sub County,South West Kisumu Ward,hAzpUozlCyI,YzEDO9Mq4TR,tAbBVBbueqD
+2005,23096.000000000000000,Kisii,Kitutu Chache South Sub County,Nyakoe Ward,z8JmM1WxmgG,gPR82w2xgJZ,sPkRcDvhGWA
+2006,50363.000000000000000,Kisii,Kitutu Chache South Sub County,Kisii Central Ward,erVsVGwRwBc,gPR82w2xgJZ,sPkRcDvhGWA
+2008,38384.000000000000000,Nairobi,Westlands  Sub County,Parklands/highridge Ward,QhDd2LAuXAF,f1T0Ltob8VQ,jkG3zaihdSs
+2012,43122.000000000000000,Nairobi,Dagoretti North Sub County,Kilimani Ward,yXbOIljEz90,CcTr4bcVGAG,jkG3zaihdSs
+2015,27202.000000000000000,Nairobi,Dagoretti North Sub County,Kileleshwa Ward,DnVTXbCnup5,CcTr4bcVGAG,jkG3zaihdSs
+802,27793.000000000000000,BARINGO,Mogotio Sub County,Mogotio Ward,duv5obCpRzb,k5sxmlXAtIg,vvOK1BxTbet
+803,16508.000000000000000,BARINGO,Mogotio Sub County,Emining Ward,uhTYg7CLmOd,k5sxmlXAtIg,vvOK1BxTbet
+804,16658.000000000000000,BARINGO,Mogotio Sub County,Kisanana Ward,LYDEE54oZAu,k5sxmlXAtIg,vvOK1BxTbet
+805,21140.000000000000000,BARINGO,Koibatek Sub County,Lembus Ward,KUL5AR13rwy,Yl9UDBnDvvW,vvOK1BxTbet
+806,20207.000000000000000,BARINGO,Koibatek Sub County,Lembus kwen Ward,YoFhsT3n9Ln,Yl9UDBnDvvW,vvOK1BxTbet
+807,17026.000000000000000,BARINGO,Koibatek Sub County,Ravine Ward,ikiFHlCFCCq,Yl9UDBnDvvW,vvOK1BxTbet
+808,18881.000000000000000,BARINGO,Koibatek Sub County,Mumberes/Maji Mazuri Ward,b85TEdR4eRk,Yl9UDBnDvvW,vvOK1BxTbet
+809,15871.000000000000000,BARINGO,Koibatek Sub County,Lembus/Perkerra Ward,NmgTZ010rTT,Yl9UDBnDvvW,vvOK1BxTbet
+810,12148.000000000000000,BARINGO,Koibatek Sub County,Koibatek Ward,NFMLHmkjDil,Yl9UDBnDvvW,vvOK1BxTbet
+811,17731.000000000000000,LAIKIPIA,Laikipia West Sub County,Ol-Moran Ward,IZGBFhMdekx,pXbWrnFPpKb,xuFdFy6t9AH
+812,21630.000000000000000,LAIKIPIA,Laikipia West Sub County,Rumuruti Township Ward,JoGNwQRLIWT,pXbWrnFPpKb,xuFdFy6t9AH
+2030,35355.000000000000000,Nairobi,Kibra  Sub County,Woodley/kenyatta Golf Course Ward,Smgomyf1mXV,LO5he3DtiFG,jkG3zaihdSs
+937,36330.000000000000000,KERICHO,Kipkelion East Sub County,Kedowa/kimugul Ward,tqCrm5nojsI,gU0Cz7Qlfss,ihZsJ8alvtb
+938,36284.000000000000000,KERICHO,Kipkelion East Sub County,Chepseon Ward,k828CVWMS7V,gU0Cz7Qlfss,ihZsJ8alvtb
+939,14665.000000000000000,KERICHO,Kipkelion East Sub County,Tendeno/sorget Ward,OrFIWXUMeP6,gU0Cz7Qlfss,ihZsJ8alvtb
+940,18001.000000000000000,KERICHO,Kipkelion West Sub County,Kunyak Ward,phnXUDE38Bv,Taw0Zg7nArd,ihZsJ8alvtb
+941,20079.000000000000000,KERICHO,Kipkelion West Sub County,Kamasian Ward,O7GqFgG69Md,Taw0Zg7nArd,ihZsJ8alvtb
+942,25501.000000000000000,KERICHO,Kipkelion West Sub County,Kipkelion Ward,fLlw3oVxfPp,Taw0Zg7nArd,ihZsJ8alvtb
+1818,21639.000000000000000,Mombasa,Likoni  Sub County,Likoni Ward,y9LgUAIGBj7,iy93Mmi73Or,wsBsC6gjHvn
+2034,38912.000000000000000,Nairobi,Roysambu  Sub County,Zimmerman Ward,m3CPhYAMMRN,j7GpbairCOi,jkG3zaihdSs
+2035,40331.000000000000000,Nairobi,Roysambu  Sub County,Roysambu Ward,RRAEO9Ltfec,j7GpbairCOi,jkG3zaihdSs
+2038,39156.000000000000000,Nairobi,Kasarani  Sub County,Mwiki Ward,LWZoX1NZFa1,FoqzDgIByL6,jkG3zaihdSs
+2039,21353.000000000000000,Nairobi,Kasarani  Sub County,Kasarani Ward,eVnnqyuwBfa,FoqzDgIByL6,jkG3zaihdSs
+1923,18902.000000000000000,Kisumu,Kisumu Central Sub County,Market Milimani Ward,wTeTHBlXnQj,OpLt8IgyHop,tAbBVBbueqD
+2045,20705.000000000000000,Nairobi,Ruaraka  Sub County,Lucky Summer Ward,cUX8GhsuLPn,Cc8uEFkzfVf,jkG3zaihdSs
+2046,41946.000000000000000,Nairobi,Ruaraka  Sub County,Korogocho Ward,TqSqq39Jbcz,Cc8uEFkzfVf,jkG3zaihdSs
+1827,24492.000000000000000,Kilifi,Kilifi North Sub County,Kibarani Ward,MrSf22UB5d3,MEkEH8ZmcOU,nrI2khZx3d0
+1829,33563.000000000000000,Kilifi,Kilifi North Sub County,Matsangoni Ward,XWYco24xiw4,MEkEH8ZmcOU,nrI2khZx3d0
+2050,56198.000000000000000,Nairobi,Embakasi South Sub County,Pipeline Ward,vjOR4Xpi2TY,aDp1odOWYC1,jkG3zaihdSs
+1924,48004.000000000000000,Kisumu,Kisumu Central Sub County,Kondele Ward,pOsTvaq49pN,OpLt8IgyHop,tAbBVBbueqD
+1819,61011.000000000000000,Mombasa,Likoni  Sub County,Timbwani Ward,bZcRxqnzRy0,iy93Mmi73Or,wsBsC6gjHvn
+1925,32430.000000000000000,Kisumu,Kisumu Central Sub County,Nyalenda B Ward,yz3WGD5x3v2,OpLt8IgyHop,tAbBVBbueqD
+1926,28456.000000000000000,Kisumu,Seme Sub County,West Seme Ward,ulkhuNyw2MH,LRNmnMw1fBs,tAbBVBbueqD
+1927,23213.000000000000000,Kisumu,Seme Sub County,Central Seme Ward,o6cVZ72goEk,LRNmnMw1fBs,tAbBVBbueqD
+1928,21688.000000000000000,Kisumu,Seme Sub County,East Seme Ward,BRDtIETwfeW,LRNmnMw1fBs,tAbBVBbueqD
+1929,25448.000000000000000,Kisumu,Seme Sub County,North Seme Ward,b2DzrddWnYN,LRNmnMw1fBs,tAbBVBbueqD
+1930,17334.000000000000000,Kisumu,Nyando Sub County,East Kano/wawidhi Ward,ONutw6s6W4y,iRK9uABUTVZ,tAbBVBbueqD
+1931,25065.000000000000000,Kisumu,Nyando Sub County,Kabonyo Kanyagwal,LCXl4ftRJYy,iRK9uABUTVZ,tAbBVBbueqD
+1932,36261.000000000000000,Kisumu,Nyando Sub County,Kobura Ward,s2NvoXiAGWj,iRK9uABUTVZ,tAbBVBbueqD
+1933,19426.000000000000000,Kisumu,Muhoroni Sub County,Miwani Ward,PoYQc8biHf3,NmbwkQ5r5cB,tAbBVBbueqD
+1934,26307.000000000000000,Kisumu,Muhoroni Sub County,Ombeyi Ward,cnOFVqKDVEi,NmbwkQ5r5cB,tAbBVBbueqD
+1935,32496.000000000000000,Kisumu,Muhoroni Sub County,Masogo/nyang'oma Ward,FFfi4zTqdH2,NmbwkQ5r5cB,tAbBVBbueqD
+1936,33078.000000000000000,Kisumu,Muhoroni Sub County,Chemelil Ward,WzjCQ2bnOk7,NmbwkQ5r5cB,tAbBVBbueqD
+1937,34457.000000000000000,Kisumu,Muhoroni Sub County,Muhoroni Koru Ward,cyChGO6tdNS,NmbwkQ5r5cB,tAbBVBbueqD
+1938,17322.000000000000000,Kisumu,Nyakach Sub County,South West Nyakach Ward,oTl0WEQrKtX,kBQIjtWUBqj,tAbBVBbueqD
+1939,31829.000000000000000,Kisumu,Nyakach Sub County,North Nyakach Ward,G2B9ridstXR,kBQIjtWUBqj,tAbBVBbueqD
+1940,26960.000000000000000,Kisumu,Nyakach Sub County,Central Nyakach Ward,go41UxgIdh5,kBQIjtWUBqj,tAbBVBbueqD
+1941,26403.000000000000000,Kisumu,Nyakach Sub County,West Nyakach Ward,cSmqxMnL3hd,kBQIjtWUBqj,tAbBVBbueqD
+1942,30527.000000000000000,Kisumu,Nyakach Sub County,South East Nyakach Ward,TAZBFBDq6KC,kBQIjtWUBqj,tAbBVBbueqD
+1943,26071.000000000000000,Kisumu,Nyando Sub County,Awasi/onjiko Ward,Vi7hrFiryu0,iRK9uABUTVZ,tAbBVBbueqD
+1944,36306.000000000000000,Kisumu,Nyando Sub County,Ahero Ward,F1etBBfosCl,iRK9uABUTVZ,tAbBVBbueqD
+1945,43300.000000000000000,Nyamira,Masaba North Sub County,Rigoma Ward,oq5P0uoHv4U,Qn5Fff2lIDz,uepLTG8wGWJ
+1946,32305.000000000000000,Nyamira,Masaba North Sub County,Gachuba Ward,PLayyGokkLa,Qn5Fff2lIDz,uepLTG8wGWJ
+1947,35307.000000000000000,Nyamira,Manga Sub County,Kamera Ward,ZJdVAPAukav,f3AcdRzgTwz,uepLTG8wGWJ
+1948,22263.000000000000000,Nyamira,Manga Sub County,Magombo Ward,s7u7anGLs0p,f3AcdRzgTwz,uepLTG8wGWJ
+1949,30289.000000000000000,Nyamira,Manga Sub County,Manga Ward,zfVQ2KNTfgY,f3AcdRzgTwz,uepLTG8wGWJ
+1950,35672.000000000000000,Nyamira,Masaba North Sub County,Gesima Ward,sHxQtj2KMIR,Qn5Fff2lIDz,uepLTG8wGWJ
+1951,32676.000000000000000,Nyamira,Nyamira Sub County,Nyamaiya Ward,Av8d3lmuaua,cxjRPbvhjzr,uepLTG8wGWJ
+1952,41826.000000000000000,Nyamira,Nyamira Sub County,Bogichora Ward,odXKgaPu8B0,cxjRPbvhjzr,uepLTG8wGWJ
+1953,39758.000000000000000,Nyamira,Nyamira Sub County,Bosamaro Ward,b3aaM8BOTDz,cxjRPbvhjzr,uepLTG8wGWJ
+1954,25836.000000000000000,Nyamira,Nyamira Sub County,Bonyamatuta Ward,d7n8GfG2cFO,cxjRPbvhjzr,uepLTG8wGWJ
+1955,19577.000000000000000,Nyamira,Nyamira Sub County,Township Ward,tjmkRVSEHwx,cxjRPbvhjzr,uepLTG8wGWJ
+1956,27598.000000000000000,Nyamira,Nyamira North Sub County,Itibo Ward,ojhmHJxovB6,v5qbFUgfIoF,uepLTG8wGWJ
+1957,17252.000000000000000,Nyamira,Nyamira North Sub County,Bomwagamo Ward,Z4MKjHrF1wJ,v5qbFUgfIoF,uepLTG8wGWJ
+1958,32482.000000000000000,Nyamira,Nyamira North Sub County,Bokeira Ward,nvxLbNo63Zw,v5qbFUgfIoF,uepLTG8wGWJ
+1959,18362.000000000000000,Nyamira,Nyamira North Sub County,Magwagwa Ward,AAVwWFH70cF,v5qbFUgfIoF,uepLTG8wGWJ
+1960,26659.000000000000000,Nyamira,Nyamira North Sub County,Ekerenyo Ward,QcYbNJ5Z88l,v5qbFUgfIoF,uepLTG8wGWJ
+1961,18976.000000000000000,Nyamira,Borabu Sub County,Mekenene Ward,UZzNEWFdz58,ABuzigW8Lzw,uepLTG8wGWJ
+1962,43664.000000000000000,Nyamira,Borabu Sub County,Kiabonyoru Ward,ZHnLneFdqXj,ABuzigW8Lzw,uepLTG8wGWJ
+1963,27495.000000000000000,Nyamira,Borabu Sub County,Nyansiongo Ward,pjOkCmcntm6,ABuzigW8Lzw,uepLTG8wGWJ
+1964,26955.000000000000000,Nyamira,Borabu Sub County,Esise Ward,yCs7obwONR9,ABuzigW8Lzw,uepLTG8wGWJ
+1965,20618.000000000000000,Kisii,Bonchari  Sub County,Bomariba Ward,lRfveTknPgF,zCCIu1Vi3Wh,sPkRcDvhGWA
+1966,27694.000000000000000,Kisii,Bonchari  Sub County,Bogiakumu Ward,JKJtpBP77A1,zCCIu1Vi3Wh,sPkRcDvhGWA
+1967,31952.000000000000000,Kisii,Bonchari  Sub County,Bomorenda Ward,MyzWMCaSFlX,zCCIu1Vi3Wh,sPkRcDvhGWA
+1968,34351.000000000000000,Kisii,Bonchari  Sub County,Riana Ward,f2pOlRPY9gE,zCCIu1Vi3Wh,sPkRcDvhGWA
+1969,32115.000000000000000,Kisii,South Mugirango Sub County,Tabaka Ward,e0kbTojCjio,WHG67QCDRS9,sPkRcDvhGWA
+1970,19866.000000000000000,Kisii,South Mugirango Sub County,Boikanga Ward,OrArvkA4MbA,WHG67QCDRS9,sPkRcDvhGWA
+1971,26139.000000000000000,Kisii,South Mugirango Sub County,Bogetenga Ward,NZLSKCRL1O0,WHG67QCDRS9,sPkRcDvhGWA
+1972,39413.000000000000000,Kisii,South Mugirango Sub County,Borabu Chitago Ward,fBGAi2rHJgE,WHG67QCDRS9,sPkRcDvhGWA
+1973,26611.000000000000000,Kisii,South Mugirango Sub County,Moticho Ward,nbMilBEW7vk,WHG67QCDRS9,sPkRcDvhGWA
+1974,14905.000000000000000,Kisii,South Mugirango Sub County,Getenga Ward,lY9h6WKKqjC,WHG67QCDRS9,sPkRcDvhGWA
+1975,33499.000000000000000,Kisii,Bomachoge Borabu Sub County,Bokimonge Ward,F0FgIasVA92,ntRK47D5dYL,sPkRcDvhGWA
+1976,33703.000000000000000,Kisii,Bomachoge Borabu Sub County,Magenche Ward,DHNNNbrtKX9,ntRK47D5dYL,sPkRcDvhGWA
+1977,18492.000000000000000,Kisii,Bobasi Sub County,Masige West Ward,kNhuVMT4NIA,cooDDG3Lh3A,sPkRcDvhGWA
+1978,19170.000000000000000,Kisii,Bobasi Sub County,Masige East Ward,ZmF6haTsiNT,cooDDG3Lh3A,sPkRcDvhGWA
+1979,23346.000000000000000,Kisii,Bobasi Sub County,Basi Central Ward,UGCnusbnkFI,cooDDG3Lh3A,sPkRcDvhGWA
+1980,31088.000000000000000,Kisii,Bobasi Sub County,Nyacheki Ward,oAXSVQp3K0O,cooDDG3Lh3A,sPkRcDvhGWA
+1981,34166.000000000000000,Kisii,Bobasi Sub County,Bassi Bogetaorio Ward,u15fCmBOYHT,cooDDG3Lh3A,sPkRcDvhGWA
+1982,22004.000000000000000,Kisii,Bobasi Sub County,Bobasi Chache Ward,Xwhn2CB2cZ3,cooDDG3Lh3A,sPkRcDvhGWA
+1983,21246.000000000000000,Kisii,Bobasi Sub County,Sameta Mokwerero Ward,qH2ke0Qrbu7,cooDDG3Lh3A,sPkRcDvhGWA
+1984,20562.000000000000000,Kisii,Bobasi Sub County,Bobasi Boitangare Ward,wXOHBThI5Kf,cooDDG3Lh3A,sPkRcDvhGWA
+1985,23482.000000000000000,Kisii,Bomachoge Chache Sub County,Majoge Basi Ward,fOorbUi6HUx,YqYSkwmOtiR,sPkRcDvhGWA
+1986,33197.000000000000000,Kisii,Bomachoge Chache Sub County,Boochi Tendere Ward,R8gqeFZV0qT,YqYSkwmOtiR,sPkRcDvhGWA
+1987,36851.000000000000000,Kisii,Bomachoge Chache Sub County,Bosoti Sengera Ward,BNC4x8wPAsw,YqYSkwmOtiR,sPkRcDvhGWA
+1988,27724.000000000000000,Kisii,Nyaribari Masaba Sub County,Ichuni Ward,TSCRn3jEAXw,A6Sj8RumZ0m,sPkRcDvhGWA
+1989,21526.000000000000000,Kisii,Nyaribari Masaba Sub County,Nyamasibi Ward,CbtRAlHp1JA,A6Sj8RumZ0m,sPkRcDvhGWA
+1990,26013.000000000000000,Kisii,Nyaribari Masaba Sub County,Masimba Ward,CDUIv5RI0VU,A6Sj8RumZ0m,sPkRcDvhGWA
+1991,25821.000000000000000,Kisii,Nyaribari Masaba Sub County,Gesusu Ward,GC3CIljaAjo,A6Sj8RumZ0m,sPkRcDvhGWA
+1992,20986.000000000000000,Kisii,Nyaribari Masaba Sub County,Kiamokama Ward,cpLjDOte8ze,A6Sj8RumZ0m,sPkRcDvhGWA
+1993,29338.000000000000000,Kisii,Nyaribari Chache  Sub County,Bobaracho Ward,H5US8Zu9bIJ,fFh3beH29fD,sPkRcDvhGWA
+1994,32203.000000000000000,Kisii,Nyaribari Chache  Sub County,Kisii Central Ward,IO0zXx5HVO2,fFh3beH29fD,sPkRcDvhGWA
+1995,15024.000000000000000,Kisii,Nyaribari Chache  Sub County,Keumbu Ward,fsE425Pq6Bo,fFh3beH29fD,sPkRcDvhGWA
+1996,13102.000000000000000,Kisii,Nyaribari Chache  Sub County,Kiogoro Ward,o25UHSbQwGY,fFh3beH29fD,sPkRcDvhGWA
+1997,19368.000000000000000,Kisii,Nyaribari Chache  Sub County,Birongo Ward,g8iPQGXNRmg,fFh3beH29fD,sPkRcDvhGWA
+128,8757.000000000000000,TAITA TAVETA,Voi Sub County,Marungu Ward,mvDV6e04X7a,yoGLpCTgjed,QyGNX2DpR4h
+2063,30751.000000000000000,Nairobi,Embakasi East Sub County,Lower Savanna Ward,Qjd5eRv25sb,gD4xxgDGJ4Y,jkG3zaihdSs
+2064,34084.000000000000000,Nairobi,Embakasi East Sub County,Embakasi Ward,raV5YKTRCG2,gD4xxgDGJ4Y,jkG3zaihdSs
+2065,30950.000000000000000,Nairobi,Embakasi East Sub County,Utawala Ward,rEwQxmUPoZE,gD4xxgDGJ4Y,jkG3zaihdSs
+2066,22936.000000000000000,Nairobi,Embakasi East Sub County,Mihango Ward,GwVllI2Zdfe,gD4xxgDGJ4Y,jkG3zaihdSs
+130,7875.000000000000000,TAITA TAVETA,Voi Sub County,Ngolia Ward,XzqVKmvJA4m,yoGLpCTgjed,QyGNX2DpR4h
+2000,27539.000000000000000,Kisii,Kitutu Chache North Sub County,Sensi Ward,SmXNTLIxvM0,cQkF9l9wePP,sPkRcDvhGWA
+2072,44881.000000000000000,Nairobi,Makadara  Sub County,Viwandani Ward,rSGZNHDJ4jJ,wwROy3Qkwin,jkG3zaihdSs
+2073,55456.000000000000000,Nairobi,Makadara  Sub County,Harambee Ward,T7AinNTWtXe,wwROy3Qkwin,jkG3zaihdSs
+2077,66264.000000000000000,Nairobi,Kamukunji  Sub County,Eastleigh South Ward,zP3xgQdPmJX,qoLIT7y5f5c,jkG3zaihdSs
+749,18970.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Kabiemit Ward,ZUMLw8HBqqW,SOEG546PqbA,MqnLxQBigG0
+143,10777.000000000000000,GARISSA,Lagdera Sub County,Maalimin Ward,weu7m3lq9xG,J69iWev2zwu,uyOrcHZBpW0
+144,19839.000000000000000,GARISSA,Lagdera Sub County,Sabena Ward,bdYNcnPn5ze,J69iWev2zwu,uyOrcHZBpW0
+145,9778.000000000000000,GARISSA,Lagdera Sub County,Baraki Ward,phpfjGEVjg8,J69iWev2zwu,uyOrcHZBpW0
+765,25403.000000000000000,NANDI,Chesumei Sub County,Chemundu/kapng'etunyi Ward,G1AXnlrNy7a,xLWuQq3DjOR,t0J75eHKxz5
+2013,27401.000000000000000,Nairobi,Dagoretti North Sub County,Kawangware Ward,arZgeTW65s5,CcTr4bcVGAG,jkG3zaihdSs
+2084,26509.000000000000000,Nairobi,Starehe  Sub County,Landimawe Ward,oYFOeehTMK2,nKHlZyN0lt9,jkG3zaihdSs
+2085,53303.000000000000000,Nairobi,Starehe  Sub County,Nairobi South Ward,LYgnp1wcewP,nKHlZyN0lt9,jkG3zaihdSs
+2088,37972.000000000000000,Nairobi,Mathare  Sub County,Huruma Ward,LlDgh96665K,gh2kzpOFCeF,jkG3zaihdSs
+2131,25580.000000000000000,Uasin Gishu,Soy Sub County,Segeroi/barsombe Ward,LXgF3A1KBLn,lmr1q6dTaso,pZqQRRW7PHP
+2132,19183.000000000000000,Uasin Gishu,Soy Sub County,Kipsomba Ward,tSBIbHLo6tl,lmr1q6dTaso,pZqQRRW7PHP
+2152,12836.000000000000000,Uasin Gishu,Kapseret Sub County,Megun Ward,gQ7WBbu9IbN,u9yagZzK49q,pZqQRRW7PHP
+2159,26673.000000000000000,Narok,Transmara West Sub County,Keyian Ward,mq1FEx5vQZ4,Nb6e34jNGAq,kqJ83J2D72s
+2160,24945.000000000000000,Narok,Transmara West Sub County,Angata Barikoi Ward,QYQsVGsbKWg,Nb6e34jNGAq,kqJ83J2D72s
+2161,28545.000000000000000,Narok,Transmara West Sub County,Shankoe Ward,L1Lr24F5gyc,Nb6e34jNGAq,kqJ83J2D72s
+2162,22843.000000000000000,Narok,Transmara West Sub County,Kimintet Ward,BCIB2lbwUN4,Nb6e34jNGAq,kqJ83J2D72s
+2163,35434.000000000000000,Narok,Transmara West Sub County,Lolgorian Ward,jhNc8UIGW4Y,Nb6e34jNGAq,kqJ83J2D72s
+2164,26357.000000000000000,Narok,Transmara East Sub County,Iikerin Ward,lQwlJ2oi5zA,PGTkGnIAZuy,kqJ83J2D72s
+2165,26773.000000000000000,Narok,Transmara East Sub County,Ololmasani Ward,tVa5R01HhNz,PGTkGnIAZuy,kqJ83J2D72s
+2166,17580.000000000000000,Narok,Transmara East Sub County,Mogondo Ward,VcvJbIcShgA,PGTkGnIAZuy,kqJ83J2D72s
+2217,27612.000000000000000,Kiambu,Lari Sub County,Kijabe Ward,oA6eNmEvCaj,nCziQtZ49jj,qKzosKQPl6G
+2241,13807.000000000000000,Kiambu,Ruiru Sub County,Gatongora Ward,B1GDVDYIGwK,TPRNJqSm4lK,qKzosKQPl6G
+306,25703.000000000000000,THARAKA-NITHI,Tharaka North Sub County,Gatunga Ward,Z8xEFHWnQB4,ZNXf7qiVh3t,T4urHM47nlm
+307,24273.000000000000000,THARAKA-NITHI,Tharaka North Sub County,Mukothima Ward,l4FVdIFWQov,ZNXf7qiVh3t,T4urHM47nlm
+2243,16711.000000000000000,Kiambu,Ruiru Sub County,Kahawa Wendani Ward,w3MNsmpJJHX,TPRNJqSm4lK,qKzosKQPl6G
+2274,16273.000000000000000,Kisii,Bomachoge Borabu Sub County,BOOCHI BORABU,iklOZN0Ok77,ntRK47D5dYL,sPkRcDvhGWA
+86,19577.000000000000000,TANA RIVER,Garsen Sub County,Kipini east Ward,UD0FqqyuxBJ,Lj0mu9j58Ss,JsH2bnvNt2d
+87,16019.000000000000000,TANA RIVER,Garsen Sub County,Garsen south Ward,dckG5TO7hf8,Lj0mu9j58Ss,JsH2bnvNt2d
+196,44501.000000000000000,MANDERA,BANISSA,BANISSA,doitLG3v6PZ,hCvlJNjyZna,R6f9znhg37c
+197,32078.000000000000000,MANDERA,BANISSA,DERKHALE,C72ryGO9u3f,hCvlJNjyZna,R6f9znhg37c
+242,22722.000000000000000,ISIOLO,Isiolo Sub County,BULA PESA,aVUy55683jB,I2LYLqKU6AW,bzOfj0iwfDH
+243,4781.000000000000000,ISIOLO,Merti Sub County,CHARI,HTTUdsL0gAm,NrGORu301bx,bzOfj0iwfDH
+244,15560.000000000000000,ISIOLO,Merti Sub County,CHERAB,onY1jZ8tPTG,NrGORu301bx,bzOfj0iwfDH
+245,5520.000000000000000,ISIOLO,Isiolo Sub County,NGARE MARA,GHmkA5jGVqQ,I2LYLqKU6AW,bzOfj0iwfDH
+246,18774.000000000000000,ISIOLO,Isiolo Sub County,BURAT,PwpI3UVqNMb,I2LYLqKU6AW,bzOfj0iwfDH
+247,15388.000000000000000,ISIOLO,Isiolo Sub County,OLDONYIRO,ZJgywSuefy6,I2LYLqKU6AW,bzOfj0iwfDH
+248,16401.000000000000000,ISIOLO,Garbatulla Sub County,GARBATULLA,PoEBay5v6Vh,ecl4YnDebUi,bzOfj0iwfDH
+249,14618.000000000000000,ISIOLO,Garbatulla Sub County,KINNA,um7zkcazal1,ecl4YnDebUi,bzOfj0iwfDH
+250,12099.000000000000000,ISIOLO,Garbatulla Sub County,SERICHO,Yqxw7nddfbo,ecl4YnDebUi,bzOfj0iwfDH
+193,14837.000000000000000,MANDERA,MANDERA WEST,LAGHSURE,rBlQZ6By4ru,H5RvDZkoDJL,R6f9znhg37c
+201,43449.000000000000000,MANDERA,MANDERA NORTH,ASHABITO,YJhdNCfPDKH,jrm0uyLXnC1,R6f9znhg37c
+202,33658.000000000000000,MANDERA,MANDERA NORTH,GUTICHA,A4Ko5vFs83F,jrm0uyLXnC1,R6f9znhg37c
+212,36794.000000000000000,MANDERA,MANDERA EAST,BULLA MPYA,g1daXHb0Lz0,fGr9rRvaovO,R6f9znhg37c
+213,13822.000000000000000,MANDERA,MANDERA EAST,KHALALIO,gVbkohpiw1f,fGr9rRvaovO,R6f9znhg37c
+214,12298.000000000000000,MANDERA,MANDERA EAST,NEBOI,UU5663WBF7t,fGr9rRvaovO,R6f9znhg37c
+215,45358.000000000000000,MANDERA,MANDERA EAST,TOWNSHIP,dYhEFLJSRYl,fGr9rRvaovO,R6f9znhg37c
+216,49098.000000000000000,MANDERA,LAFEY,LIBEHIA,r9itCpitueT,nsfbHBS9tMT,R6f9znhg37c
+217,16632.000000000000000,MANDERA,LAFEY,FINO,BRWO7tcujQF,nsfbHBS9tMT,R6f9znhg37c
+218,48659.000000000000000,MANDERA,LAFEY,LAFEY,LtPutnKuKqO,nsfbHBS9tMT,R6f9znhg37c
+219,24619.000000000000000,MANDERA,LAFEY,WARANKARA,k3FtDRPwlPG,nsfbHBS9tMT,R6f9znhg37c
+220,14138.000000000000000,MANDERA,LAFEY,ALANGO GOF,zFbFESCJ8mq,nsfbHBS9tMT,R6f9znhg37c
+445,20665.000000000000000,NYANDARUA,Kinangop Sub County,Njabani/kiburu Ward,WntjnQMsI6t,RAnL5kBKMIt,mYZacFNIB3h
+637,44233.000000000000000,TURKANA,Turkana South Sub County,Lokichar Ward,Dg2JnSl7lk7,iTw0sFjlqZ2,kphDeKClFch
+638,25438.000000000000000,TURKANA,Turkana East Sub County,Kapedo/napeitom Ward,prqcH9XZcQe,dr8gOvVAdiE,kphDeKClFch
+733,23898.000000000000000,ELGEYO-MARAKWET,Marakwet East sub-county,Endo Ward,pwYHLOkW31r,EZraJgLdRLX,MqnLxQBigG0
+734,15049.000000000000000,ELGEYO-MARAKWET,Marakwet East sub-county,Embobut/Embulot Ward,u6ONpoWIV0d,EZraJgLdRLX,MqnLxQBigG0
+735,20111.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Lelan Ward,qsljIZxApCc,fNCuk4Lpsnh,MqnLxQBigG0
+2016,40013.000000000000000,Nairobi,Dagoretti North Sub County,Kabiro Ward,Kzpb8gvmSkz,CcTr4bcVGAG,jkG3zaihdSs
+2017,17973.000000000000000,Nairobi,Dagoretti South Sub County,Mutu-ini Ward,HuBMlfYHHEy,sqNWYDHZZ6W,jkG3zaihdSs
+2018,34014.000000000000000,Nairobi,Dagoretti South Sub County,Ngando Ward,bK37v9AMeU3,sqNWYDHZZ6W,jkG3zaihdSs
+2019,65320.000000000000000,Nairobi,Dagoretti South Sub County,Riruta Ward,PTKcICD0k31,sqNWYDHZZ6W,jkG3zaihdSs
+2020,32575.000000000000000,Nairobi,Dagoretti South Sub County,Uthiru/ruthimitu Ward,jaQjWqSJPAd,sqNWYDHZZ6W,jkG3zaihdSs
+2021,31054.000000000000000,Nairobi,Dagoretti South Sub County,Waithaka Ward,pUKcRGZTyGW,sqNWYDHZZ6W,jkG3zaihdSs
+2022,33303.000000000000000,Nairobi,Langata  Sub County,Karen Ward,clyAqa9XVNp,aTGYlhEw2Xx,jkG3zaihdSs
+794,15230.000000000000000,BARINGO,Baringo Central Sub County,Sacho Ward,X0OCKVcartn,k7Rj54u6dMx,vvOK1BxTbet
+801,9503.000000000000000,BARINGO,Marigat Sub County,Mukutani Ward,sPoq2HB87R1,dSLnPmNlm8Q,vvOK1BxTbet
+935,20349.000000000000000,KAJIADO,Loitokitok Sub County,Kimana Ward,REkEoX4PR5g,eyADpAXM834,Hsk1YV8kHkT
+821,16201.000000000000000,LAIKIPIA,Laikipia East Sub County,Umande Ward,GpddBXmXl2i,pF6qPMIlHte,xuFdFy6t9AH
+822,26077.000000000000000,LAIKIPIA,Laikipia North Sub County,Sosian Ward,Dg8SGNnGQny,RJyUfi5BQUm,xuFdFy6t9AH
+823,16002.000000000000000,LAIKIPIA,Laikipia North Sub County,Segera Ward,Kx1h1yqLZh9,RJyUfi5BQUm,xuFdFy6t9AH
+824,13715.000000000000000,LAIKIPIA,Laikipia North Sub County,Mugogodo West Ward,Zrkf6cQj2AP,RJyUfi5BQUm,xuFdFy6t9AH
+825,23412.000000000000000,LAIKIPIA,Laikipia North Sub County,Mugogodo East Ward,qZ5JBQj1DxJ,RJyUfi5BQUm,xuFdFy6t9AH
+927,16470.000000000000000,KAJIADO,Kajiado West Sub County,Iloodokilani Ward,MMPnyemUFot,wYsCfCAUWNB,Hsk1YV8kHkT
+928,25451.000000000000000,KAJIADO,Kajiado West Sub County,Magadi Ward,bSdHZBeB5bQ,wYsCfCAUWNB,Hsk1YV8kHkT
+929,29587.000000000000000,KAJIADO,Kajiado West Sub County,Ewuaso oonkidong'i Ward,KHFGFujHwZA,wYsCfCAUWNB,Hsk1YV8kHkT
+1802,52777.000000000000000,Mombasa,Jomvu  Sub County,Mikindani Ward,AtSX1b8b5wZ,vSISrsNNHwq,wsBsC6gjHvn
+1820,25875.000000000000000,Mombasa,Mvita  Sub County,Makadara Ward-mji Wa Kale Ward,lZiLgEqsjq5,C1xuoa1NAMm,wsBsC6gjHvn
+1822,27513.000000000000000,Mombasa,Mvita  Sub County,Tononoka Ward,Dvo3BcpbGkD,C1xuoa1NAMm,wsBsC6gjHvn
+1823,18806.000000000000000,Mombasa,Mvita  Sub County,Ganjoni Ward-shimanzi Ward,I1ioJIBPdpG,C1xuoa1NAMm,wsBsC6gjHvn
+1824,38834.000000000000000,Mombasa,Mvita  Sub County,Majengo Ward,i1bANekmIzQ,C1xuoa1NAMm,wsBsC6gjHvn
+1825,25545.000000000000000,Kilifi,Kilifi North Sub County,Tezo Ward,xmMP1QapXiY,MEkEH8ZmcOU,nrI2khZx3d0
+123,14155.000000000000000,TAITA TAVETA,Mwatate Sub County,Chawia Ward,NkcRjTGJbuh,IBDoGsLdhvt,QyGNX2DpR4h
+1834,50846.000000000000000,Kilifi,Kilifi South Sub County,Shimo La Tewa Ward,QfHPo7H918V,xWAZBULwGxp,nrI2khZx3d0
+1844,43144.000000000000000,Kilifi,Rabai Sub County,Rabai/kisurutini Ward,mi5ayQN77v7,hJf4rt7cvI6,nrI2khZx3d0
+1845,31333.000000000000000,Kilifi,Ganze Sub County,Ganze Ward,f51CfBzKknF,x7qUMtZZvo9,nrI2khZx3d0
+1848,43543.000000000000000,Kilifi,Ganze Sub County,Sokoke Ward,kpL4HsQ7YZ5,x7qUMtZZvo9,nrI2khZx3d0
+1851,32562.000000000000000,Kilifi,Malindi Sub County,Ganda Ward,gWqTliiaRaB,lGg3wEy784X,nrI2khZx3d0
+1852,51254.000000000000000,Kilifi,Malindi Sub County,Malindi Town Ward,u6oi5OySCnQ,lGg3wEy784X,nrI2khZx3d0
+1856,34597.000000000000000,Kilifi,Magarini Sub County,Gongoni Ward,nsigtOm8lE7,KMWrMZrlO5u,nrI2khZx3d0
+1857,43005.000000000000000,Kilifi,Magarini Sub County,Adu Ward,EO3kbx8nZIp,KMWrMZrlO5u,nrI2khZx3d0
+1858,25781.000000000000000,Kilifi,Magarini Sub County,Garashi Ward,nResMsI1yRw,KMWrMZrlO5u,nrI2khZx3d0
+1859,16317.000000000000000,Kilifi,Magarini Sub County,Sabaki Ward,fXc21yLLxVd,KMWrMZrlO5u,nrI2khZx3d0
+1860,31777.000000000000000,Siaya,Alego Usonga Sub County,North Alego Ward,zcpKiQgMNyb,Cu46otDi1RO,u4t9H8XyU9P
+1861,46386.000000000000000,Siaya,Alego Usonga Sub County,South East Alego Ward,hMo6PZnvQqb,Cu46otDi1RO,u4t9H8XyU9P
+1862,35004.000000000000000,Siaya,Gem Sub County,North Gem Ward,KzqDLd1CVFQ,PKeFksHlJkB,u4t9H8XyU9P
+1863,23481.000000000000000,Siaya,Gem Sub County,West Gem Ward,mEZBjj4fLBT,PKeFksHlJkB,u4t9H8XyU9P
+1864,23854.000000000000000,Siaya,Gem Sub County,Central Gem Ward,LWXYw2EpuLy,PKeFksHlJkB,u4t9H8XyU9P
+1865,23151.000000000000000,Siaya,Gem Sub County,Yala Township Ward,PeEcMfBchbr,PKeFksHlJkB,u4t9H8XyU9P
+1866,24764.000000000000000,Siaya,Gem Sub County,East Gem Ward,XM6wZZeKqhk,PKeFksHlJkB,u4t9H8XyU9P
+1867,30421.000000000000000,Siaya,Gem Sub County,South Gem Ward,F3o4X4OBHKw,PKeFksHlJkB,u4t9H8XyU9P
+1868,28503.000000000000000,Siaya,Bondo Sub County,West Yimbo Ward,NYqz8G2gfEC,JNvqpOnKfGR,u4t9H8XyU9P
+1869,20093.000000000000000,Siaya,Bondo Sub County,Central Sakwa Ward,JVz0J1MJJ0V,JNvqpOnKfGR,u4t9H8XyU9P
+1870,23260.000000000000000,Siaya,Bondo Sub County,South Sakwa Ward,CRBP2g6KqWH,JNvqpOnKfGR,u4t9H8XyU9P
+1871,27189.000000000000000,Siaya,Bondo Sub County,Yimbo East Ward,bxQkw99jktF,JNvqpOnKfGR,u4t9H8XyU9P
+1872,25313.000000000000000,Siaya,Bondo Sub County,West Sakwa Ward,uid3Vo2PCsW,JNvqpOnKfGR,u4t9H8XyU9P
+1873,33164.000000000000000,Siaya,Bondo Sub County,North Sakwa Ward,EmooFdjzKlm,JNvqpOnKfGR,u4t9H8XyU9P
+1874,32886.000000000000000,Siaya,Rarieda Sub County,East Asembo Ward,cfUqqHJA6z4,XcRpb1xsM64,u4t9H8XyU9P
+1875,33072.000000000000000,Siaya,Rarieda Sub County,West Asembo Ward,kazFsB6YZ6J,XcRpb1xsM64,u4t9H8XyU9P
+1910,40876.000000000000000,Kisumu,Kisumu East Sub County,Kajulu Ward,xyzeTkTa8o7,PRpKwAloU5b,tAbBVBbueqD
+1911,21288.000000000000000,Kisumu,Kisumu East Sub County,Kolwa East Ward,kQXcKGM8chb,PRpKwAloU5b,tAbBVBbueqD
+1914,31739.000000000000000,Kisumu,Kisumu East Sub County,Kolwa Central Ward,ml7KNIMIuvz,PRpKwAloU5b,tAbBVBbueqD
+1916,38128.000000000000000,Kisumu,Kisumu West Sub County,Central Kisumu Ward,Xs7PwQOVMmb,YzEDO9Mq4TR,tAbBVBbueqD
+127,20418.000000000000000,TAITA TAVETA,Voi Sub County,Kaloleni  Ward,KrQMvgSyMd7,yoGLpCTgjed,QyGNX2DpR4h
+1917,24890.000000000000000,Kisumu,Kisumu West Sub County,North Kisumu Ward,SPH4pigpmjD,YzEDO9Mq4TR,tAbBVBbueqD
+1918,22147.000000000000000,Kisumu,Kisumu West Sub County,West Kisumu Ward,DP7qvMiw5Du,YzEDO9Mq4TR,tAbBVBbueqD
+1919,23955.000000000000000,Kisumu,Kisumu West Sub County,North West Kisumu Ward,r6rYPoyjxvR,YzEDO9Mq4TR,tAbBVBbueqD
+1920,34924.000000000000000,Kisumu,Kisumu Central Sub County,Railways Ward,ZplKg3SMkIC,OpLt8IgyHop,tAbBVBbueqD
+1921,19826.000000000000000,Kisumu,Kisumu Central Sub County,Migosi Ward,oz6zXuKWiR9,OpLt8IgyHop,tAbBVBbueqD
+1998,20710.000000000000000,Kisii,Nyaribari Chache  Sub County,Ibeno Ward,v0dNWrWeT7B,fFh3beH29fD,sPkRcDvhGWA
+1999,27611.000000000000000,Kisii,Kitutu Chache North Sub County,Monyerero Ward,PwxIcksWPYQ,cQkF9l9wePP,sPkRcDvhGWA
+2001,28161.000000000000000,Kisii,Kitutu Chache North Sub County,Marani Ward,BR5uAoEu5yV,cQkF9l9wePP,sPkRcDvhGWA
+2002,20558.000000000000000,Kisii,Kitutu Chache North Sub County,Kegogi Ward,O8hNbyssZJJ,cQkF9l9wePP,sPkRcDvhGWA
+2003,24872.000000000000000,Kisii,Kitutu Chache South Sub County,Bogusero Ward,rWETDR5My3k,gPR82w2xgJZ,sPkRcDvhGWA
+2004,13254.000000000000000,Kisii,Kitutu Chache South Sub County,Bogeka Ward,TwsN9rzFim6,gPR82w2xgJZ,sPkRcDvhGWA
+2007,20546.000000000000000,Kisii,Kitutu Chache South Sub County,Nyatieko Ward,Dvfw4PI207c,gPR82w2xgJZ,sPkRcDvhGWA
+2009,26453.000000000000000,Nairobi,Westlands  Sub County,Karura Ward,CNKaaMOOKGn,f1T0Ltob8VQ,jkG3zaihdSs
+2010,44564.000000000000000,Nairobi,Westlands  Sub County,Kangemi Ward,HWHpeXSxVCb,f1T0Ltob8VQ,jkG3zaihdSs
+2011,36135.000000000000000,Nairobi,Westlands  Sub County,Mountain View Ward,Wrx3LFjULLl,f1T0Ltob8VQ,jkG3zaihdSs
+678,33297.000000000000000,TRANS NZOIA,Kwanza  Sub County,Keiyo Ward,HSm3Cq7ZrWd,ABy8CNqf2e7,mThvosEflAU
+2014,45872.000000000000000,Nairobi,Dagoretti North Sub County,Gatina Ward,ufzdiFbvPYg,CcTr4bcVGAG,jkG3zaihdSs
+780,21390.000000000000000,NANDI,Mosop Sub County,Sangalo/kebulonik Ward,Vh31LHi1RC8,Xtb7tbJpk9p,t0J75eHKxz5
+786,18390.000000000000000,BARINGO,Tiaty Sub County,Tangulbei/korossi Ward,i4HY1pMsQ4q,Mk4bMOSMRTB,vvOK1BxTbet
+2023,33377.000000000000000,Nairobi,Langata  Sub County,Nairobi West Ward,uPv6CYD6np2,aTGYlhEw2Xx,jkG3zaihdSs
+2024,47037.000000000000000,Nairobi,Langata  Sub County,Mugumo-ini Ward,oFPmL4TCoWb,aTGYlhEw2Xx,jkG3zaihdSs
+787,21227.000000000000000,BARINGO,Tiaty Sub County,Churo/amaya Ward,gF0VBsLJhxK,Mk4bMOSMRTB,vvOK1BxTbet
+788,23986.000000000000000,BARINGO,Baringo North Sub County,Barwessa Ward,OlKUTmnTY57,bqtTmWcikTN,vvOK1BxTbet
+789,19092.000000000000000,BARINGO,Baringo North Sub County,Kabartonjo Ward,hOymt7wmmCI,bqtTmWcikTN,vvOK1BxTbet
+790,21046.000000000000000,BARINGO,Baringo North Sub County,Saimoi/kipsaraman Ward,PS4XNPha7bO,bqtTmWcikTN,vvOK1BxTbet
+791,17814.000000000000000,BARINGO,Baringo North Sub County,Saimo/soi Ward,SRnkv6Fgvoh,bqtTmWcikTN,vvOK1BxTbet
+792,11851.000000000000000,BARINGO,Baringo North Sub County,Bartabwa Ward,Tdyu1iQYirq,bqtTmWcikTN,vvOK1BxTbet
+793,23430.000000000000000,BARINGO,Baringo Central Sub County,Kabarnet Ward,Kn2aiEXbw5B,k7Rj54u6dMx,vvOK1BxTbet
+2025,47202.000000000000000,Nairobi,Langata  Sub County,South C Ward,ZWRytukDvQ7,aTGYlhEw2Xx,jkG3zaihdSs
+795,9567.000000000000000,BARINGO,Baringo Central Sub County,Tenges Ward,l7Lt0CsaQGl,k7Rj54u6dMx,vvOK1BxTbet
+796,17021.000000000000000,BARINGO,Baringo Central Sub County,Ewalel/chapchap Ward,Uq1zAqIJXv3,k7Rj54u6dMx,vvOK1BxTbet
+797,16232.000000000000000,BARINGO,Baringo Central Sub County,Kapropita Ward,er24ckvh14d,k7Rj54u6dMx,vvOK1BxTbet
+798,27669.000000000000000,BARINGO,Marigat Sub County,Marigat Ward,bVD6U8Bf6As,dSLnPmNlm8Q,vvOK1BxTbet
+799,16000.000000000000000,BARINGO,Marigat Sub County,Iichamus Ward,zI7CuvCQcos,dSLnPmNlm8Q,vvOK1BxTbet
+800,27699.000000000000000,BARINGO,Marigat Sub County,Mochongoi Ward,RUfWwfXjF1B,dSLnPmNlm8Q,vvOK1BxTbet
+2026,24191.000000000000000,Nairobi,Langata  Sub County,Nyayo Highrise Ward,IDtR0R9o2Q4,aTGYlhEw2Xx,jkG3zaihdSs
+2027,28182.000000000000000,Nairobi,Kibra  Sub County,Laini Saba Ward,sFC62axqvzl,LO5he3DtiFG,jkG3zaihdSs
+930,5692.000000000000000,KAJIADO,Kajiado West Sub County,Mosiro Ward,gV7ZuBU4q7U,wYsCfCAUWNB,Hsk1YV8kHkT
+931,23779.000000000000000,KAJIADO,Loitokitok Sub County,Entonet/lenkism Ward,u3IXGUmWgZ2,eyADpAXM834,Hsk1YV8kHkT
+932,18617.000000000000000,KAJIADO,Loitokitok Sub County,Imbrikani/eselelnkei Ward,fBbEs297NMY,eyADpAXM834,Hsk1YV8kHkT
+933,37147.000000000000000,KAJIADO,Loitokitok Sub County,Kuku Ward,aLPl4YD1hzh,eyADpAXM834,Hsk1YV8kHkT
+934,37604.000000000000000,KAJIADO,Loitokitok Sub County,Rombo Ward,Zk0ZFibhfaI,eyADpAXM834,Hsk1YV8kHkT
+2028,52521.000000000000000,Nairobi,Kibra  Sub County,Lindi Ward,taVVtCXxo50,LO5he3DtiFG,jkG3zaihdSs
+936,24553.000000000000000,KERICHO,Kipkelion East Sub County,Londiani Ward,hnO1LFuQFvR,gU0Cz7Qlfss,ihZsJ8alvtb
+2029,35028.000000000000000,Nairobi,Kibra  Sub County,Makina Ward,tZfKaFDQcdW,LO5he3DtiFG,jkG3zaihdSs
+2031,54347.000000000000000,Nairobi,Kibra  Sub County,Sarang'ombe Ward,dYniZG1Q7Tk,LO5he3DtiFG,jkG3zaihdSs
+2032,47188.000000000000000,Nairobi,Roysambu  Sub County,Githurai Ward,FNDsOKdbWTO,j7GpbairCOi,jkG3zaihdSs
+2033,39994.000000000000000,Nairobi,Roysambu  Sub County,Kahawa West,gJel307q0y1,j7GpbairCOi,jkG3zaihdSs
+2036,25265.000000000000000,Nairobi,Roysambu  Sub County,Kahawa,ihmR2IRWnpi,j7GpbairCOi,jkG3zaihdSs
+2037,39963.000000000000000,Nairobi,Kasarani  Sub County,Clay City,bF28Xs26tXA,FoqzDgIByL6,jkG3zaihdSs
+2040,34523.000000000000000,Nairobi,Kasarani  Sub County,Njiru Ward,aZGmpSZ2M0H,FoqzDgIByL6,jkG3zaihdSs
+2041,35961.000000000000000,Nairobi,Kasarani  Sub County,Ruai Ward,wskDg8KQ0v3,FoqzDgIByL6,jkG3zaihdSs
+2042,40036.000000000000000,Nairobi,Ruaraka  Sub County,Babandogo,OObzseEJrMs,Cc8uEFkzfVf,jkG3zaihdSs
+2043,36275.000000000000000,Nairobi,Ruaraka  Sub County,Utalii Ward,r1YlC9GTC4S,Cc8uEFkzfVf,jkG3zaihdSs
+2048,24359.000000000000000,Nairobi,Embakasi South Sub County,Kwa Njenga Ward,XnWPNKPDxxo,aDp1odOWYC1,jkG3zaihdSs
+2056,45567.000000000000000,Nairobi,Embakasi North Sub County,Dandora Area Iv Ward,rj9COmxBpVr,SSz1iOv28Jk,jkG3zaihdSs
+2049,26015.000000000000000,Nairobi,Embakasi South Sub County,Kwa Reuben Ward,HvcGWkiIxjp,aDp1odOWYC1,jkG3zaihdSs
+2067,47811.000000000000000,Nairobi,Embakasi West Sub County,Umoja I Ward,Zmv9YmuisYs,aCwUX5V42Zz,jkG3zaihdSs
+2051,23829.000000000000000,Nairobi,Embakasi South Sub County,Kware Ward,A1sIHVzJM77,aDp1odOWYC1,jkG3zaihdSs
+2052,39342.000000000000000,Nairobi,Embakasi North Sub County,Kariobangi North Ward,YMBLUc2euxC,SSz1iOv28Jk,jkG3zaihdSs
+2053,22802.000000000000000,Nairobi,Embakasi North Sub County,Dandora Area I Ward,Qusks6YHAmd,SSz1iOv28Jk,jkG3zaihdSs
+2054,33675.000000000000000,Nairobi,Embakasi North Sub County,Dandora Area Ii Ward,KhxCmDKgYMT,SSz1iOv28Jk,jkG3zaihdSs
+2055,40002.000000000000000,Nairobi,Embakasi North Sub County,Dandora Area Iii Ward,UrLRfZeC3Oq,SSz1iOv28Jk,jkG3zaihdSs
+2057,39292.000000000000000,Nairobi,Embakasi Central Sub County,Kayole North Ward,ETN4UDiD5y5,XvpLXU47BKs,jkG3zaihdSs
+2058,50712.000000000000000,Nairobi,Embakasi Central Sub County,Kayole Central Ward,BMzkWPbVOCH,XvpLXU47BKs,jkG3zaihdSs
+2068,53666.000000000000000,Nairobi,Embakasi West Sub County,Umoja Ii Ward,ivNrlSMRNra,aCwUX5V42Zz,jkG3zaihdSs
+2059,50317.000000000000000,Nairobi,Embakasi Central Sub County,Kayole South Ward,UJlaR99kRxm,XvpLXU47BKs,jkG3zaihdSs
+2074,31022.000000000000000,Nairobi,Makadara  Sub County,Makongeni Ward,ov2muONmDh8,wwROy3Qkwin,jkG3zaihdSs
+2060,35628.000000000000000,Nairobi,Embakasi Central Sub County,Komarock Ward,I6S3XcUsF34,XvpLXU47BKs,jkG3zaihdSs
+2061,14930.000000000000000,Nairobi,Embakasi Central Sub County,Matopeni/spring Valley Ward,xhXsdnqx3eX,XvpLXU47BKs,jkG3zaihdSs
+2076,43258.000000000000000,Nairobi,Kamukunji  Sub County,Eastleigh North Ward,i1zR9ESXM9L,qoLIT7y5f5c,jkG3zaihdSs
+2062,45137.000000000000000,Nairobi,Embakasi East Sub County,Upper Savanna Ward,OaqOHmb6jNs,gD4xxgDGJ4Y,jkG3zaihdSs
+2069,22953.000000000000000,Nairobi,Embakasi West Sub County,Mowlem Ward,ujYuDykrrXi,aCwUX5V42Zz,jkG3zaihdSs
+2070,33036.000000000000000,Nairobi,Embakasi West Sub County,Kariobangi South Ward,WJ020FJI9yB,aCwUX5V42Zz,jkG3zaihdSs
+2071,52293.000000000000000,Nairobi,Makadara  Sub County,Maringo/hamza Ward,Ao5e4mVaq7w,wwROy3Qkwin,jkG3zaihdSs
+693,38731.000000000000000,TRANS NZOIA,Kiminini  Sub County,Nabiswa Ward,X1eiwwCQwbI,pzZHpL2ueIn,mThvosEflAU
+2079,21699.000000000000000,Nairobi,Kamukunji  Sub County,California Ward,LR8RoEpERGM,qoLIT7y5f5c,jkG3zaihdSs
+2075,37602.000000000000000,Nairobi,Kamukunji  Sub County,Pumwani Ward,x6E428s1HPf,qoLIT7y5f5c,jkG3zaihdSs
+694,25890.000000000000000,TRANS NZOIA,Cherangany Sub County,Sinyerere Ward,hHfS8R69bEH,f18kGo9yXWo,mThvosEflAU
+2078,43168.000000000000000,Nairobi,Kamukunji  Sub County,Airbase Ward,t4Suo8Enc7T,qoLIT7y5f5c,jkG3zaihdSs
+133,22349.000000000000000,GARISSA,Garissa Sub County,Iftin Ward,sxXb2Lcz396,lQkHbTC1iRg,uyOrcHZBpW0
+2080,13328.000000000000000,Nairobi,Starehe  Sub County,Nairobi Central Ward,KJHG9zDp2UR,nKHlZyN0lt9,jkG3zaihdSs
+146,15013.000000000000000,GARISSA,Dadaab Sub County,Dertu Ward,s9YsYYqvjAs,EW4Jw4dVWBt,uyOrcHZBpW0
+147,60390.000000000000000,GARISSA,Dadaab Sub County,Dadaab Ward,MG7qx3dHgee,EW4Jw4dVWBt,uyOrcHZBpW0
+148,43741.000000000000000,GARISSA,Dadaab Sub County,LABISGALE Ward,IqrzDYsRJpA,EW4Jw4dVWBt,uyOrcHZBpW0
+149,9469.000000000000000,GARISSA,Dadaab Sub County,Damajale Ward,Iz7ISZHUk3Q,EW4Jw4dVWBt,uyOrcHZBpW0
+150,11440.000000000000000,GARISSA,Dadaab Sub County,Liboi Ward,OazP6bDZAb4,EW4Jw4dVWBt,uyOrcHZBpW0
+151,12434.000000000000000,GARISSA,Dadaab Sub County,Abakaile Ward,Mn7xPHjxcxb,EW4Jw4dVWBt,uyOrcHZBpW0
+756,20456.000000000000000,NANDI,Aldai Sub County,Terik Ward,ojy9ffncq0R,Sq2fLWnOCGg,t0J75eHKxz5
+2081,25354.000000000000000,Nairobi,Starehe  Sub County,Ngara Ward Ward,QKZyfxaG8EJ,nKHlZyN0lt9,jkG3zaihdSs
+2082,37062.000000000000000,Nairobi,Starehe  Sub County,Pangani Ward,DR0BSs3eYeC,nKHlZyN0lt9,jkG3zaihdSs
+2083,10488.000000000000000,Nairobi,Starehe  Sub County,Ziwani/kariokor,nRw6kIlJ23L,nKHlZyN0lt9,jkG3zaihdSs
+2086,20463.000000000000000,Nairobi,Mathare  Sub County,Hospital Ward,QzN4B49WE91,gh2kzpOFCeF,jkG3zaihdSs
+2087,28260.000000000000000,Nairobi,Mathare  Sub County,Mabatini Ward,rD8Z7AgYLaS,gh2kzpOFCeF,jkG3zaihdSs
+2089,34523.000000000000000,Nairobi,Mathare  Sub County,Ngei Ward,tsmsPb6qMFa,gh2kzpOFCeF,jkG3zaihdSs
+2090,38374.000000000000000,Nairobi,Mathare  Sub County,Mlango Kubwa,lvETWuhiIMi,gh2kzpOFCeF,jkG3zaihdSs
+2091,33824.000000000000000,Nairobi,Mathare  Sub County,Kiamaiko Ward,tgAB60BL0u9,gh2kzpOFCeF,jkG3zaihdSs
+2092,31242.000000000000000,Nairobi,Westlands  Sub County,Kitisuru Ward,TpTOC5VcUGe,f1T0Ltob8VQ,jkG3zaihdSs
+2093,23192.000000000000000,Muranga,Kangema Sub County,Kanyenya-ini Ward,lJIdDl7HaCT,U9CLTNIwehR,ahwTMNAJvrL
+2094,34524.000000000000000,Muranga,Kangema Sub County,Muguru Ward,Mdn0FWVc1MX,U9CLTNIwehR,ahwTMNAJvrL
+2095,19272.000000000000000,Muranga,Kangema Sub County,Rwathia Ward,UYC51WCz1R2,U9CLTNIwehR,ahwTMNAJvrL
+2096,33731.000000000000000,Muranga,Mathioya Sub County,Gitugi Ward,UgrVrVp78rA,u7Gkh63FYe4,ahwTMNAJvrL
+168,23381.000000000000000,WAJIR,Wajir East Sub County,Wagberi Ward,bvqz4r93cJm,uov0yFMw9Qm,CeLsrJOH0g9
+2151,17347.000000000000000,Uasin Gishu,Kapseret Sub County,Ngeria Ward,ymhb4pW8ryv,u9yagZzK49q,pZqQRRW7PHP
+2153,51041.000000000000000,Uasin Gishu,Kapseret Sub County,Langas Ward,ZBnsczLPwr2,u9yagZzK49q,pZqQRRW7PHP
+181,19322.000000000000000,WAJIR,Eldas Sub County,Eldas Ward,jJEKwJhftfv,x6Z1sBeiyqQ,CeLsrJOH0g9
+2154,22028.000000000000000,Uasin Gishu,Kesses Sub County,Racecourse Ward,ydfRAgF1oDr,dKHnvt7gleN,pZqQRRW7PHP
+2155,27657.000000000000000,Uasin Gishu,Kesses Sub County,Cheptiret/kipchamo Ward,ydWuSvAtVs1,dKHnvt7gleN,pZqQRRW7PHP
+2156,41084.000000000000000,Uasin Gishu,Kesses Sub County,Tulwet/chiyat Ward,M2Y9JtFNd0u,dKHnvt7gleN,pZqQRRW7PHP
+2157,37683.000000000000000,Uasin Gishu,Kesses Sub County,Tarakwa Ward,HrhIAUzgxqq,dKHnvt7gleN,pZqQRRW7PHP
+152,5316.000000000000000,GARISSA,Fafi Sub County,Bura Ward,kqTPEb1RsMy,RScEHA3V38d,uyOrcHZBpW0
+2167,23405.000000000000000,Narok,Transmara East Sub County,Kapsasian Ward,D9H082cdWsj,PGTkGnIAZuy,kqJ83J2D72s
+2168,20035.000000000000000,Narok,Narok North Sub County,Olposimoru Ward,gzHtPrtr6nU,fNROL0qm8De,kqJ83J2D72s
+2169,21045.000000000000000,Narok,Narok North Sub County,Olokurto Ward,pTkgy00IQrp,fNROL0qm8De,kqJ83J2D72s
+2170,47517.000000000000000,Narok,Narok North Sub County,Narok Town Ward,MAdyJPs0RUr,fNROL0qm8De,kqJ83J2D72s
+2171,20206.000000000000000,Narok,Narok North Sub County,Nkareta Ward,zoVBqNpy6Sw,fNROL0qm8De,kqJ83J2D72s
+182,21080.000000000000000,WAJIR,Eldas Sub County,Della Ward,FpUMvmJqkG2,x6Z1sBeiyqQ,CeLsrJOH0g9
+186,8693.000000000000000,WAJIR,Wajir South Sub County,Dadaja bulla Ward,qLYEefMIqQ0,U7KFQn3Up3o,CeLsrJOH0g9
+187,27968.000000000000000,WAJIR,Wajir South Sub County,Habasswein Ward,HO38wbafDJg,U7KFQn3Up3o,CeLsrJOH0g9
+188,22631.000000000000000,WAJIR,Wajir South Sub County,Lagboghoi south Ward,feWwmqlVMEq,U7KFQn3Up3o,CeLsrJOH0g9
+2205,24295.000000000000000,Kiambu,Kabete Sub County,Uthiru Ward,AJKSRemTmee,lb5LzWiUX8Y,qKzosKQPl6G
+2206,20420.000000000000000,Kiambu,Kikuyu Sub County,Karai,rdJwRuqqUHC,jOVcLeZQSsS,qKzosKQPl6G
+2207,18655.000000000000000,Kiambu,Kikuyu Sub County,Nachu Ward,gFLRh6j7pBd,jOVcLeZQSsS,qKzosKQPl6G
+2208,26823.000000000000000,Kiambu,Kikuyu Sub County,Sigona Ward,Rm2JR4F01rw,jOVcLeZQSsS,qKzosKQPl6G
+2209,32422.000000000000000,Kiambu,Kikuyu Sub County,Kikuyu Ward,cbYznphRVBi,jOVcLeZQSsS,qKzosKQPl6G
+2210,27082.000000000000000,Kiambu,Kikuyu Sub County,Kinoo,WoFjxj90Kle,jOVcLeZQSsS,qKzosKQPl6G
+2211,21202.000000000000000,Kiambu,Limuru Sub County,Bibirioni Ward,cSNzNEfbQfk,xhVi71INcFs,qKzosKQPl6G
+2212,31211.000000000000000,Kiambu,Limuru Sub County,Limuru Central Ward,DwOhEdMGpB7,xhVi71INcFs,qKzosKQPl6G
+2213,26387.000000000000000,Kiambu,Limuru Sub County,Ndeiya Ward,lRFhjTLImNu,xhVi71INcFs,qKzosKQPl6G
+2214,28348.000000000000000,Kiambu,Limuru Sub County,Limuru East Ward,JbltwguSYWn,xhVi71INcFs,qKzosKQPl6G
+2215,23984.000000000000000,Kiambu,Limuru Sub County,Ngecha Tigoni Ward,tp0mFiSv7ar,xhVi71INcFs,qKzosKQPl6G
+153,9522.000000000000000,GARISSA,Fafi Sub County,Dekaharia Ward,RXFwsNh7egy,RScEHA3V38d,uyOrcHZBpW0
+190,15692.000000000000000,WAJIR,Wajir South Sub County,Diif Ward,jXyH8e9KzGe,U7KFQn3Up3o,CeLsrJOH0g9
+2240,41596.000000000000000,Kiambu,Ruiru Sub County,Biashara Ward,uQXYQokmIzX,TPRNJqSm4lK,qKzosKQPl6G
+308,15574.000000000000000,THARAKA-NITHI,Tharaka South Sub County,Nkondi Ward,Om9OC4PNQJo,Yz1V5Cx8CO2,T4urHM47nlm
+309,34679.000000000000000,THARAKA-NITHI,Tharaka South Sub County,Chiakagira Ward,rZ0Io1sU38M,Yz1V5Cx8CO2,T4urHM47nlm
+310,29869.000000000000000,THARAKA-NITHI,Tharaka South Sub County,Marimanti Ward,IcAegRcGuV6,Yz1V5Cx8CO2,T4urHM47nlm
+311,27925.000000000000000,EMBU,Manyatta  Sub County,Ruguru-Ngandori Ward,ncD8mIBXHRn,IPOMRXiYjxr,PFu8alU2KWG
+312,18999.000000000000000,EMBU,Manyatta  Sub County,Kithimu Ward,lMTHF7AFCSP,IPOMRXiYjxr,PFu8alU2KWG
+313,28511.000000000000000,EMBU,Manyatta  Sub County,Nginda Ward,juDN8sSnk3O,IPOMRXiYjxr,PFu8alU2KWG
+314,33468.000000000000000,EMBU,Manyatta  Sub County,Mbeti north Ward,vEAFtHnPDrX,IPOMRXiYjxr,PFu8alU2KWG
+315,32185.000000000000000,EMBU,Manyatta  Sub County,Kirimari Ward,GjGpfHjSGbO,IPOMRXiYjxr,PFu8alU2KWG
+316,13544.000000000000000,EMBU,Manyatta  Sub County,Gaturi south Ward,FUD1yUgctME,IPOMRXiYjxr,PFu8alU2KWG
+317,24398.000000000000000,EMBU,Manyatta  Sub County,Gaturi north Ward,s3eywuLj65m,IPOMRXiYjxr,PFu8alU2KWG
+318,20426.000000000000000,EMBU,Runyenjes  Sub County,Kaagari South Ward,QpKvk4GkYRI,kMSLkN4nsRl,PFu8alU2KWG
+319,23600.000000000000000,EMBU,Runyenjes  Sub County,Central ward,wZh1OhsZAK2,kMSLkN4nsRl,PFu8alU2KWG
+320,24952.000000000000000,EMBU,Runyenjes  Sub County,Kaagari North Ward,kiVPb44vhiR,kMSLkN4nsRl,PFu8alU2KWG
+2242,8744.000000000000000,Kiambu,Ruiru Sub County,Kahawa/sukari Ward,Lc6GluslY9h,TPRNJqSm4lK,qKzosKQPl6G
+2244,46351.000000000000000,Kiambu,Ruiru Sub County,Kiuu Ward,PN1D8Nm8ufZ,TPRNJqSm4lK,qKzosKQPl6G
+331,18447.000000000000000,KITUI,Mwingi North Sub County,Ngomeni Ward,zR0sWpigMWE,KXM9VnhuLfP,j8o6iO4Njsi
+332,40375.000000000000000,KITUI,Mwingi North Sub County,Kyuso Ward,WJLrTzwzXNb,KXM9VnhuLfP,j8o6iO4Njsi
+2245,44760.000000000000000,Kiambu,Ruiru Sub County,Mwiki Ward,KoIp1GKz0UI,TPRNJqSm4lK,qKzosKQPl6G
+2246,11934.000000000000000,Kiambu,Ruiru Sub County,Mwihoko Ward,dnLaU3RrCnp,TPRNJqSm4lK,qKzosKQPl6G
+2247,36378.000000000000000,Kiambu,Githunguri Sub County,Githunguri Ward,NFNF57gkxbf,E7tkGikenbD,qKzosKQPl6G
+2248,37149.000000000000000,Bomet,Sotik Sub County,Ndanai/abosi Ward,ygECklrrzGE,KyuSYunELJI,HMNARUV2CW4
+2249,32234.000000000000000,Bomet,Sotik Sub County,Chemagel Ward,LK2nY0OUCDG,KyuSYunELJI,HMNARUV2CW4
+2250,32708.000000000000000,Bomet,Sotik Sub County,Kipsonoi Ward,p5Z6myFYERX,KyuSYunELJI,HMNARUV2CW4
+2251,40368.000000000000000,Bomet,Sotik Sub County,Kapletundo Ward,G6aklDidwGe,KyuSYunELJI,HMNARUV2CW4
+2252,24830.000000000000000,Bomet,Sotik Sub County,Rongena/manaret Ward,Xj8EsCO27Jv,KyuSYunELJI,HMNARUV2CW4
+2253,29458.000000000000000,Bomet,Chepalungu Sub County,Kong'asis Ward,IBgG8lef22L,PUhMyfDD2xp,HMNARUV2CW4
+2254,35420.000000000000000,Bomet,Chepalungu Sub County,Nyangores Ward,mareBenlFqk,PUhMyfDD2xp,HMNARUV2CW4
+2255,32818.000000000000000,Bomet,Chepalungu Sub County,Sigor Ward,KFjbUWezAnU,PUhMyfDD2xp,HMNARUV2CW4
+2256,34922.000000000000000,Bomet,Chepalungu Sub County,Chebunyo Ward,m6Ko9GT996i,PUhMyfDD2xp,HMNARUV2CW4
+2257,31215.000000000000000,Bomet,Chepalungu Sub County,Siongiroi Ward,zxVl78P6p8i,PUhMyfDD2xp,HMNARUV2CW4
+2258,29062.000000000000000,Bomet,Bomet East Sub County,Merigi Ward,sp794D1MvxT,OZNRpww2TUK,HMNARUV2CW4
+2259,26992.000000000000000,Bomet,Bomet East Sub County,Kembu Ward,Va67VduPAgZ,OZNRpww2TUK,HMNARUV2CW4
+2260,28365.000000000000000,Bomet,Bomet East Sub County,Longisa Ward,drrGwAxlRtW,OZNRpww2TUK,HMNARUV2CW4
+2261,23272.000000000000000,Bomet,Bomet East Sub County,Kipreres  Ward,dDmN1rie0ij,OZNRpww2TUK,HMNARUV2CW4
+2262,19233.000000000000000,Bomet,Bomet East Sub County,Chemaner Ward,qj9Id3LgrGI,OZNRpww2TUK,HMNARUV2CW4
+2263,28017.000000000000000,Bomet,Bomet Central Sub County,Silibwet Township Ward,tM4Bmyj48cN,m9gdonbVXjZ,HMNARUV2CW4
+2264,22059.000000000000000,Bomet,Bomet Central Sub County,Ndaraweta Ward,J4ZIAuamKlu,m9gdonbVXjZ,HMNARUV2CW4
+2265,21795.000000000000000,Bomet,Bomet Central Sub County,Singorwet Ward,wHeMr9JlYBi,m9gdonbVXjZ,HMNARUV2CW4
+2266,34476.000000000000000,Bomet,Bomet Central Sub County,Chesoen Ward,Nu4cnZtQHk8,m9gdonbVXjZ,HMNARUV2CW4
+2267,20679.000000000000000,Bomet,Bomet Central Sub County,Mutarakwa  Ward,g5eGcoROeya,m9gdonbVXjZ,HMNARUV2CW4
+2268,25704.000000000000000,Bomet,Konoin Sub County,Chepchabas Ward,uMqAPTG5rm0,PLFoYJO8MVS,HMNARUV2CW4
+159,16055.000000000000000,GARISSA,Ijara Sub County,Ijara Ward,EgSwrsgfIho,l5E6PiIUs1J,uyOrcHZBpW0
+198,20068.000000000000000,MANDERA,BANISSA,GUBA,lZqCQuWJGTO,hCvlJNjyZna,R6f9znhg37c
+199,27602.000000000000000,MANDERA,BANISSA,MALKAMARI,eLXthnYAfFd,hCvlJNjyZna,R6f9znhg37c
+88,17999.000000000000000,TANA RIVER,Garsen Sub County,Kipini west Ward,SmP2VkWU2f9,Lj0mu9j58Ss,JsH2bnvNt2d
+89,14852.000000000000000,TANA RIVER,Garsen Sub County,Garsen central Ward,y1cIpVUXwUj,Lj0mu9j58Ss,JsH2bnvNt2d
+90,10716.000000000000000,TANA RIVER,Garsen Sub County,Garsen west Ward,urcMYGpY3xy,Lj0mu9j58Ss,JsH2bnvNt2d
+107,11724.000000000000000,LAMU,LAMU WEST,MKUNUMBI,wXf275eEPuy,Lfxw0DfD4jN,NjWSbQTwys4
+110,15706.000000000000000,LAMU,LAMU WEST,BAHARI,m7FYoouCqec,Lfxw0DfD4jN,NjWSbQTwys4
+194,37494.000000000000000,MANDERA,MANDERA WEST,DANDU,vuSQ9fTFw30,H5RvDZkoDJL,R6f9znhg37c
+195,33271.000000000000000,MANDERA,MANDERA WEST,GITHER,eaH1r5sQTr0,H5RvDZkoDJL,R6f9znhg37c
+200,33825.000000000000000,MANDERA,BANISSA,KILIWAHERI,ZEJu2asfUfk,hCvlJNjyZna,R6f9znhg37c
+209,27347.000000000000000,MANDERA,MANDERA SOUTH,ELWAK NORTH,h0htcHoe6tJ,qyhVIMG2rUw,R6f9znhg37c
+230,10336.000000000000000,MARSABIT,NORTH HORR,TURBI,WJ7jJ5A1MjS,j6fqt5TYqPZ,Eey8fT4Im3y
+109,13105.000000000000000,LAMU,LAMU WEST,WITU,aoySZ1KcDFN,Lfxw0DfD4jN,NjWSbQTwys4
+237,9753.000000000000000,MARSABIT,LAISAMIS,KARGI/SOUTH HORR,RaSqiM3lgfo,eZpy65ooW0m,Eey8fT4Im3y
+238,21305.000000000000000,MARSABIT,LAISAMIS,KORR/NGURUNIT,si4GkeAGSXo,eZpy65ooW0m,Eey8fT4Im3y
+91,17501.000000000000000,TANA RIVER,Garsen Sub County,Garsen north Ward,aLLewdAnspB,Lj0mu9j58Ss,JsH2bnvNt2d
+239,5144.000000000000000,MARSABIT,LAISAMIS,LOGOLOGO,ooyM9K6FAXE,eZpy65ooW0m,Eey8fT4Im3y
+132,43244.000000000000000,GARISSA,Garissa Sub County,Galbet Ward,K6stsAPW2Eu,lQkHbTC1iRg,uyOrcHZBpW0
+169,29349.000000000000000,WAJIR,Wajir East Sub County,Township Ward,SjGfdtwQbHd,uov0yFMw9Qm,CeLsrJOH0g9
+170,30070.000000000000000,WAJIR,Wajir East Sub County,Barwaqo Ward,x1BOzSCIanu,uov0yFMw9Qm,CeLsrJOH0g9
+176,21750.000000000000000,WAJIR,Wajir West Sub County,Arbajahan Ward,xvlSuZsdYVY,X98G0eIWdmP,CeLsrJOH0g9
+178,26216.000000000000000,WAJIR,Wajir West Sub County,ADEMASAJIDE Ward,BMKDCdHbiHL,X98G0eIWdmP,CeLsrJOH0g9
+179,14842.000000000000000,WAJIR,Wajir West Sub County,Ganyure Wagalla Ward,Y6KykEFTGUj,X98G0eIWdmP,CeLsrJOH0g9
+180,9071.000000000000000,WAJIR,Eldas Sub County,Lakoley south/basir Ward,xgSKqiZof82,x6Z1sBeiyqQ,CeLsrJOH0g9
+299,17487.000000000000000,THARAKA-NITHI,Mwimbi Sub County,Ganga Ward,AIL7D1wnOIl,wQ8XjZ7zVwL,T4urHM47nlm
+300,32021.000000000000000,THARAKA-NITHI,Mwimbi Sub County,Chogoria Ward,yQ9Js5EZ61q,wQ8XjZ7zVwL,T4urHM47nlm
+301,14123.000000000000000,THARAKA-NITHI,Igambang'ombe Sub County,Mariani Ward,Dcu26yytcIH,yXwsnpFBIPW,T4urHM47nlm
+302,23141.000000000000000,THARAKA-NITHI,Chuka Sub County,Karingani Ward,UQd8QPTpVD0,JmE1qRVQD4F,T4urHM47nlm
+303,36498.000000000000000,THARAKA-NITHI,Chuka Sub County,Magumoni Ward,vGpXQ5hFNmS,JmE1qRVQD4F,T4urHM47nlm
+304,24185.000000000000000,THARAKA-NITHI,Chuka Sub County,Mugwe Ward,mr7zhcDiR5h,JmE1qRVQD4F,T4urHM47nlm
+321,21546.000000000000000,EMBU,Runyenjes  Sub County,Kyeni north Ward,QRBxWEQZUpe,kMSLkN4nsRl,PFu8alU2KWG
+322,27438.000000000000000,EMBU,Runyenjes  Sub County,Kyeni south Ward,hA5gPMwN9gK,kMSLkN4nsRl,PFu8alU2KWG
+323,30117.000000000000000,EMBU,Mbeere South  Sub County,Mwea Ward,cWJOQn1YUfg,AvnM6jKoocs,PFu8alU2KWG
+324,21291.000000000000000,EMBU,Mbeere South  Sub County,Makima Ward,AoN9iYrVOUP,AvnM6jKoocs,PFu8alU2KWG
+325,29579.000000000000000,EMBU,Mbeere South  Sub County,Mbeti south Ward,wCqyM612JwW,AvnM6jKoocs,PFu8alU2KWG
+326,34139.000000000000000,EMBU,Mbeere South  Sub County,Mavuria Ward,IqDql8D0FEF,AvnM6jKoocs,PFu8alU2KWG
+327,15059.000000000000000,EMBU,Mbeere South  Sub County,Kiambere Ward,CMHN2XMxdY9,AvnM6jKoocs,PFu8alU2KWG
+328,26725.000000000000000,EMBU,Mbeere North  Sub County,Nthawa Ward,tGtfKyhl0y1,eYBXetGx8xF,PFu8alU2KWG
+350,26759.000000000000000,KITUI,Kitui Rural Sub County,Kisasi Ward,ZkMkC815uDw,vbauk0RRq9N,j8o6iO4Njsi
+357,28573.000000000000000,KITUI,Kitui Central  Sub County,Mulango Ward,KBHoROCFohc,MWqQbxWqACn,j8o6iO4Njsi
+358,28257.000000000000000,KITUI,Kitui Central  Sub County,Kyangwithya east Ward,XCMLultdtNW,MWqQbxWqACn,j8o6iO4Njsi
+361,22046.000000000000000,KITUI,Kitui East Sub County,Chuluni Ward,CHn58eAvVl9,d0Gu8FrRM0Y,j8o6iO4Njsi
+366,24450.000000000000000,KITUI,Kitui South Sub County,Mutomo Ward,ToGeasli0pe,d3hSQ3EtnPk,j8o6iO4Njsi
+367,25138.000000000000000,KITUI,Kitui South Sub County,Mutha Ward,V2yqe9L0ha7,d3hSQ3EtnPk,j8o6iO4Njsi
+369,18664.000000000000000,KITUI,Kitui South Sub County,Kanziko Ward,zNPxEQ4AIcH,d3hSQ3EtnPk,j8o6iO4Njsi
+446,25140.000000000000000,NYANDARUA,Kinangop Sub County,Nyakio Ward,sDFNdNK4QJ8,RAnL5kBKMIt,mYZacFNIB3h
+447,19485.000000000000000,NYANDARUA,Kinangop Sub County,Githabai Ward,il32x0l8U6u,RAnL5kBKMIt,mYZacFNIB3h
+448,25638.000000000000000,NYANDARUA,Kinangop Sub County,Magumu Ward,BBQbdCSiXdl,RAnL5kBKMIt,mYZacFNIB3h
+451,20259.000000000000000,NYANDARUA,Kipipiri Sub County,Geta Ward,ExTmlWkEQL9,KlVgeHmvG6n,mYZacFNIB3h
+453,25514.000000000000000,NYANDARUA,Olkalou Sub County,Karau Ward,b7xmixlTNYm,Lm9RMwhIu3G,mYZacFNIB3h
+455,27056.000000000000000,NYANDARUA,Olkalou Sub County,Mirangine Ward,QFG9oFhHG2F,Lm9RMwhIu3G,mYZacFNIB3h
+456,17926.000000000000000,NYANDARUA,Olkalou Sub County,Kaimbaga Ward,hYNt8KLy0zR,Lm9RMwhIu3G,mYZacFNIB3h
+458,21331.000000000000000,NYANDARUA,Oljoroorok Sub County,Gathanji Ward,xNnLSFClkz7,fVSw60UAC3W,mYZacFNIB3h
+459,26341.000000000000000,NYANDARUA,Oljoroorok Sub County,Gatimu Ward,hh7VWuhTI6A,fVSw60UAC3W,mYZacFNIB3h
+460,26147.000000000000000,NYANDARUA,Oljoroorok Sub County,Weru Ward,yOvD8h5gUOb,fVSw60UAC3W,mYZacFNIB3h
+463,20159.000000000000000,NYANDARUA,Ndaragwa Sub County,Kiritta Ward,xzY6X2bhxaT,EESGLsSLTqH,mYZacFNIB3h
+464,29960.000000000000000,NYANDARUA,Ndaragwa Sub County,Central Ward,e0xkgk6TZEG,EESGLsSLTqH,mYZacFNIB3h
+465,23441.000000000000000,NYANDARUA,Ndaragwa Sub County,Shamata Ward,W9GVYGq6UqK,EESGLsSLTqH,mYZacFNIB3h
+466,20686.000000000000000,NYERI,Tetu Sub County,Dedan kimathi Ward,LDPAHGr7qUm,YT3tecc4atw,ptWVfaCIdVx
+467,31003.000000000000000,NYERI,Tetu Sub County,Wamagana Ward,AO0q4JiVIMz,YT3tecc4atw,ptWVfaCIdVx
+468,26631.000000000000000,NYERI,Tetu Sub County,Aguthi-gaaki Ward,JIQYJYd5CzO,YT3tecc4atw,ptWVfaCIdVx
+469,17264.000000000000000,NYERI,Kieni West Sub County,Mweiga Ward,uhmsPJrZCXF,odOtfcaMg4p,ptWVfaCIdVx
+470,26291.000000000000000,NYERI,Kieni East Sub County,Naromoru/kiamathaga Ward,REFeM2dROq3,YXt5ETQPRlB,ptWVfaCIdVx
+471,19446.000000000000000,NYERI,Kieni West Sub County,Mwiyogo/endarasha Ward,kBloQxkcKxZ,odOtfcaMg4p,ptWVfaCIdVx
+472,23712.000000000000000,NYERI,Kieni West Sub County,Mugunda Ward,Ls8TbRfbKBs,odOtfcaMg4p,ptWVfaCIdVx
+473,18890.000000000000000,NYERI,Kieni West Sub County,Gatarakwa Ward,cWSGKfzRIhc,odOtfcaMg4p,ptWVfaCIdVx
+474,21804.000000000000000,NYERI,Kieni East Sub County,Thegu river Ward,lZXZ7HwrMGu,YXt5ETQPRlB,ptWVfaCIdVx
+475,22084.000000000000000,NYERI,Kieni East Sub County,Kabaru Ward,fB16JFnw8Ex,YXt5ETQPRlB,ptWVfaCIdVx
+476,26321.000000000000000,NYERI,Kieni East Sub County,Gakawa Ward,FsRuO9llshq,YXt5ETQPRlB,ptWVfaCIdVx
+477,22946.000000000000000,NYERI,Mathira West Sub County,Ruguru Ward,Z2yWQMpy2Ki,msIc1uFAY6B,ptWVfaCIdVx
+478,19722.000000000000000,NYERI,Mathira East Sub County,Magutu Ward,AZOhKeOxHR7,vznKK4IegIL,ptWVfaCIdVx
+617,33539.000000000000000,TURKANA,Turkana West Sub County,Kakuma Ward,bg4tS3m8rZA,HK5SUCMQmsw,kphDeKClFch
+621,18272.000000000000000,TURKANA,Turkana West Sub County,Kalobeyei Ward,WwMThzLSS3I,HK5SUCMQmsw,kphDeKClFch
+623,42211.000000000000000,TURKANA,Turkana West Sub County,Nanaam Ward,C93goWh2C1d,HK5SUCMQmsw,kphDeKClFch
+627,35506.000000000000000,TURKANA,Turkana Central Sub County,Lodwar Township Ward,v27o9CuZh11,zd8rhYqGowE,kphDeKClFch
+628,22784.000000000000000,TURKANA,Turkana Central Sub County,Kanamkemer Ward,U0eLQb7xmyu,zd8rhYqGowE,kphDeKClFch
+629,31629.000000000000000,TURKANA,Loima Sub County,Kotaruk/Lobei Ward,z3pqrBr5TyV,OZiGQn2R8kK,kphDeKClFch
+631,19848.000000000000000,TURKANA,Loima Sub County,Loima Ward,jRyJjLWoDig,OZiGQn2R8kK,kphDeKClFch
+634,41924.000000000000000,TURKANA,Turkana South Sub County,Katilu Ward,XtEn1yMSsKf,iTw0sFjlqZ2,kphDeKClFch
+639,20983.000000000000000,TURKANA,Turkana East Sub County,Katilia Ward,NhFq5rXnO3r,dr8gOvVAdiE,kphDeKClFch
+640,44045.000000000000000,TURKANA,Turkana East Sub County,Lokori/kochodin Ward,AY46zJ3BT9H,dr8gOvVAdiE,kphDeKClFch
+656,43565.000000000000000,WEST POKOT,Pokot North Sub County,Alale Ward,Oe8JEzBVDa9,YXpHG1Ez8V2,XWALbfAPa6n
+657,41563.000000000000000,WEST POKOT,Pokot South Sub County,Chepareria Ward,cQvnOvaqDNE,u2zJahNiSP5,XWALbfAPa6n
+658,30773.000000000000000,WEST POKOT,Pokot South Sub County,Batei Ward,Vfo6mLv2MkA,u2zJahNiSP5,XWALbfAPa6n
+659,33527.000000000000000,WEST POKOT,Pokot South Sub County,Lelan Ward,NfgFPylvlvN,u2zJahNiSP5,XWALbfAPa6n
+660,26237.000000000000000,WEST POKOT,Pokot South Sub County,Tapach Ward,WmCj9vCPVH2,u2zJahNiSP5,XWALbfAPa6n
+661,14020.000000000000000,SAMBURU,Samburu Central Sub County,Lodokejek Ward,PRuQd7VjO3x,EmQRGVtvWy3,o36zCRjSd4G
+679,21498.000000000000000,TRANS NZOIA,Kwanza  Sub County,Bidii Ward,NAWbghvoSOZ,ABy8CNqf2e7,mThvosEflAU
+685,39662.000000000000000,TRANS NZOIA,Saboti  Sub County,Tuwani Ward,xpKH3jY02I5,y2M16lesMsF,mThvosEflAU
+686,34988.000000000000000,TRANS NZOIA,Saboti  Sub County,Saboti Ward,OBSb0eIl4tb,y2M16lesMsF,mThvosEflAU
+687,19999.000000000000000,TRANS NZOIA,Saboti  Sub County,Machewa Ward,GQFH01xLj74,y2M16lesMsF,mThvosEflAU
+691,30234.000000000000000,TRANS NZOIA,Kiminini  Sub County,Hospital Ward,O6JUPINK7vr,pzZHpL2ueIn,mThvosEflAU
+692,24129.000000000000000,TRANS NZOIA,Kiminini  Sub County,Sikhendu Ward,SvN2Xzl3FK7,pzZHpL2ueIn,mThvosEflAU
+700,26364.000000000000000,TRANS NZOIA,Cherangany Sub County,Sitatunga Ward,jUfXO40BeXD,f18kGo9yXWo,mThvosEflAU
+736,18903.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Sengwer Ward,T8RJtzhGvHA,fNCuk4Lpsnh,MqnLxQBigG0
+737,18172.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Cherangany  Ward,z5brnaiDs4p,fNCuk4Lpsnh,MqnLxQBigG0
+738,19277.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Moiben Kuserwo Ward,aMEeDm5knkx,fNCuk4Lpsnh,MqnLxQBigG0
+739,25423.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Kapsowar Ward,bxngHzifzKY,fNCuk4Lpsnh,MqnLxQBigG0
+740,6488.000000000000000,ELGEYO-MARAKWET,Marakwet West Sub County,Arror Ward,nwXVUZOi5LN,fNCuk4Lpsnh,MqnLxQBigG0
+741,25057.000000000000000,ELGEYO-MARAKWET,Keiyo North Sub County,Kamariny Ward,upVp36SDGsU,rlWH0Ac9vjc,MqnLxQBigG0
+742,9602.000000000000000,ELGEYO-MARAKWET,Keiyo North Sub County,Emsoo Ward,i7TCmhUejq5,rlWH0Ac9vjc,MqnLxQBigG0
+743,15930.000000000000000,ELGEYO-MARAKWET,Keiyo North Sub County,Tambach Ward,q3dexsgOLhS,rlWH0Ac9vjc,MqnLxQBigG0
+744,23126.000000000000000,ELGEYO-MARAKWET,Keiyo North Sub County,Kapchemutwa Ward,XMy3sTrrhew,rlWH0Ac9vjc,MqnLxQBigG0
+745,19069.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Kaptarakwa Ward,elLT94gpbch,SOEG546PqbA,MqnLxQBigG0
+746,23349.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Chepkorio Ward,ca3KHxzwLQy,SOEG546PqbA,MqnLxQBigG0
+750,12945.000000000000000,ELGEYO-MARAKWET,Keiyo South Sub County,Metkei Ward,mdOmXEGyL3l,SOEG546PqbA,MqnLxQBigG0
+751,39934.000000000000000,NANDI,Tinderet Sub County,Songhor/Soba Ward,MWpytk1a5rh,NPYRMdqrK6L,t0J75eHKxz5
+752,27896.000000000000000,NANDI,Tinderet Sub County,Tinderet Ward,f2OJrvgkEuq,NPYRMdqrK6L,t0J75eHKxz5
+753,14479.000000000000000,NANDI,Tinderet Sub County,Chemelil/chemase Ward,EHPasx2Mt1b,NPYRMdqrK6L,t0J75eHKxz5
+754,18382.000000000000000,NANDI,Nandi East Sub County,Kapsimotwo Ward,lTqRLp5FwoY,W6Err8cQf5J,t0J75eHKxz5
+763,19396.000000000000000,NANDI,Nandi East Sub County,Ol'lessos Ward,w0ljXC7o4Rd,W6Err8cQf5J,t0J75eHKxz5
+764,17818.000000000000000,NANDI,Nandi East Sub County,Kapchorua Ward,kVHX5gVg5MQ,W6Err8cQf5J,t0J75eHKxz5
+766,25741.000000000000000,NANDI,Chesumei Sub County,Kosirai Ward,k9ff5zzhfkX,xLWuQq3DjOR,t0J75eHKxz5
+768,31375.000000000000000,NANDI,Chesumei Sub County,Kaptel/kamoiywo Ward,i590M8uyKeM,xLWuQq3DjOR,t0J75eHKxz5
+769,24879.000000000000000,NANDI,Chesumei Sub County,Kiptuiya Ward,KfApxlzUoLn,xLWuQq3DjOR,t0J75eHKxz5
+771,23994.000000000000000,NANDI,Emgwen Sub County,Kapkangani Ward,deAxq0HNUFb,Njv37QXxNy2,t0J75eHKxz5
+774,18944.000000000000000,NANDI,Mosop Sub County,Chepterwai Ward,eB5qRSOhocc,Xtb7tbJpk9p,t0J75eHKxz5
+775,19147.000000000000000,NANDI,Mosop Sub County,Kipkaren Ward,Dfh61wYrllH,Xtb7tbJpk9p,t0J75eHKxz5
+776,18225.000000000000000,NANDI,Mosop Sub County,Kurgung/surungai Ward,UDgBjC3Y1eU,Xtb7tbJpk9p,t0J75eHKxz5
+777,19262.000000000000000,NANDI,Mosop Sub County,Kabiyet Ward,Qno2Rye1no5,Xtb7tbJpk9p,t0J75eHKxz5
+779,19029.000000000000000,NANDI,Mosop Sub County,Kabisaga Ward,upEtsdaf6Ri,Xtb7tbJpk9p,t0J75eHKxz5
+813,28102.000000000000000,LAIKIPIA,Laikipia West Sub County,Githiga Ward,pgF7Kz2WZPu,pXbWrnFPpKb,xuFdFy6t9AH
+956,22733.000000000000000,KERICHO,Bureti Sub County,Kapkatet Ward,t6j6TDZfwrc,wt8cPHWfkfu,ihZsJ8alvtb
+959,20649.000000000000000,KERICHO,Belgut Sub County,Cheptororiet/seretut Ward,d45kXzPbKzk,YnIAWg1T4AY,ihZsJ8alvtb

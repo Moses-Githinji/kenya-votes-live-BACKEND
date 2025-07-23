@@ -1,6 +1,16 @@
 import { PrismaClient } from "@prisma/client";
+import fs from "fs/promises";
+import path from "path";
 
 const prisma = new PrismaClient();
+
+async function loadJson(file) {
+  const data = await fs.readFile(
+    path.join(process.cwd(), "prisma", "data", file),
+    "utf-8"
+  );
+  return JSON.parse(data);
+}
 
 // Kenya Counties with realistic registered voters
 const counties = [
@@ -599,48 +609,186 @@ function generateRealisticVotes(candidate, regionCode, position) {
   return Math.max(voteCount, 100); // Minimum 100 votes
 }
 
+// 1. Distribute 3 million registered voters across all regions
+const TOTAL_VOTERS = 3000000;
+
+// Helper to get all region ids for counties, constituencies, wards
+async function getAllRegionIds(prisma) {
+  const counties = await prisma.region.findMany({ where: { type: "COUNTY" } });
+  const constituencies = await prisma.region.findMany({
+    where: { type: "CONSTITUENCY" },
+  });
+  const wards = await prisma.region.findMany({ where: { type: "WARD" } });
+  return { counties, constituencies, wards };
+}
+
+// Helper to simulate realistic voting per region
+async function simulateVotesForRegion(
+  prisma,
+  region,
+  positions,
+  candidatesByRegion,
+  registeredVoters
+) {
+  for (const position of positions) {
+    const candidates = candidatesByRegion[region.id]?.filter(
+      (c) => c.position === position
+    );
+    if (!candidates || candidates.length === 0) continue;
+    // Each voter casts one vote for this position
+    let votesRemaining = registeredVoters;
+    const voteCounts = Array(candidates.length).fill(0);
+    for (let i = 0; i < registeredVoters; i++) {
+      const candidateIdx = Math.floor(Math.random() * candidates.length);
+      voteCounts[candidateIdx]++;
+    }
+    for (let j = 0; j < candidates.length; j++) {
+      await prisma.vote.update({
+        where: { id: candidates[j].voteId },
+        data: { voteCount: voteCounts[j] },
+      });
+    }
+  }
+}
+
+// Helper to simulate realistic PRESIDENT voting per region with random turnout
+async function simulatePresidentVotesForRegion(
+  prisma,
+  region,
+  candidatesByRegion,
+  registeredVoters
+) {
+  // Random turnout between 60% and 80%
+  const turnoutRate = 0.6 + Math.random() * 0.2;
+  const votesToCast = Math.floor(registeredVoters * turnoutRate);
+  const candidates = candidatesByRegion[region.id]?.filter(
+    (c) => c.position === "PRESIDENT"
+  );
+  if (!candidates || candidates.length === 0) return;
+  const voteCounts = Array(candidates.length).fill(0);
+  for (let i = 0; i < votesToCast; i++) {
+    const candidateIdx = Math.floor(Math.random() * candidates.length);
+    voteCounts[candidateIdx]++;
+  }
+  for (let j = 0; j < candidates.length; j++) {
+    await prisma.vote.update({
+      where: { id: candidates[j].voteId },
+      data: { voteCount: voteCounts[j] },
+    });
+  }
+}
+
+// 3. Main seeding logic update
 async function seed() {
-  console.log("🌱 Starting comprehensive database seeding...");
+  console.log(
+    "🌱 Starting comprehensive database seeding with real-world regions..."
+  );
+
+  // Load data
+  const counties = await loadJson("counties.json");
+  const constituencies = await loadJson("constituencies.json");
+  const wards = await loadJson("wards.json");
 
   try {
     // Clear existing data
     await prisma.vote.deleteMany();
     await prisma.candidateTranslation.deleteMany();
     await prisma.candidate.deleteMany();
-    await prisma.region.deleteMany();
     await prisma.electionStatus.deleteMany();
+    await prisma.region.deleteMany();
     await prisma.feedback.deleteMany();
 
-    console.log("🗑️ Cleared existing data");
-
-    // Create regions (counties)
-    const createdRegions = [];
+    // Insert counties
+    const countyMap = {};
     for (const county of counties) {
       const region = await prisma.region.create({
         data: {
           name: county.name,
           code: county.code,
           type: "COUNTY",
-          registeredVoters: county.registeredVoters,
-          geojson: {
-            type: "Feature",
-            properties: { name: county.name, code: county.code },
-            geometry: { type: "Point", coordinates: [0, 0] }, // Simplified coordinates
-          },
+          registeredVoters: county.registeredVoters || 0,
         },
       });
-      createdRegions.push(region);
+      countyMap[county.code] = region;
     }
-    console.log(`✅ Created ${createdRegions.length} regions`);
+    console.log(`✅ Inserted ${counties.length} counties`);
 
-    // Create national region for presidential elections
-    const nationalRegion = await prisma.region.create({
+    // --- INSERT electionStatus for every county and every position ---
+    const esPositions = [
+      "PRESIDENT",
+      "GOVERNOR",
+      "SENATOR",
+      "MP",
+      "WOMAN_REPRESENTATIVE",
+      "COUNTY_ASSEMBLY_MEMBER",
+    ];
+    const esStatusOptions = ["NOT_STARTED", "IN_PROGRESS", "COMPLETED"];
+    const esCountiesFromDb = await prisma.region.findMany({
+      where: { type: "COUNTY" },
+    });
+    for (const county of esCountiesFromDb) {
+      for (const position of esPositions) {
+        await prisma.electionStatus.create({
+          data: {
+            position,
+            region: { connect: { id: county.id } },
+            status:
+              esStatusOptions[
+                Math.floor(Math.random() * esStatusOptions.length)
+              ],
+            totalStations: 100,
+            reportingStations: Math.floor(Math.random() * 100),
+            totalVotes: Math.floor(Math.random() * 100000),
+            lastUpdate: new Date(),
+          },
+        });
+      }
+    }
+    console.log("✅ Seeded electionStatus for all counties and positions");
+
+    // Insert constituencies
+    const constituencyMap = {};
+    for (const constituency of constituencies) {
+      const parentCounty = countyMap[constituency.countyCode];
+      if (!parentCounty) continue;
+      const region = await prisma.region.create({
+        data: {
+          name: constituency.name,
+          code: constituency.code,
+          type: "CONSTITUENCY",
+          parentId: parentCounty.id,
+          registeredVoters: constituency.registeredVoters || 0,
+        },
+      });
+      constituencyMap[constituency.code] = region;
+    }
+    console.log(`✅ Inserted ${constituencies.length} constituencies`);
+
+    // Insert wards
+    let wardCount = 0;
+    for (const ward of wards) {
+      const parentConstituency = constituencyMap[ward.constituencyCode];
+      if (!parentConstituency) continue;
+      await prisma.region.create({
+        data: {
+          name: ward.name,
+          code: ward.code,
+          type: "WARD",
+          parentId: parentConstituency.id,
+        },
+      });
+      wardCount++;
+    }
+    console.log(`✅ Inserted ${wardCount} wards`);
+
+    // Insert national region for PRESIDENT
+    const createdNationalRegion = await prisma.region.create({
       data: {
         name: "Kenya",
         code: "NATIONAL",
         type: "NATIONAL",
         registeredVoters: counties.reduce(
-          (sum, c) => sum + c.registeredVoters,
+          (sum, c) => sum + (c.registeredVoters || 0),
           0
         ),
       },
@@ -654,7 +802,7 @@ async function seed() {
           name: candidate.name,
           party: candidate.party,
           position: "PRESIDENT",
-          regionId: nationalRegion.id,
+          regionId: createdNationalRegion.id,
           regionType: "NATIONAL",
           bio: candidate.bio,
           photoUrl: candidate.photoUrl,
@@ -676,7 +824,13 @@ async function seed() {
       "COUNTY_ASSEMBLY_MEMBER",
     ];
 
-    for (const region of createdRegions) {
+    const statusOptions = ["NOT_STARTED", "IN_PROGRESS", "COMPLETED"];
+    const countiesFromDb = await prisma.region.findMany({
+      where: { type: "COUNTY" },
+    });
+
+    for (const region of Object.values(countyMap)) {
+      // Iterate through counties
       for (const position of positions) {
         const candidates = generateCandidatesForPosition(
           position,
@@ -705,7 +859,8 @@ async function seed() {
     // Create vote records for presidential candidates in each county
     const presidentialVotes = [];
     for (const candidate of presidentialCandidatesCreated) {
-      for (const region of createdRegions) {
+      for (const region of Object.values(countyMap)) {
+        // Iterate through counties
         const voteCount = generateRealisticVotes(
           candidate,
           region.code,
@@ -731,7 +886,9 @@ async function seed() {
     // Create vote records for all other candidates
     let otherVotes = 0;
     for (const candidate of allCandidates) {
-      const region = createdRegions.find((r) => r.id === candidate.regionId);
+      const region = Object.values(countyMap).find(
+        (r) => r.id === candidate.regionId
+      );
       if (region) {
         const voteCount = generateRealisticVotes(
           candidate,
@@ -753,6 +910,64 @@ async function seed() {
     }
     console.log(`✅ Created ${otherVotes} vote records for other positions`);
 
+    // --- ADDITIONAL: MASSIVE CANDIDATE SEEDING ---
+    const massiveCandidateCount = 100000;
+    const massiveCandidates = [];
+    const massiveCandidateNames = new Set();
+    const parties = [
+      "UDA",
+      "ODM",
+      "Jubilee",
+      "NARC-Kenya",
+      "Roots Party",
+      "Wiper",
+      "Ford Kenya",
+      "ANC",
+      "PAA",
+      "KANU",
+    ];
+    for (let i = 0; i < massiveCandidateCount; i++) {
+      // Random county
+      const region =
+        Object.values(countyMap)[
+          Math.floor(Math.random() * Object.values(countyMap).length)
+        ];
+      // Random party
+      const party = parties[Math.floor(Math.random() * parties.length)];
+      // Random name
+      let name;
+      do {
+        name = `Candidate${Math.floor(Math.random() * 100000000)}_${party}_${region.code}`;
+      } while (massiveCandidateNames.has(name));
+      massiveCandidateNames.add(name);
+      // Random position
+      const position = positions[Math.floor(Math.random() * positions.length)];
+      massiveCandidates.push({
+        name,
+        party,
+        position,
+        regionId: region.id,
+        regionType: "COUNTY",
+        bio: `Massive test candidate for ${position} in ${region.name}`,
+      });
+    }
+    // Batch insert for performance
+    console.log(
+      `🚀 Inserting ${massiveCandidates.length} massive test candidates...`
+    );
+    for (let i = 0; i < massiveCandidates.length; i += 1000) {
+      await prisma.candidate.createMany({
+        data: massiveCandidates.slice(i, i + 1000),
+        skipDuplicates: true,
+      });
+      if ((i + 1000) % 10000 === 0) {
+        console.log(`  ...inserted ${i + 1000} so far`);
+      }
+    }
+    console.log(
+      `✅ Inserted ${massiveCandidates.length} massive test candidates`
+    );
+
     // Create election status for all positions
     await prisma.electionStatus.createMany({
       data: [
@@ -762,6 +977,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 40000,
           totalVotes: 15000000,
+          regionId: createdNationalRegion.id,
         },
         {
           position: "GOVERNOR",
@@ -769,6 +985,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 40000,
           totalVotes: 15000000,
+          regionId: createdNationalRegion.id,
         },
         {
           position: "SENATOR",
@@ -776,6 +993,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 35000,
           totalVotes: 12000000,
+          regionId: createdNationalRegion.id,
         },
         {
           position: "MP",
@@ -783,6 +1001,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 32000,
           totalVotes: 11000000,
+          regionId: createdNationalRegion.id,
         },
         {
           position: "WOMAN_REPRESENTATIVE",
@@ -790,6 +1009,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 30000,
           totalVotes: 10000000,
+          regionId: createdNationalRegion.id,
         },
         {
           position: "COUNTY_ASSEMBLY_MEMBER",
@@ -797,6 +1017,7 @@ async function seed() {
           totalStations: 40000,
           reportingStations: 0,
           totalVotes: 0,
+          regionId: createdNationalRegion.id,
         },
       ],
     });
@@ -822,13 +1043,119 @@ async function seed() {
       ],
     });
 
+    // Create sample users for each new role
+    await prisma.user.createMany({
+      data: [
+        {
+          email: "commissioner@iebc.or.ke",
+          name: "IEBC Commissioner",
+          role: "IEBC_COMMISSIONER",
+          isActive: true,
+        },
+        {
+          email: "returning@iebc.or.ke",
+          name: "Returning Officer",
+          role: "RETURNING_OFFICER",
+          isActive: true,
+        },
+        {
+          email: "presiding@iebc.or.ke",
+          name: "Presiding Officer",
+          role: "PRESIDING_OFFICER",
+          isActive: true,
+        },
+        {
+          email: "clerk@iebc.or.ke",
+          name: "Election Clerk",
+          role: "ELECTION_CLERK",
+          isActive: true,
+        },
+        {
+          email: "sysadmin@iebc.or.ke",
+          name: "System Administrator",
+          role: "SYSTEM_ADMINISTRATOR",
+          isActive: true,
+        },
+      ],
+      skipDuplicates: true,
+    });
+    console.log("✅ Created sample users for all new roles");
+
+    // --- VOTER DISTRIBUTION AND SIMULATION LOGIC (after all regions/candidates) ---
+    // Load counties from DB
+    const dbCounties = await prisma.region.findMany({
+      where: { type: "COUNTY" },
+    });
+    const countyVoters = Math.floor(TOTAL_VOTERS / dbCounties.length);
+    for (const county of dbCounties) {
+      await prisma.region.update({
+        where: { id: county.id },
+        data: { registeredVoters: countyVoters },
+      });
+    }
+    // Build a map of candidates by region
+    const allVotes = await prisma.vote.findMany();
+    const candidatesByRegion = {};
+    for (const vote of allVotes) {
+      if (!candidatesByRegion[vote.regionId])
+        candidatesByRegion[vote.regionId] = [];
+      candidatesByRegion[vote.regionId].push({
+        voteId: vote.id,
+        position: vote.position,
+      });
+    }
+    // Simulate votes for each county, capping total votes at registeredVoters
+    for (const county of dbCounties) {
+      await simulateVotesForRegion(
+        prisma,
+        county,
+        positions,
+        candidatesByRegion,
+        countyVoters
+      );
+    }
+    // Simulate presidential votes at national level
+    if (!createdNationalRegion) {
+      createdNationalRegion = await prisma.region.findFirst({
+        where: { type: "NATIONAL" },
+      });
+    }
+    if (createdNationalRegion) {
+      await simulateVotesForRegion(
+        prisma,
+        createdNationalRegion,
+        ["PRESIDENT"],
+        candidatesByRegion,
+        countyVoters * dbCounties.length
+      );
+    }
+
+    // Simulate PRESIDENT votes for each county, capping total votes at a realistic turnout
+    for (const county of dbCounties) {
+      await simulatePresidentVotesForRegion(
+        prisma,
+        county,
+        candidatesByRegion,
+        countyVoters
+      );
+    }
+    // Simulate PRESIDENT votes at national level
+    if (createdNationalRegion) {
+      await simulatePresidentVotesForRegion(
+        prisma,
+        createdNationalRegion,
+        candidatesByRegion,
+        countyVoters * dbCounties.length
+      );
+    }
+
     const totalCandidates =
       presidentialCandidatesCreated.length + allCandidates.length;
     const totalVotes = presidentialVotes.length + otherVotes;
 
     console.log("🎉 Comprehensive database seeding completed successfully!");
     console.log("\n📊 Complete Data Summary:");
-    console.log(`- ${createdRegions.length} Counties created`);
+    console.log(`- ${Object.values(countyMap).length} Counties created`);
     console.log(`- ${totalCandidates} Total candidates (all positions)`);
     console.log(
       `  - ${presidentialCandidatesCreated.length} Presidential candidates`

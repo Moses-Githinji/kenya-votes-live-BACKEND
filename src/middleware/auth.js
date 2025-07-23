@@ -2,95 +2,145 @@ import jwt from "jsonwebtoken";
 import pkg from "@prisma/client";
 const { PrismaClient } = pkg;
 import logger from "../utils/logger.js";
+import { sendEmail } from "../utils/email.js";
 
 const prisma = new PrismaClient();
 
 // JWT verification middleware
-export const authMiddleware = async (req, res, next) => {
-  try {
-    const authHeader = req.headers.authorization;
+export default function authenticateToken(req, res, next) {
+  (async () => {
+    try {
+      const authHeader = req.headers && req.headers.authorization;
 
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "No token provided",
+      if (!authHeader || !authHeader.startsWith("Bearer ")) {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "No token provided",
+        });
+      }
+
+      const token = authHeader.substring(7); // Remove 'Bearer ' prefix
+
+      if (!token) {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "No token provided",
+        });
+      }
+
+      // Verify JWT token
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+      if (!decoded) {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "Invalid token",
+        });
+      }
+
+      // Get user from database
+      const user = await prisma.user.findUnique({
+        where: { id: decoded.userId },
       });
+
+      if (!user || !user.isActive) {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "User not found or inactive",
+        });
+      }
+
+      // Add user to request object
+      req.user = {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+      };
+
+      // Send login email for all admin roles
+      const adminRoleMessages = {
+        SYSTEM_ADMINISTRATOR: {
+          subject: "System Administrator Login | Kenya Votes Live",
+          main_message:
+            "You have successfully logged in as a SYSTEM ADMINISTRATOR.",
+          content_title: "System Administrator Login Alert",
+          cta_text: "Go to Admin Dashboard",
+        },
+        IEBC_COMMISSIONER: {
+          subject: "IEBC Commissioner Login | Kenya Votes Live",
+          main_message:
+            "You have successfully logged in as an IEBC COMMISSIONER.",
+          content_title: "Commissioner Login Alert",
+          cta_text: "Go to Commissioner Dashboard",
+        },
+        RETURNING_OFFICER: {
+          subject: "Returning Officer Login | Kenya Votes Live",
+          main_message:
+            "You have successfully logged in as a RETURNING OFFICER.",
+          content_title: "Returning Officer Login Alert",
+          cta_text: "Go to Returning Officer Dashboard",
+        },
+        PRESIDING_OFFICER: {
+          subject: "Presiding Officer Login | Kenya Votes Live",
+          main_message:
+            "You have successfully logged in as a PRESIDING OFFICER.",
+          content_title: "Presiding Officer Login Alert",
+          cta_text: "Go to Presiding Officer Dashboard",
+        },
+        ELECTION_CLERK: {
+          subject: "Election Clerk Login | Kenya Votes Live",
+          main_message: "You have successfully logged in as an ELECTION CLERK.",
+          content_title: "Election Clerk Login Alert",
+          cta_text: "Go to Clerk Dashboard",
+        },
+      };
+      if (adminRoleMessages[user.role]) {
+        const msg = adminRoleMessages[user.role];
+        try {
+          await sendEmail({
+            to: user.email,
+            subject: msg.subject,
+            templateData: {
+              greeting: "Dear",
+              user_name: user.name,
+              main_message: msg.main_message,
+              content_title: msg.content_title,
+              content_details: `Login time: ${new Date().toLocaleString()}`,
+              status_label: "Success",
+              cta_url: process.env.BACKEND_URL || "http://localhost:4000",
+              cta_text: msg.cta_text,
+              additional_info:
+                "If this was not you, please contact support immediately.",
+            },
+          });
+        } catch (e) {
+          logger.error(`Failed to send ${user.role} login email:`, e);
+        }
+      }
+
+      next();
+    } catch (error) {
+      logger.error("Authentication error:", error);
+      if (error.name === "JsonWebTokenError") {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "Invalid token",
+        });
+      }
+      if (error.name === "TokenExpiredError") {
+        return res.status(401).json({
+          error: "Access denied",
+          message: "Token expired",
+        });
+      }
+      next(error);
     }
+  })();
+}
 
-    const token = authHeader.substring(7); // Remove 'Bearer ' prefix
-
-    if (!token) {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "No token provided",
-      });
-    }
-
-    // Verify JWT token
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-
-    if (!decoded) {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "Invalid token",
-      });
-    }
-
-    // Get user from database
-    const user = await prisma.user.findUnique({
-      where: { id: decoded.userId },
-    });
-
-    if (!user || !user.isActive) {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "User not found or inactive",
-      });
-    }
-
-    // Check if user has admin role
-    if (user.role === "PUBLIC") {
-      return res.status(403).json({
-        error: "Access denied",
-        message: "Admin access required",
-      });
-    }
-
-    // Add user to request object
-    req.user = {
-      id: user.id,
-      email: user.email,
-      name: user.name,
-      role: user.role,
-    };
-
-    next();
-  } catch (error) {
-    logger.error("Authentication error:", error);
-
-    if (error.name === "JsonWebTokenError") {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "Invalid token",
-      });
-    }
-
-    if (error.name === "TokenExpiredError") {
-      return res.status(401).json({
-        error: "Access denied",
-        message: "Token expired",
-      });
-    }
-
-    res.status(500).json({
-      error: "Authentication failed",
-      message: "Internal server error",
-    });
-  }
-};
-
-// Role-based access control middleware
-export const requireRole = (roles) => {
+// Role-based access control middleware for new roles
+export function requireRole(roles) {
   return (req, res, next) => {
     if (!req.user) {
       return res.status(401).json({
@@ -98,23 +148,22 @@ export const requireRole = (roles) => {
         message: "Authentication required",
       });
     }
-
     if (!roles.includes(req.user.role)) {
       return res.status(403).json({
         error: "Access denied",
         message: `Required role: ${roles.join(" or ")}`,
       });
     }
-
     next();
   };
-};
+}
 
-// Super admin only middleware
-export const requireSuperAdmin = requireRole(["SUPER_ADMIN"]);
-
-// Admin or super admin middleware
-export const requireAdmin = requireRole(["ADMIN", "SUPER_ADMIN"]);
+// Middleware for each new role
+export const requireIEBCCommissioner = requireRole(["IEBC_COMMISSIONER"]);
+export const requireReturningOfficer = requireRole(["RETURNING_OFFICER"]);
+export const requirePresidingOfficer = requireRole(["PRESIDING_OFFICER"]);
+export const requireElectionClerk = requireRole(["ELECTION_CLERK"]);
+export const requireSystemAdministrator = requireRole(["SYSTEM_ADMINISTRATOR"]);
 
 // API key authentication middleware
 export const apiKeyAuth = async (req, res, next) => {
