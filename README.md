@@ -1,6 +1,6 @@
 # Kenya Votes Live - Backend API
 
-## 🆕 Recent Updates (July 2024)
+## 🆕 Recent Updates (July 2025)
 
 - **Database Seeding Reliability:**
   - Fixed duplicate `ElectionStatus` creation by removing redundant seeding logic.
