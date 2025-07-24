@@ -1249,4 +1249,85 @@ router.get(
   }
 );
 
+// Voter turnout summary endpoint
+router.get("/turnout/summary", async (req, res) => {
+  try {
+    const { countyCode, limit } = req.query;
+    const target = 60;
+    let results = [];
+
+    if (!countyCode) {
+      // National turnout (single result)
+      const counties = await prisma.region.findMany({
+        where: { type: "COUNTY" },
+      });
+      const registered = counties.reduce(
+        (sum, c) => sum + (c.registeredVoters || 0),
+        0
+      );
+      const presidentVotes = await prisma.vote.aggregate({
+        where: { position: "PRESIDENT" },
+        _sum: { voteCount: true },
+      });
+      const voted = presidentVotes._sum.voteCount || 0;
+      const pollingStations = counties.reduce(
+        (sum, c) => sum + (c.totalStations || 0),
+        0
+      );
+      const turnout = registered > 0 ? (voted / registered) * 100 : 0;
+      const current = Number(turnout.toFixed(2));
+      const difference = registered - voted;
+      results.push({
+        region: "National",
+        turnout: current,
+        target,
+        registered,
+        voted,
+        difference,
+        pollingStations,
+      });
+    } else {
+      // County turnout (with pagination)
+      const pageSize = parseInt(limit) || 7;
+      const region = await prisma.region.findFirst({
+        where: { code: countyCode, type: "COUNTY" },
+      });
+      if (!region) {
+        return res.status(404).json({
+          error: "County not found",
+          message: "No county with the provided code.",
+        });
+      }
+      // For future: get constituencies/wards in this county and paginate
+      // For now: just return the county itself, paginated (will always be 1 result)
+      const registered = region.registeredVoters || 0;
+      const presidentVotes = await prisma.vote.aggregate({
+        where: { position: "PRESIDENT", regionId: region.id },
+        _sum: { voteCount: true },
+      });
+      const voted = presidentVotes._sum.voteCount || 0;
+      const pollingStations = region.totalStations || 0;
+      const turnout = registered > 0 ? (voted / registered) * 100 : 0;
+      const current = Number(turnout.toFixed(2));
+      const difference = registered - voted;
+      results.push({
+        region: region.name,
+        turnout: current,
+        target,
+        registered,
+        voted,
+        difference,
+        pollingStations,
+      });
+      // If you expand to more granular regions, slice here:
+      results = results.slice(0, pageSize);
+    }
+
+    res.json(results);
+  } catch (error) {
+    logger.error("Error in /api/turnout/summary", error);
+    res.status(500).json({ error: "Unable to fetch turnout summary" });
+  }
+});
+
 export default router;

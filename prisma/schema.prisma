@@ -130,6 +130,8 @@ model Region {
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
 
+  totalStations    Int         @default(0)
+
   // Relations
   parent      Region?    @relation("RegionHierarchy", fields: [parentId], references: [id])
   children    Region[]   @relation("RegionHierarchy")
