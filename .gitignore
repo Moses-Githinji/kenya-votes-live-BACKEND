@@ -137,18 +137,24 @@ kenya-votes-live-comprehensive-report-updated.html
 generate-updated-pdf.js
 
 # Frontend comprehensive audit and development prompt (contains detailed feature specifications)
-frontend-comprehensive-audit-and-prompt.txt 
-frontend_region_code_update_prompt.txt 
-frontend_features_list.txt 
+frontend-comprehensive-audit-and-prompt.txt
+frontend_region_code_update_prompt.txt
+frontend_features_list.txt
 SYSTEM_ADMINISTRATOR_privileges.txt
-SYSTEM_ADMINISTRATOR_privileges.pdf 
+SYSTEM_ADMINISTRATOR_privileges.pdf
 API_Improvements_Recommendations.md
 API_Improvements_Recommendations.pdf
-sysadmin_implementation_roadmap.txt 
-frontend-api-integration-example.txt 
-RECOMMENDATIONS.txt 
+sysadmin_implementation_roadmap.txt
+frontend-api-integration-example.txt
+RECOMMENDATIONS.txt
+SYSTEM_ADMINISTRATOR-permissions-and-frontend-integration.txt
+
+
 # Performance analysis reports and data
-performance-analysis/ 
-KENYA_VOTES_LIVE_BACKEND_FULL_DESCRIPTION.txt 
-admin-auth-flow.txt 
+performance-analysis/
+KENYA_VOTES_LIVE_BACKEND_FULL_DESCRIPTION.txt
+admin-auth-flow.txt
 admin-credentials.txt
+
+# System administrator login function
+sysadmin-login-function.txt
