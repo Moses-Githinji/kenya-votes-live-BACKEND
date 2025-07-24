@@ -143,10 +143,12 @@ frontend_features_list.txt
 SYSTEM_ADMINISTRATOR_privileges.txt
 SYSTEM_ADMINISTRATOR_privileges.pdf 
 API_Improvements_Recommendations.md
-API_Improvements_Recommendations.pdf 
+API_Improvements_Recommendations.pdf
 sysadmin_implementation_roadmap.txt 
 frontend-api-integration-example.txt 
 RECOMMENDATIONS.txt 
 # Performance analysis reports and data
 performance-analysis/ 
 KENYA_VOTES_LIVE_BACKEND_FULL_DESCRIPTION.txt 
+admin-auth-flow.txt 
+admin-credentials.txt

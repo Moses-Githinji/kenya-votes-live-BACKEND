@@ -1,11 +1,14 @@
 import { PrismaClient } from "@prisma/client";
-import fs from "fs/promises";
+import fs from "fs";
+import fsPromises from "fs/promises";
 import path from "path";
+import bcrypt from "bcrypt";
+import crypto from "crypto";
 
 const prisma = new PrismaClient();
 
 async function loadJson(file) {
-  const data = await fs.readFile(
+  const data = fs.readFileSync(
     path.join(process.cwd(), "prisma", "data", file),
     "utf-8"
   );
@@ -1177,16 +1180,19 @@ async function seed() {
     await prisma.feedback.createMany({
       data: [
         {
+          name: "Jane Citizen",
           type: "general",
           message: "Great platform for tracking election results!",
           email: "citizen@example.com",
         },
         {
+          name: "John Observer",
           type: "issue",
           message: "Some results seem to be loading slowly",
           email: "observer@example.com",
         },
         {
+          name: "Mary Voter",
           type: "suggestion",
           message: "Please add more detailed candidate information",
           email: "voter@example.com",
@@ -1194,42 +1200,76 @@ async function seed() {
       ],
     });
 
-    // Create sample users for each new role
+    // Generate unique passwords for each admin
+    function generatePassword() {
+      return (
+        crypto.randomBytes(4).toString("hex") +
+        "-" +
+        crypto.randomBytes(4).toString("hex") +
+        "-!A1"
+      );
+    }
+
+    const adminUsers = [
+      {
+        email: "commissioner@iebc.or.ke",
+        name: "IEBC Commissioner",
+        role: "IEBC_COMMISSIONER",
+      },
+      {
+        email: "returning@iebc.or.ke",
+        name: "Returning Officer",
+        role: "RETURNING_OFFICER",
+      },
+      {
+        email: "presiding@iebc.or.ke",
+        name: "Presiding Officer",
+        role: "PRESIDING_OFFICER",
+      },
+      {
+        email: "clerk@iebc.or.ke",
+        name: "Election Clerk",
+        role: "ELECTION_CLERK",
+      },
+      {
+        email: "sysadmin@iebc.or.ke",
+        name: "System Administrator",
+        role: "SYSTEM_ADMINISTRATOR",
+      },
+    ];
+
+    const adminUserData = [];
+    const adminCredentials = [];
+    for (const user of adminUsers) {
+      const password = generatePassword();
+      const hashed = await bcrypt.hash(password, 10);
+      adminUserData.push({
+        ...user,
+        password: hashed,
+        isActive: true,
+      });
+      const credLine = `Admin user: ${user.email} | Password: ${password}`;
+      adminCredentials.push(credLine);
+      console.log(credLine);
+    }
+
     await prisma.user.createMany({
-      data: [
-        {
-          email: "commissioner@iebc.or.ke",
-          name: "IEBC Commissioner",
-          role: "IEBC_COMMISSIONER",
-          isActive: true,
-        },
-        {
-          email: "returning@iebc.or.ke",
-          name: "Returning Officer",
-          role: "RETURNING_OFFICER",
-          isActive: true,
-        },
-        {
-          email: "presiding@iebc.or.ke",
-          name: "Presiding Officer",
-          role: "PRESIDING_OFFICER",
-          isActive: true,
-        },
-        {
-          email: "clerk@iebc.or.ke",
-          name: "Election Clerk",
-          role: "ELECTION_CLERK",
-          isActive: true,
-        },
-        {
-          email: "sysadmin@iebc.or.ke",
-          name: "System Administrator",
-          role: "SYSTEM_ADMINISTRATOR",
-          isActive: true,
-        },
-      ],
+      data: adminUserData,
       skipDuplicates: true,
     });
+    // Save credentials to a file at the project root
+    await fsPromises
+      .writeFile(
+        path.join(process.cwd(), "admin-credentials.txt"),
+        adminCredentials.join("\n") + "\n"
+      )
+      .then(() => {
+        console.log("✅ Saved admin credentials to admin-credentials.txt");
+      })
+      .catch((error) => {
+        console.error("❌ Error saving admin credentials:", error);
+      });
+    console.log("✅ Saved admin credentials to admin-credentials.txt");
     console.log("✅ Created sample users for all new roles");
 
     // --- VOTER DISTRIBUTION AND SIMULATION LOGIC (after all regions/candidates) ---

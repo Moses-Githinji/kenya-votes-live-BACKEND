@@ -64,6 +64,7 @@ model User {
   email     String   @unique
   name      String
   role      UserRole @default(PUBLIC)
+  password  String   // Hashed password for authentication
   auth0Id   String?  @unique
   isActive  Boolean  @default(true)
   lastLogin DateTime?
@@ -240,7 +241,9 @@ model ApiKey {
 // Feedback from public users
 model Feedback {
   id          String   @id @default(cuid())
-  type        String   // issue, suggestion, general
+  name        String   // Name of the user submitting feedback
+  subject     String?  // Subject of the feedback (optional)
+  type        String   // general, technical, suggestion, question
   message     String
   email       String?
   userAgent   String?

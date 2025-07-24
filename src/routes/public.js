@@ -6,6 +6,7 @@ import Redis from "ioredis";
 import { cacheMiddleware } from "../middleware/cache.js";
 import { generateChecksum } from "../utils/checksum.js";
 import logger from "../utils/logger.js";
+import { sendEmail, sendFeedbackEmail } from "../utils/email.js";
 
 const router = express.Router();
 const prisma = new PrismaClient();
@@ -772,9 +773,11 @@ router.get(
 router.post(
   "/feedback",
   [
-    body("type").isIn(["issue", "suggestion", "general"]),
+    body("name").isString().isLength({ min: 2, max: 100 }),
+    body("type").isIn(["general", "technical", "suggestion", "question"]),
     body("message").isString().isLength({ min: 10, max: 1000 }),
-    body("email").optional().isEmail(),
+    body("email").isEmail(),
+    body("subject").optional().isString().isLength({ min: 0, max: 200 }),
   ],
   async (req, res) => {
     try {
@@ -783,16 +786,27 @@ router.post(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const { type, message, email } = req.body;
+      const { name, type, message, email, subject } = req.body;
 
       const feedback = await prisma.feedback.create({
         data: {
+          name,
           type,
           message,
           email,
+          subject,
           userAgent: req.get("User-Agent"),
           ipAddress: req.ip,
         },
+      });
+
+      // Only send feedback acknowledgement email
+      await sendFeedbackEmail({
+        name,
+        email,
+        type,
+        subject,
+        message,
       });
 
       res.status(201).json({
